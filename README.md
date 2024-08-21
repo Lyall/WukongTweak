@@ -11,6 +11,7 @@ This is an ASI plugin for Black Myth: Wukong that features expanded ultrawide su
 ### Graphical Tweaks
 - Adjust forced sharpening.
 - Disable chromatic aberration.
+- Disable vignette (darkening at the edges of the screen).
 
 ## Installation
 - Grab the latest release of WukongTweak from [here.](https://github.com/Lyall/WukongTweak/releases)
