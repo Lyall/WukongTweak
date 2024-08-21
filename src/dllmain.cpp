@@ -28,11 +28,13 @@ bool bFixAspectLimit;
 bool bSharpening;
 float fSharpeningValue;
 bool bChromaticAberration;
+bool bVignette;
 
 // Variables
 bool bCachedConsoleObjects = false;
-IConsoleVariable* tonemapperSharpen;
-IConsoleVariable* chromaticAbberation;
+IConsoleVariable* cvarSharpen;
+IConsoleVariable* cvarCA;
+IConsoleVariable* cvarVignette;
 
 // CVAR addresses
 UC::TMap<UC::FString, Unreal::FConsoleObject*> ConsoleObjects;
@@ -100,12 +102,14 @@ void Configuration()
     inipp::get_value(ini.sections["Adjust Sharpening"], "Enabled", bSharpening);
     inipp::get_value(ini.sections["Adjust Sharpening"], "Value", fSharpeningValue);
     inipp::get_value(ini.sections["Chromatic Aberration"], "Value", bChromaticAberration);
+    inipp::get_value(ini.sections["Vignette"], "Value", bVignette);
 
     spdlog::info("----------");
     spdlog::info("Config Parse: bFixAspectLimit: {}", bFixAspectLimit);
     spdlog::info("Config Parse: bSharpening: {}", bSharpening);
     spdlog::info("Config Parse: fSharpeningValue: {}", fSharpeningValue);
     spdlog::info("Config Parse: bChromaticAberration: {}", bChromaticAberration);
+    spdlog::info("Config Parse: bVignette: {}", bVignette);
     spdlog::info("----------");
 
     // Grab desktop resolution/aspect
@@ -151,15 +155,21 @@ void GetCVARs()
 
     if (bCachedConsoleObjects) {
         // r.Tonemapper.Sharpen
-        tonemapperSharpen = Unreal::FindCVAR("r.Tonemapper.Sharpen", ConsoleObjects);
-        if (tonemapperSharpen) {
-            spdlog::info("CVar: r.Tonemapper.Sharpen: Address {:x}", (uintptr_t)tonemapperSharpen);
+        cvarSharpen = Unreal::FindCVAR("r.Tonemapper.Sharpen", ConsoleObjects);
+        if (cvarSharpen) {
+            spdlog::info("CVar: r.Tonemapper.Sharpen: Address {:x}", (uintptr_t)cvarSharpen);
         }
 
         // r.SceneColorFringeQuality
-        chromaticAbberation = Unreal::FindCVAR("r.SceneColorFringeQuality", ConsoleObjects);
-        if (chromaticAbberation) {
-            spdlog::info("CVar: r.SceneColorFringeQuality: Address {:x}", (uintptr_t)chromaticAbberation);
+        cvarCA = Unreal::FindCVAR("r.SceneColorFringeQuality", ConsoleObjects);
+        if (cvarCA) {
+            spdlog::info("CVar: r.SceneColorFringeQuality: Address {:x}", (uintptr_t)cvarCA);
+        }
+
+        // r.Tonemapper.Quality
+        cvarVignette = Unreal::FindCVAR("r.Tonemapper.Quality", ConsoleObjects);
+        if (cvarCA) {
+            spdlog::info("CVar: r.Tonemapper.Quality: Address {:x}", (uintptr_t)cvarCA);
         }
     }
 }
@@ -174,19 +184,27 @@ void SetCVARs()
         static SafetyHookMid LevelPostLoadMidHook{};
         LevelPostLoadMidHook = safetyhook::create_mid(LevelPostLoadScanResult,
             [](SafetyHookContext& ctx) {
-                if (tonemapperSharpen && tonemapperSharpen->GetFloat() != fSharpeningValue && bSharpening) {
+                // r.Tonemapper.Sharpen
+                if (cvarSharpen && (cvarSharpen->GetFloat() != fSharpeningValue) && bSharpening) {
                     // Flag jank
-                    *reinterpret_cast<int*>((uintptr_t)tonemapperSharpen + 0x18) = 0x0A000000;
+                    *reinterpret_cast<int*>((uintptr_t)cvarSharpen + 0x18) = 0x0A000000;
                     // Set value manually since this one is finicky
-                    *reinterpret_cast<float*>((uintptr_t)tonemapperSharpen + 0x60) = fSharpeningValue;
-                    *reinterpret_cast<float*>((uintptr_t)tonemapperSharpen + 0x64) = fSharpeningValue;
-                    spdlog::info("CVar: r.Tonemapper.Sharpen: Set to {}", tonemapperSharpen->GetFloat());
+                    *reinterpret_cast<float*>((uintptr_t)cvarSharpen + 0x60) = fSharpeningValue;
+                    *reinterpret_cast<float*>((uintptr_t)cvarSharpen + 0x64) = fSharpeningValue;
+                    spdlog::info("CVar: r.Tonemapper.Sharpen: Set to {}", cvarSharpen->GetFloat());
                 }
 
-                if (chromaticAbberation && chromaticAbberation->GetInt() != 0) {
-                    chromaticAbberation->Set(L"0");
-                    spdlog::info("CVar: r.SceneColorFringeQuality: Set to {}", chromaticAbberation->GetInt());
-                }              
+                // r.SceneColorFringeQuality
+                if (cvarCA && (cvarCA->GetInt() != (int)bChromaticAberration)) {
+                    cvarCA->Set(std::to_wstring((int)bChromaticAberration).c_str());
+                    spdlog::info("CVar: r.SceneColorFringeQuality: Set to {}", cvarCA->GetInt());
+                }    
+
+                // r.Tonemapper.Quality
+                if (!bVignette && cvarVignette && (cvarVignette->GetInt() != 1)) {
+                    cvarVignette->Set(L"1");
+                    spdlog::info("CVar: r.Tonemapper.Quality: Set to {}", cvarVignette->GetInt());
+                }
             });
     }
     else if (!LevelPostLoadScanResult) {
