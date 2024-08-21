@@ -5,6 +5,9 @@
 This is an ASI plugin for Black Myth: Wukong that features expanded ultrawide support and graphical tweaks.
 
 ## Features
+### General
+- Adjust gameplay FOV.
+
 ### Ultrawide
 - Remove 21:9 aspect ratio limit.
 
