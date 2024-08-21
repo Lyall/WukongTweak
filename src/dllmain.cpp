@@ -105,6 +105,7 @@ void Configuration()
     spdlog::info("Config Parse: bFixAspectLimit: {}", bFixAspectLimit);
     spdlog::info("Config Parse: bSharpening: {}", bSharpening);
     spdlog::info("Config Parse: fSharpeningValue: {}", fSharpeningValue);
+    spdlog::info("Config Parse: bChromaticAberration: {}", bChromaticAberration);
     spdlog::info("----------");
 
     // Grab desktop resolution/aspect
