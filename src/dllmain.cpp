@@ -10,7 +10,7 @@ HMODULE baseModule = GetModuleHandle(NULL);
 
 // Version
 std::string sFixName = "WukongTweak";
-std::string sFixVer = "0.8.0";
+std::string sFixVer = "0.8.1";
 std::string sLogFile = sFixName + ".log";
 
 // Logger
@@ -25,10 +25,10 @@ std::pair DesktopDimensions = { 0,0 };
 
 // Ini variables
 bool bFixAspectLimit;
-bool bSharpening;
 float fSharpeningValue;
 bool bChromaticAberration;
 bool bVignette;
+float fAdditionalFOV;
 
 // Variables
 bool bCachedConsoleObjects = false;
@@ -99,14 +99,18 @@ void Configuration()
     // Parse config
     ini.strip_trailing_comments();
     inipp::get_value(ini.sections["Remove Aspect Ratio Limit"], "Enabled", bFixAspectLimit);
-    inipp::get_value(ini.sections["Adjust Sharpening"], "Enabled", bSharpening);
-    inipp::get_value(ini.sections["Adjust Sharpening"], "Value", fSharpeningValue);
-    inipp::get_value(ini.sections["Chromatic Aberration"], "Value", bChromaticAberration);
-    inipp::get_value(ini.sections["Vignette"], "Value", bVignette);
+    inipp::get_value(ini.sections["Gameplay FOV"], "AdditionalFOV", fAdditionalFOV);
+    inipp::get_value(ini.sections["Adjust Sharpening"], "Strength", fSharpeningValue);
+    inipp::get_value(ini.sections["Chromatic Aberration"], "Enabled", bChromaticAberration);
+    inipp::get_value(ini.sections["Vignette"], "Enabled", bVignette);
 
     spdlog::info("----------");
     spdlog::info("Config Parse: bFixAspectLimit: {}", bFixAspectLimit);
-    spdlog::info("Config Parse: bSharpening: {}", bSharpening);
+    if (fAdditionalFOV < (float)-80 || fAdditionalFOV >(float)80) {
+        fAdditionalFOV = std::clamp(fAdditionalFOV, (float)-80, (float)80);
+        spdlog::warn("Config Parse: fAdditionalFOV value invalid, clamped to {}", fAdditionalFOV);
+    }
+    spdlog::info("Config Parse: fAdditionalFOV: {}", fAdditionalFOV);
     spdlog::info("Config Parse: fSharpeningValue: {}", fSharpeningValue);
     spdlog::info("Config Parse: bChromaticAberration: {}", bChromaticAberration);
     spdlog::info("Config Parse: bVignette: {}", bVignette);
@@ -133,7 +137,7 @@ void GetCVARs()
             std::this_thread::sleep_for(std::chrono::milliseconds(100));
 
             if (i == 100) { // 10s
-                spdlog::info("Console CVARs: Failed to find singleton adddress.");
+                spdlog::error("Console CVARs: Failed to find singleton adddress.");
                 return;
             }
         }
@@ -169,7 +173,7 @@ void GetCVARs()
         // r.Tonemapper.Quality
         cvarVignette = Unreal::FindCVAR("r.Tonemapper.Quality", ConsoleObjects);
         if (cvarCA) {
-            spdlog::info("CVar: r.Tonemapper.Quality: Address {:x}", (uintptr_t)cvarCA);
+            spdlog::info("CVar: r.Tonemapper.Quality: Address {:x}", (uintptr_t)cvarVignette);
         }
     }
 }
@@ -185,7 +189,7 @@ void SetCVARs()
         LevelPostLoadMidHook = safetyhook::create_mid(LevelPostLoadScanResult,
             [](SafetyHookContext& ctx) {
                 // r.Tonemapper.Sharpen
-                if (cvarSharpen && (cvarSharpen->GetFloat() != fSharpeningValue) && bSharpening) {
+                if (cvarSharpen && (cvarSharpen->GetFloat() != fSharpeningValue)) {
                     // Flag jank
                     *reinterpret_cast<int*>((uintptr_t)cvarSharpen + 0x18) = 0x0A000000;
                     // Set value manually since this one is finicky
@@ -201,7 +205,7 @@ void SetCVARs()
                 }    
 
                 // r.Tonemapper.Quality
-                if (!bVignette && cvarVignette && (cvarVignette->GetInt() != 1)) {
+                if (cvarVignette && (cvarVignette->GetInt() != 1) && !bVignette) {
                     cvarVignette->Set(L"1");
                     spdlog::info("CVar: r.Tonemapper.Quality: Set to {}", cvarVignette->GetInt());
                 }
@@ -224,6 +228,22 @@ void Tweaks()
         }
         else if (!AspectRatioLimitScanResult) {
             spdlog::error("Aspect Ratio Limit: Pattern scan failed.");
+        }
+    }
+
+    // Gameplay FOV
+    if (fAdditionalFOV != 0.00f) {
+        uint8_t* GameplayFOVScanResult = Memory::PatternScan(baseModule, "F3 0F ?? ?? ?? 03 ?? ?? F3 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? ?? ?? ?? ?? 48 8B ?? ?? 48 8B ?? 83 ?? 00 F3 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? 48 8B ?? ?? 48 8B ?? 83 ?? 00"); // stupidly long pattern (:
+        if (GameplayFOVScanResult) {
+            spdlog::info("Gameplay FOV: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)GameplayFOVScanResult - (uintptr_t)baseModule);
+            static SafetyHookMid GameplayFOVMidHook{};
+            GameplayFOVMidHook = safetyhook::create_mid(GameplayFOVScanResult + 0x8,
+                [](SafetyHookContext& ctx) {
+                    ctx.xmm0.f32[0] += fAdditionalFOV;
+                });
+        }
+        else if (!GameplayFOVScanResult) {
+            spdlog::error("Gameplay FOV: Pattern scan failed.");
         }
     }
 }
