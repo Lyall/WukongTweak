@@ -1,5 +1,5 @@
 # Black Myth: Wukong Tweak
-(https://www.patreon.com/Wintermance) [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W01UAI9)<br />
+[![Patreon-Button](https://github.com/user-attachments/assets/d48a56e7-ab96-4257-8b7e-e2293695e6cb)](https://www.patreon.com/Wintermance) [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W01UAI9)<br />
 [![Github All Releases](https://img.shields.io/github/downloads/Lyall/WukongTweak/total.svg)](https://github.com/Lyall/WukongTweak/releases)
 
 This is an ASI plugin for Black Myth: Wukong that features expanded ultrawide support and graphical tweaks.
@@ -21,16 +21,16 @@ This is an ASI plugin for Black Myth: Wukong that features expanded ultrawide su
 - Open up the game properties in Steam and add `WINEDLLOVERRIDES="dsound=n,b" %command%` to the launch options.
 
 ## Configuration
-- See **WukongTweak.ini** to adjust settings for the fix.
+- See **WukongTweak.ini** to adjust settings.
 
 ## Known Issues
 Please report any issues you see.
 This list will contain bugs which may or may not be fixed.
 
 ## Screenshots
-|  |
+| ![ezgif-4-d26e19afde](https://github.com/user-attachments/assets/20bed27f-f26b-4fea-8321-065da2a22c34) |
 |:--:|
-| Gameplay |
+| Expanded Ultrawide Support |
 
 ## Credits
 [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader) for ASI loading. <br />
