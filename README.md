@@ -1,4 +1,4 @@
-# Wukong Tweak
+# WukongTweak
 [![Patreon-Button](https://github.com/user-attachments/assets/d48a56e7-ab96-4257-8b7e-e2293695e6cb)](https://www.patreon.com/Wintermance) [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W01UAI9)<br />
 [![Github All Releases](https://img.shields.io/github/downloads/Lyall/WukongTweak/total.svg)](https://github.com/Lyall/WukongTweak/releases)
 
@@ -41,4 +41,4 @@ This list will contain bugs which may or may not be fixed.
 [inipp](https://github.com/mcmtroffaes/inipp) for ini reading. <br />
 [spdlog](https://github.com/gabime/spdlog) for logging. <br />
 [safetyhook](https://github.com/cursey/safetyhook) for hooking. <br />
-[UnrealContainers](https://github.com/Fischsalat/UnrealContainers) for working with UE4/5 data types.
+[UnrealContainers](https://github.com/Fischsalat/UnrealContainers) for working with UE4/5 container types.
