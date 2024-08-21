@@ -17,7 +17,7 @@ This is an ASI plugin for Black Myth: Wukong that features expanded ultrawide su
 - Disable vignette (darkening at the edges of the screen).
 
 ## Installation
-- If you used my [SUWSF patch](https://github.com/Lyall/UltrawidePatches/tree/main/Black%20Myth%20Wukong) for the game before, make sure to delete `SUWSF.asi` and `SUWSF.ini` in the game folder.
+- If you used my [patch](https://github.com/Lyall/UltrawidePatches/tree/main/Black%20Myth%20Wukong) for the game before, make sure to delete `SUWSF.asi` and `SUWSF.ini` in the game folder.
 - Grab the latest release of WukongTweak from [here.](https://github.com/Lyall/WukongTweak/releases)
 - Extract the contents of the release zip in to the the game folder. e.g. ("**steamapps\common\BlackMythWukong**" for Steam).
 
