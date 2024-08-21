@@ -40,14 +40,14 @@ jobs:
         
     - name: Create Directory Structure
       run: |
-        mkdir .\zip\
+        mkdir .\zip\b1\Binaries\Win64
 
     - name: Prepare files
       run: |
-        cp ${{ github.event.repository.name }}.asi .\zip\
-        cp ${{ github.event.repository.name }}.ini .\zip\
-        cp dinput8.dll .\zip\dinput8.dll
-        cp UltimateASILoader_LICENSE.md .\zip\
+        cp ${{ github.event.repository.name }}.asi .\zip\b1\Binaries\Win64\
+        cp ${{ github.event.repository.name }}.ini .\zip\b1\Binaries\Win64\
+        cp dinput8.dll .\zip\b1\Binaries\Win64\dsound.dll
+        cp UltimateASILoader_LICENSE.md .\zip\b1\Binaries\Win64\
         New-Item -Path ".\zip\EXTRACT_TO_GAME_FOLDER" -ItemType File
         
     - name: Create Release Zip
