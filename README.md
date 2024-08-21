@@ -1,4 +1,4 @@
-# Black Myth: Wukong Tweak
+# Wukong Tweak
 [![Patreon-Button](https://github.com/user-attachments/assets/d48a56e7-ab96-4257-8b7e-e2293695e6cb)](https://www.patreon.com/Wintermance) [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W01UAI9)<br />
 [![Github All Releases](https://img.shields.io/github/downloads/Lyall/WukongTweak/total.svg)](https://github.com/Lyall/WukongTweak/releases)
 
