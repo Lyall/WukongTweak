@@ -41,3 +41,4 @@ This list will contain bugs which may or may not be fixed.
 [inipp](https://github.com/mcmtroffaes/inipp) for ini reading. <br />
 [spdlog](https://github.com/gabime/spdlog) for logging. <br />
 [safetyhook](https://github.com/cursey/safetyhook) for hooking.
+[UnrealContainers](https://github.com/Fischsalat/UnrealContainers) for working with UE4/5 data types.
