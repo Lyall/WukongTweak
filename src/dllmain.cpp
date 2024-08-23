@@ -28,13 +28,26 @@ std::pair DesktopDimensions = { 0,0 };
 
 // Ini variables
 bool bFixAspectLimit;
+bool bFixFOV;
 bool bEnableConsole;
 float fSharpeningValue;
 bool bChromaticAberration;
 bool bVignette;
 float fAdditionalFOV;
 
+// Aspect ratio + HUD stuff
+float fPi = (float)3.141592653;
+float fAspectRatio;
+float fNativeAspect = (float)16 / 9;
+float fAspectMultiplier;
+float fHUDWidth;
+float fHUDHeight;
+float fHUDWidthOffset;
+float fHUDHeightOffset;
+
 // Variables
+int iCurrentResX;
+int iCurrentResY;
 bool bCachedConsoleObjects = false;
 SDK::IConsoleVariable* cvarSharpen;
 SDK::IConsoleVariable* cvarCA;
@@ -42,6 +55,38 @@ SDK::IConsoleVariable* cvarVignette;
 
 // CVAR addresses
 UC::TMap<UC::FString, Unreal::FConsoleObject*> ConsoleObjects;
+
+void CalculateAspectRatio(bool bLog)
+{
+    // Calculate aspect ratio
+    fAspectRatio = (float)iCurrentResX / (float)iCurrentResY;
+    fAspectMultiplier = fAspectRatio / fNativeAspect;
+
+    // HUD variables
+    fHUDWidth = iCurrentResY * fNativeAspect;
+    fHUDHeight = (float)iCurrentResY;
+    fHUDWidthOffset = (float)(iCurrentResX - fHUDWidth) / 2;
+    fHUDHeightOffset = 0;
+    if (fAspectRatio < fNativeAspect) {
+        fHUDWidth = (float)iCurrentResX;
+        fHUDHeight = (float)iCurrentResX / fNativeAspect;
+        fHUDWidthOffset = 0;
+        fHUDHeightOffset = (float)(iCurrentResY - fHUDHeight) / 2;
+    }
+
+    if (bLog) {
+        // Log details about current resolution
+        spdlog::info("----------");
+        spdlog::info("Current Resolution: Resolution: {}x{}", iCurrentResX, iCurrentResY);
+        spdlog::info("Current Resolution: fAspectRatio: {}", fAspectRatio);
+        spdlog::info("Current Resolution: fAspectMultiplier: {}", fAspectMultiplier);
+        spdlog::info("Current Resolution: fHUDWidth: {}", fHUDWidth);
+        spdlog::info("Current Resolution: fHUDHeight: {}", fHUDHeight);
+        spdlog::info("Current Resolution: fHUDWidthOffset: {}", fHUDWidthOffset);
+        spdlog::info("Current Resolution: fHUDHeightOffset: {}", fHUDHeightOffset);
+        spdlog::info("----------");
+    }
+}
 
 void Logging()
 {
@@ -103,6 +148,7 @@ void Configuration()
     // Parse config
     ini.strip_trailing_comments();
     inipp::get_value(ini.sections["Remove Aspect Ratio Limit"], "Enabled", bFixAspectLimit);
+    inipp::get_value(ini.sections["Fix FOV"], "Enabled", bFixFOV);
     inipp::get_value(ini.sections["Developer Console"], "Enabled", bEnableConsole);
     inipp::get_value(ini.sections["Gameplay FOV"], "AdditionalFOV", fAdditionalFOV);
     inipp::get_value(ini.sections["Adjust Sharpening"], "Strength", fSharpeningValue);
@@ -111,6 +157,7 @@ void Configuration()
 
     spdlog::info("----------");
     spdlog::info("Config Parse: bFixAspectLimit: {}", bFixAspectLimit);
+    spdlog::info("Config Parse: bFixFOV: {}", bFixFOV);
     spdlog::info("Config Parse: bEnableConsole: {}", bEnableConsole);
     if (fAdditionalFOV < (float)-80 || fAdditionalFOV >(float)80) {
         fAdditionalFOV = std::clamp(fAdditionalFOV, (float)-80, (float)80);
@@ -126,6 +173,99 @@ void Configuration()
     DesktopDimensions = Util::GetPhysicalDesktopDimensions();
 }
 
+void Resolution()
+{
+    // Get current resolution
+    uint8_t* CurrResolutionScanResult = Memory::PatternScan(baseModule, "48 89 ?? ?? ?? 8D ?? ?? 44 89 ?? ?? ?? ?? ?? 44 89 ?? ?? ?? ?? ?? 44 89 ?? ?? ?? ?? ??");
+    if (CurrResolutionScanResult) {
+        spdlog::info("Current Resolution: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)CurrResolutionScanResult - (uintptr_t)baseModule);
+
+        static SafetyHookMid CurrResolutionMidHook{};
+        CurrResolutionMidHook = safetyhook::create_mid(CurrResolutionScanResult + 0x8,
+            [](SafetyHookContext& ctx) {
+                // Get ResX and ResY
+                int iResX = (int)ctx.r13;
+                int iResY = (int)ctx.r12;
+
+                // Only log on resolution change
+                if (iResX != iCurrentResX || iResY != iCurrentResY) {
+                    iCurrentResX = iResX;
+                    iCurrentResY = iResY;
+                    CalculateAspectRatio(true);
+                }
+            });
+    }
+    else if (!CurrResolutionScanResult) {
+        spdlog::error("Current Resolution: Pattern scan failed.");
+    }
+
+    // Remove aspect ratio limit
+    if (bFixAspectLimit) {
+        uint8_t* AspectRatioLimitScanResult = Memory::PatternScan(baseModule, "45 ?? ?? 74 ?? 0F ?? ?? 0F ?? ?? FE ?? 41 ?? ?? C3");
+        if (AspectRatioLimitScanResult) {
+            spdlog::info("Aspect Ratio Limit: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)AspectRatioLimitScanResult - (uintptr_t)baseModule);
+            Memory::PatchBytes((uintptr_t)AspectRatioLimitScanResult + 0x3, "\x90\x90", 2);
+            spdlog::info("Aspect Ratio Limit: Patched instruction.");
+        }
+        else if (!AspectRatioLimitScanResult) {
+            spdlog::error("Aspect Ratio Limit: Pattern scan failed.");
+        }
+    }
+}
+
+void EnableConsole()
+{
+    if (bEnableConsole) {
+        // Get GEngine
+        SDK::UEngine* engine = nullptr;
+
+        int i = 0;
+        while (i < 100) { // 10s
+            engine = SDK::UEngine::GetEngine();
+
+            if (engine) {
+                if (engine->ConsoleClass && engine->GameViewport) {
+                    break;
+                }
+            }
+
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            i++;
+        }
+
+        if (i == 100) {
+            spdlog::error("Construct Console: Failed to find GEngine address after 10 seconds.");
+            return;
+        }
+
+        spdlog::info("Construct Console: GEngine address = {:x}", (uintptr_t)engine);
+
+        // Construct console
+        if (engine->ConsoleClass && engine->GameViewport) {
+            SDK::UObject* NewObject = SDK::UGameplayStatics::SpawnObject(engine->ConsoleClass, engine->GameViewport);
+            if (NewObject) {
+                engine->GameViewport->ViewportConsole = static_cast<SDK::UConsole*>(NewObject);
+                spdlog::info("Construct Console: Console object constructed.");
+            }
+            else {
+                spdlog::error("Construct Console: Failed to construct console object.");
+                return;
+            }
+        }
+        else {
+            spdlog::error("Construct Console: Failed to construct console object - ConsoleClass or GameViewport is null.");
+            return;
+        }
+
+        // Log console key
+        if (SDK::UInputSettings::GetInputSettings()->ConsoleKeys && SDK::UInputSettings::GetInputSettings()->ConsoleKeys.Num() > 0) {
+            spdlog::info("Construct Console: Console enabled - access it using key: {}.", SDK::UInputSettings::GetInputSettings()->ConsoleKeys[0].KeyName.ToString());
+        }
+        else {
+            spdlog::warn("Console enabled but no console key is bound.\nAdd this to %LOCALAPPDATA%\\b1\\Saved\\Config\\Windows\\Input.ini -\n[/Script/Engine.InputSettings]\nConsoleKeys = Tilde");
+        }
+    }
+}
 
 void GetCVARs()
 {
@@ -222,21 +362,29 @@ void SetCVARs()
     }
 }
 
-void Tweaks()
+void FOV()
 {
-    // Remove aspect ratio limit
-    if (bFixAspectLimit) {
-        uint8_t* AspectRatioLimitScanResult = Memory::PatternScan(baseModule, "45 ?? ?? 74 ?? 0F ?? ?? 0F ?? ?? FE ?? 41 ?? ?? C3");
-        if (AspectRatioLimitScanResult) {
-            spdlog::info("Aspect Ratio Limit: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)AspectRatioLimitScanResult - (uintptr_t)baseModule);
-            Memory::PatchBytes((uintptr_t)AspectRatioLimitScanResult + 0x3, "\x90\x90", 2);
-            spdlog::info("Aspect Ratio Limit: Patched instruction.");
+    // FOV
+    if (bFixFOV) {
+        uint8_t* AspectRatioFOVScanResult = Memory::PatternScan(baseModule, "F3 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? ?? 0F 57 ?? 8B ?? ?? ?? ?? ?? 89 ?? ?? 0F ?? ?? ?? ?? ?? ??");
+        if (AspectRatioFOVScanResult)
+        {
+            spdlog::info("Aspect Ratio / FOV: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)AspectRatioFOVScanResult - (uintptr_t)baseModule);
+
+            static SafetyHookMid FOVMidHook{};
+            FOVMidHook = safetyhook::create_mid(AspectRatioFOVScanResult + 0x8,
+                [](SafetyHookContext& ctx) {
+                    // Fix cropped FOV when at <16:9
+                    if (fAspectRatio < fNativeAspect) {
+                        ctx.xmm0.f32[0] = atanf(tanf(ctx.xmm0.f32[0] * (fPi / 360)) / fAspectRatio * fNativeAspect) * (360 / fPi);
+                    }
+                });
         }
-        else if (!AspectRatioLimitScanResult) {
-            spdlog::error("Aspect Ratio Limit: Pattern scan failed.");
+        else if (!AspectRatioFOVScanResult) {
+            spdlog::error("Aspect Ratio / FOV: Pattern scan failed.");
         }
     }
-
+       
     // Gameplay FOV
     if (fAdditionalFOV != 0.00f) {
         uint8_t* GameplayFOVScanResult = Memory::PatternScan(baseModule, "F3 0F ?? ?? ?? 03 ?? ?? F3 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? ?? ?? ?? ?? 48 8B ?? ?? 48 8B ?? 83 ?? 00 F3 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? 48 8B ?? ?? 48 8B ?? 83 ?? 00"); // stupidly long pattern (:
@@ -254,68 +402,15 @@ void Tweaks()
     }
 }
 
-void EnableConsole()
-{
-    if (bEnableConsole) {
-        // Get GEngine
-        SDK::UEngine* engine = nullptr;
-
-        int i = 0;
-        while (i < 100) { // 10s
-            engine = SDK::UEngine::GetEngine();
-
-            if (engine) {
-                if (engine->ConsoleClass && engine->GameViewport) {
-                    break;
-                }
-            }
-
-            std::this_thread::sleep_for(std::chrono::milliseconds(100));
-            i++;
-        }
-
-        if (i == 100) {
-            spdlog::error("Construct Console: Failed to find GEngine address after 10 seconds.");
-            return;
-        }
-
-        spdlog::info("Construct Console: GEngine address = {:x}", (uintptr_t)engine);
-
-        // Construct console
-        if (engine->ConsoleClass && engine->GameViewport) {
-            SDK::UObject* NewObject = SDK::UGameplayStatics::SpawnObject(engine->ConsoleClass, engine->GameViewport);
-            if (NewObject) {
-                engine->GameViewport->ViewportConsole = static_cast<SDK::UConsole*>(NewObject);
-                spdlog::info("Construct Console: Console object constructed.");
-            }
-            else {
-                spdlog::error("Construct Console: Failed to construct console object.");
-                return;
-            }
-        }
-        else {
-            spdlog::error("Construct Console: Failed to construct console object - ConsoleClass or GameViewport is null.");
-            return;
-        }
-
-        // Log console key
-        if (SDK::UInputSettings::GetInputSettings()->ConsoleKeys && SDK::UInputSettings::GetInputSettings()->ConsoleKeys.Num() > 0) {
-            spdlog::info("Construct Console: Console enabled - access it using key: {}.", SDK::UInputSettings::GetInputSettings()->ConsoleKeys[0].KeyName.ToString());
-        }
-        else {
-            spdlog::warn("Console enabled but no console key is bound.\nAdd this to %LOCALAPPDATA%\\b1\\Saved\\Config\\Windows\\Input.ini -\n[/Script/Engine.InputSettings]\nConsoleKeys = Tilde");
-        }
-    }
-}
-
 DWORD __stdcall Main(void*)
 {
     Logging();
     Configuration();
     EnableConsole();
+    Resolution();
     GetCVARs();
     SetCVARs();
-    Tweaks();
+    FOV();
     return true;
 }
 
