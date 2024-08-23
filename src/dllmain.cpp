@@ -6,11 +6,14 @@
 #include <spdlog/sinks/basic_file_sink.h>
 #include <safetyhook.hpp>
 
+// SDK
+#include "SDK/Engine_classes.hpp"
+
 HMODULE baseModule = GetModuleHandle(NULL);
 
 // Version
 std::string sFixName = "WukongTweak";
-std::string sFixVer = "0.8.1";
+std::string sFixVer = "0.8.2";
 std::string sLogFile = sFixName + ".log";
 
 // Logger
@@ -25,6 +28,7 @@ std::pair DesktopDimensions = { 0,0 };
 
 // Ini variables
 bool bFixAspectLimit;
+bool bEnableConsole;
 float fSharpeningValue;
 bool bChromaticAberration;
 bool bVignette;
@@ -32,9 +36,9 @@ float fAdditionalFOV;
 
 // Variables
 bool bCachedConsoleObjects = false;
-IConsoleVariable* cvarSharpen;
-IConsoleVariable* cvarCA;
-IConsoleVariable* cvarVignette;
+SDK::IConsoleVariable* cvarSharpen;
+SDK::IConsoleVariable* cvarCA;
+SDK::IConsoleVariable* cvarVignette;
 
 // CVAR addresses
 UC::TMap<UC::FString, Unreal::FConsoleObject*> ConsoleObjects;
@@ -99,6 +103,7 @@ void Configuration()
     // Parse config
     ini.strip_trailing_comments();
     inipp::get_value(ini.sections["Remove Aspect Ratio Limit"], "Enabled", bFixAspectLimit);
+    inipp::get_value(ini.sections["Developer Console"], "Enabled", bEnableConsole);
     inipp::get_value(ini.sections["Gameplay FOV"], "AdditionalFOV", fAdditionalFOV);
     inipp::get_value(ini.sections["Adjust Sharpening"], "Strength", fSharpeningValue);
     inipp::get_value(ini.sections["Chromatic Aberration"], "Enabled", bChromaticAberration);
@@ -106,6 +111,7 @@ void Configuration()
 
     spdlog::info("----------");
     spdlog::info("Config Parse: bFixAspectLimit: {}", bFixAspectLimit);
+    spdlog::info("Config Parse: bEnableConsole: {}", bEnableConsole);
     if (fAdditionalFOV < (float)-80 || fAdditionalFOV >(float)80) {
         fAdditionalFOV = std::clamp(fAdditionalFOV, (float)-80, (float)80);
         spdlog::warn("Config Parse: fAdditionalFOV value invalid, clamped to {}", fAdditionalFOV);
@@ -248,10 +254,65 @@ void Tweaks()
     }
 }
 
+void EnableConsole()
+{
+    if (bEnableConsole) {
+        // Get GEngine
+        SDK::UEngine* engine = nullptr;
+
+        int i = 0;
+        while (i < 100) { // 10s
+            engine = SDK::UEngine::GetEngine();
+
+            if (engine) {
+                if (engine->ConsoleClass && engine->GameViewport) {
+                    break;
+                }
+            }
+
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            i++;
+        }
+
+        if (i == 100) {
+            spdlog::error("Construct Console: Failed to find GEngine address after 10 seconds.");
+            return;
+        }
+
+        spdlog::info("Construct Console: GEngine address = {:x}", (uintptr_t)engine);
+
+        // Construct console
+        if (engine->ConsoleClass && engine->GameViewport) {
+            SDK::UObject* NewObject = SDK::UGameplayStatics::SpawnObject(engine->ConsoleClass, engine->GameViewport);
+            if (NewObject) {
+                engine->GameViewport->ViewportConsole = static_cast<SDK::UConsole*>(NewObject);
+                spdlog::info("Construct Console: Console object constructed.");
+            }
+            else {
+                spdlog::error("Construct Console: Failed to construct console object.");
+                return;
+            }
+        }
+        else {
+            spdlog::error("Construct Console: Failed to construct console object - ConsoleClass or GameViewport is null.");
+            return;
+        }
+
+        // Log console key
+        if (SDK::UInputSettings::GetInputSettings()->ConsoleKeys && SDK::UInputSettings::GetInputSettings()->ConsoleKeys.Num() > 0) {
+            spdlog::info("Construct Console: Console enabled - access it using key: {}.", SDK::UInputSettings::GetInputSettings()->ConsoleKeys[0].KeyName.ToString());
+        }
+        else {
+            spdlog::warn("Console enabled but no console key is bound.\nAdd this to %LOCALAPPDATA%\\b1\\Saved\\Config\\Windows\\Input.ini -\n[/Script/Engine.InputSettings]\nConsoleKeys = Tilde");
+        }
+    }
+}
+
 DWORD __stdcall Main(void*)
 {
     Logging();
     Configuration();
+    EnableConsole();
     GetCVARs();
     SetCVARs();
     Tweaks();

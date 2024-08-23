@@ -21,9 +21,6 @@
     <ClInclude Include="src\helper.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\UnrealContainers.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="external\safetyhook\safetyhook.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -39,6 +36,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="external\safetyhook\safetyhook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SDK\CoreUObject_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SDK\Basic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SDK\Engine_functions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

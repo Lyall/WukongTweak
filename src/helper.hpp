@@ -147,7 +147,7 @@ namespace Unreal
         return *reinterpret_cast<UC::TMap<UC::FString, FConsoleObject*>*>(*Singleton + 8);
     }
 
-    IConsoleVariable* FindCVAR(std::string CVAR, UC::TMap<UC::FString, FConsoleObject*> ConsoleObjects)
+    SDK::IConsoleVariable* FindCVAR(std::string CVAR, UC::TMap<UC::FString, FConsoleObject*> ConsoleObjects)
     {
         if (CVAR.empty() || ConsoleObjects.Num() == 0)
         {
@@ -163,58 +163,10 @@ namespace Unreal
 
             if (Pair.Key().ToString() == CVAR)
             {
-                return reinterpret_cast<IConsoleVariable*>(Pair.Value());
+                return reinterpret_cast<SDK::IConsoleVariable*>(Pair.Value());
             }
         }
 
         return nullptr;
-    }
-
-    struct UObject
-    {
-        // TODO
-    };
-
-    struct UClass
-    {
-        // TODO
-    };
-
-    struct UConsole
-    {
-        // TODO
-    };
-
-    struct UGameViewportClient
-    {
-        char Unk00[0x40];
-        UConsole* ViewportConsole;
-    };
-
-    struct UEngine500
-    {
-        char unknown1[0xF0];
-        UClass* ConsoleClass; // 0xF8
-        char unknown2[0x6E8]; 
-        UGameViewportClient* GameViewport; // 0x7E8
-    };
-
-    typedef UObject* (__fastcall* fStaticConstructObject_Internal)
-        (
-            UClass* Class,
-            UObject* InOuter,
-            void* Name,
-            int SetFlags,
-            unsigned int InternalSetFlags,
-            UObject* Template,
-            bool  bCopyTransientsFromClassDefaults,
-            void* InstanceGraph,
-            bool  bAssumeTemplateIsArchetype
-            );
-    static fStaticConstructObject_Internal StaticConstructObject_Internal;
-
-    static UConsole* ConstructConsole(UClass* ConsoleClass, UObject* outer)
-    {
-        return reinterpret_cast<UConsole*>(StaticConstructObject_Internal(ConsoleClass, outer, nullptr, 0, 0, nullptr, false, nullptr, false));
     }
 }
