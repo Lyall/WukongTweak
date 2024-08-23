@@ -171,6 +171,9 @@ void Configuration()
 
     // Grab desktop resolution/aspect
     DesktopDimensions = Util::GetPhysicalDesktopDimensions();
+    iCurrentResX = DesktopDimensions.first;
+    iCurrentResY = DesktopDimensions.second;
+    CalculateAspectRatio(true);
 }
 
 void Resolution()
@@ -212,61 +215,6 @@ void Resolution()
         }
     }
 }
-
-void EnableConsole()
-{
-    if (bEnableConsole) {
-        // Get GEngine
-        SDK::UEngine* engine = nullptr;
-
-        int i = 0;
-        while (i < 100) { // 10s
-            engine = SDK::UEngine::GetEngine();
-
-            if (engine) {
-                if (engine->ConsoleClass && engine->GameViewport) {
-                    break;
-                }
-            }
-
-            std::this_thread::sleep_for(std::chrono::milliseconds(100));
-            i++;
-        }
-
-        if (i == 100) {
-            spdlog::error("Construct Console: Failed to find GEngine address after 10 seconds.");
-            return;
-        }
-
-        spdlog::info("Construct Console: GEngine address = {:x}", (uintptr_t)engine);
-
-        // Construct console
-        if (engine->ConsoleClass && engine->GameViewport) {
-            SDK::UObject* NewObject = SDK::UGameplayStatics::SpawnObject(engine->ConsoleClass, engine->GameViewport);
-            if (NewObject) {
-                engine->GameViewport->ViewportConsole = static_cast<SDK::UConsole*>(NewObject);
-                spdlog::info("Construct Console: Console object constructed.");
-            }
-            else {
-                spdlog::error("Construct Console: Failed to construct console object.");
-                return;
-            }
-        }
-        else {
-            spdlog::error("Construct Console: Failed to construct console object - ConsoleClass or GameViewport is null.");
-            return;
-        }
-
-        // Log console key
-        if (SDK::UInputSettings::GetInputSettings()->ConsoleKeys && SDK::UInputSettings::GetInputSettings()->ConsoleKeys.Num() > 0) {
-            spdlog::info("Construct Console: Console enabled - access it using key: {}.", SDK::UInputSettings::GetInputSettings()->ConsoleKeys[0].KeyName.ToString());
-        }
-        else {
-            spdlog::warn("Console enabled but no console key is bound.\nAdd this to %LOCALAPPDATA%\\b1\\Saved\\Config\\Windows\\Input.ini -\n[/Script/Engine.InputSettings]\nConsoleKeys = Tilde");
-        }
-    }
-}
-
 void GetCVARs()
 {
     // Get console objects
@@ -324,6 +272,61 @@ void GetCVARs()
     }
 }
 
+void EnableConsole()
+{
+    // Enable developer console
+    if (bEnableConsole) {
+        // Get GEngine
+        SDK::UEngine* engine = nullptr;
+
+        int i = 0;
+        while (i < 100) { // 10s
+            engine = SDK::UEngine::GetEngine();
+
+            if (engine) {
+                if (engine->ConsoleClass && engine->GameViewport) {
+                    break;
+                }
+            }
+
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            i++;
+        }
+
+        if (i == 100) {
+            spdlog::error("Construct Console: Failed to find GEngine address after 10 seconds.");
+            return;
+        }
+
+        spdlog::info("Construct Console: GEngine address = {:x}", (uintptr_t)engine);
+
+        // Construct console
+        if (engine->ConsoleClass && engine->GameViewport) {
+            SDK::UObject* NewObject = SDK::UGameplayStatics::SpawnObject(engine->ConsoleClass, engine->GameViewport);
+            if (NewObject) {
+                engine->GameViewport->ViewportConsole = static_cast<SDK::UConsole*>(NewObject);
+                spdlog::info("Construct Console: Console object constructed.");
+            }
+            else {
+                spdlog::error("Construct Console: Failed to construct console object.");
+                return;
+            }
+        }
+        else {
+            spdlog::error("Construct Console: Failed to construct console object - ConsoleClass or GameViewport is null.");
+            return;
+        }
+
+        // Log console key
+        if (SDK::UInputSettings::GetInputSettings()->ConsoleKeys && SDK::UInputSettings::GetInputSettings()->ConsoleKeys.Num() > 0) {
+            spdlog::info("Construct Console: Console enabled - access it using key: {}.", SDK::UInputSettings::GetInputSettings()->ConsoleKeys[0].KeyName.ToString());
+        }
+        else {
+            spdlog::warn("Console enabled but no console key is bound.\nAdd this to %LOCALAPPDATA%\\b1\\Saved\\Config\\Windows\\Input.ini -\n[/Script/Engine.InputSettings]\nConsoleKeys = Tilde");
+        }
+    }
+}
+
 void SetCVARs()
 {
     // ULevelSequence::PostLoad
@@ -348,7 +351,7 @@ void SetCVARs()
                 if (cvarCA && (cvarCA->GetInt() != (int)bChromaticAberration)) {
                     cvarCA->Set(std::to_wstring((int)bChromaticAberration).c_str());
                     spdlog::info("CVar: r.SceneColorFringeQuality: Set to {}", cvarCA->GetInt());
-                }    
+                }
 
                 // r.Tonemapper.Quality
                 if (cvarVignette && (cvarVignette->GetInt() != 1) && !bVignette) {
@@ -379,6 +382,13 @@ void FOV()
                         ctx.xmm0.f32[0] = atanf(tanf(ctx.xmm0.f32[0] * (fPi / 360)) / fAspectRatio * fNativeAspect) * (360 / fPi);
                     }
                 });
+            /*
+            static SafetyHookMid AspectRatioMidHook{};
+            AspectRatioMidHook = safetyhook::create_mid(AspectRatioFOVScanResult + 0x16,
+                [](SafetyHookContext& ctx) {
+                    ctx.rax = *(uint32_t*)&fAspectRatio;
+                });
+            */
         }
         else if (!AspectRatioFOVScanResult) {
             spdlog::error("Aspect Ratio / FOV: Pattern scan failed.");
@@ -406,10 +416,10 @@ DWORD __stdcall Main(void*)
 {
     Logging();
     Configuration();
-    EnableConsole();
-    Resolution();
     GetCVARs();
+    EnableConsole();
     SetCVARs();
+    Resolution();
     FOV();
     return true;
 }
