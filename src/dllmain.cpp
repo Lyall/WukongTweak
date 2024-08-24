@@ -33,6 +33,7 @@ bool bEnableConsole;
 float fSharpeningValue;
 bool bChromaticAberration;
 bool bVignette;
+bool bVirtualShadowmaps;
 float fAdditionalFOV;
 
 // Aspect ratio + HUD stuff
@@ -49,12 +50,13 @@ float fHUDHeightOffset;
 int iCurrentResX;
 int iCurrentResY;
 bool bCachedConsoleObjects = false;
-SDK::IConsoleVariable* cvarSharpen;
-SDK::IConsoleVariable* cvarCA;
-SDK::IConsoleVariable* cvarVignette;
 
 // CVAR addresses
 UC::TMap<UC::FString, Unreal::FConsoleObject*> ConsoleObjects;
+SDK::IConsoleVariable* cvarSharpen;
+SDK::IConsoleVariable* cvarCA;
+SDK::IConsoleVariable* cvarVignette;
+SDK::IConsoleVariable* cvarVSMEnable;
 
 void CalculateAspectRatio(bool bLog)
 {
@@ -154,6 +156,7 @@ void Configuration()
     inipp::get_value(ini.sections["Adjust Sharpening"], "Strength", fSharpeningValue);
     inipp::get_value(ini.sections["Chromatic Aberration"], "Enabled", bChromaticAberration);
     inipp::get_value(ini.sections["Vignette"], "Enabled", bVignette);
+    inipp::get_value(ini.sections["Virtual Shadow Maps"], "Enabled", bVirtualShadowmaps);
 
     spdlog::info("----------");
     spdlog::info("Config Parse: bFixAspectLimit: {}", bFixAspectLimit);
@@ -167,6 +170,7 @@ void Configuration()
     spdlog::info("Config Parse: fSharpeningValue: {}", fSharpeningValue);
     spdlog::info("Config Parse: bChromaticAberration: {}", bChromaticAberration);
     spdlog::info("Config Parse: bVignette: {}", bVignette);
+    spdlog::info("Config Parse: bVirtualShadowmaps: {}", bVirtualShadowmaps);
     spdlog::info("----------");
 
     // Grab desktop resolution/aspect
@@ -174,6 +178,61 @@ void Configuration()
     iCurrentResX = DesktopDimensions.first;
     iCurrentResY = DesktopDimensions.second;
     CalculateAspectRatio(true);
+}
+
+void EnableConsole()
+{
+    // Enable developer console
+    if (bEnableConsole) {
+        // Get GEngine
+        SDK::UEngine* engine = nullptr;
+
+        int i = 0;
+        while (i < 100) { // 10s
+            engine = SDK::UEngine::GetEngine();
+
+            if (engine) {
+                if (engine->ConsoleClass && engine->GameViewport) {
+                    break;
+                }
+            }
+
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            i++;
+        }
+
+        if (i == 100) {
+            spdlog::error("Construct Console: Failed to find GEngine address after 10 seconds.");
+            return;
+        }
+
+        spdlog::info("Construct Console: GEngine address = {:x}", (uintptr_t)engine);
+
+        // Construct console
+        if (engine->ConsoleClass && engine->GameViewport) {
+            SDK::UObject* NewObject = SDK::UGameplayStatics::SpawnObject(engine->ConsoleClass, engine->GameViewport);
+            if (NewObject) {
+                engine->GameViewport->ViewportConsole = static_cast<SDK::UConsole*>(NewObject);
+                spdlog::info("Construct Console: Console object constructed.");
+            }
+            else {
+                spdlog::error("Construct Console: Failed to construct console object.");
+                return;
+            }
+        }
+        else {
+            spdlog::error("Construct Console: Failed to construct console object - ConsoleClass or GameViewport is null.");
+            return;
+        }
+
+        // Log console key
+        if (SDK::UInputSettings::GetInputSettings()->ConsoleKeys && SDK::UInputSettings::GetInputSettings()->ConsoleKeys.Num() > 0) {
+            spdlog::info("Construct Console: Console enabled - access it using key: {}.", SDK::UInputSettings::GetInputSettings()->ConsoleKeys[0].KeyName.ToString());
+        }
+        else {
+            spdlog::warn("Console enabled but no console key is bound.\nAdd this to %LOCALAPPDATA%\\b1\\Saved\\Config\\Windows\\Input.ini -\n[/Script/Engine.InputSettings]\nConsoleKeys = Tilde");
+        }
+    }
 }
 
 void Resolution()
@@ -250,118 +309,56 @@ void GetCVARs()
     else if (!ConsoleManagerSingletonScanResult) {
         spdlog::error("Console CVARs: Pattern scan failed.");
     }
-
-    if (bCachedConsoleObjects) {
-        // r.Tonemapper.Sharpen
-        cvarSharpen = Unreal::FindCVAR("r.Tonemapper.Sharpen", ConsoleObjects);
-        if (cvarSharpen) {
-            spdlog::info("CVar: r.Tonemapper.Sharpen: Address {:x}", (uintptr_t)cvarSharpen);
-        }
-
-        // r.SceneColorFringeQuality
-        cvarCA = Unreal::FindCVAR("r.SceneColorFringeQuality", ConsoleObjects);
-        if (cvarCA) {
-            spdlog::info("CVar: r.SceneColorFringeQuality: Address {:x}", (uintptr_t)cvarCA);
-        }
-
-        // r.Tonemapper.Quality
-        cvarVignette = Unreal::FindCVAR("r.Tonemapper.Quality", ConsoleObjects);
-        if (cvarCA) {
-            spdlog::info("CVar: r.Tonemapper.Quality: Address {:x}", (uintptr_t)cvarVignette);
-        }
-    }
-}
-
-void EnableConsole()
-{
-    // Enable developer console
-    if (bEnableConsole) {
-        // Get GEngine
-        SDK::UEngine* engine = nullptr;
-
-        int i = 0;
-        while (i < 100) { // 10s
-            engine = SDK::UEngine::GetEngine();
-
-            if (engine) {
-                if (engine->ConsoleClass && engine->GameViewport) {
-                    break;
-                }
-            }
-
-            std::this_thread::sleep_for(std::chrono::milliseconds(100));
-            i++;
-        }
-
-        if (i == 100) {
-            spdlog::error("Construct Console: Failed to find GEngine address after 10 seconds.");
-            return;
-        }
-
-        spdlog::info("Construct Console: GEngine address = {:x}", (uintptr_t)engine);
-
-        // Construct console
-        if (engine->ConsoleClass && engine->GameViewport) {
-            SDK::UObject* NewObject = SDK::UGameplayStatics::SpawnObject(engine->ConsoleClass, engine->GameViewport);
-            if (NewObject) {
-                engine->GameViewport->ViewportConsole = static_cast<SDK::UConsole*>(NewObject);
-                spdlog::info("Construct Console: Console object constructed.");
-            }
-            else {
-                spdlog::error("Construct Console: Failed to construct console object.");
-                return;
-            }
-        }
-        else {
-            spdlog::error("Construct Console: Failed to construct console object - ConsoleClass or GameViewport is null.");
-            return;
-        }
-
-        // Log console key
-        if (SDK::UInputSettings::GetInputSettings()->ConsoleKeys && SDK::UInputSettings::GetInputSettings()->ConsoleKeys.Num() > 0) {
-            spdlog::info("Construct Console: Console enabled - access it using key: {}.", SDK::UInputSettings::GetInputSettings()->ConsoleKeys[0].KeyName.ToString());
-        }
-        else {
-            spdlog::warn("Console enabled but no console key is bound.\nAdd this to %LOCALAPPDATA%\\b1\\Saved\\Config\\Windows\\Input.ini -\n[/Script/Engine.InputSettings]\nConsoleKeys = Tilde");
-        }
-    }
 }
 
 void SetCVARs()
 {
-    // ULevelSequence::PostLoad
-    // Set CVars after the level has loaded so that we override anything set by the game.
-    uint8_t* LevelPostLoadScanResult = Memory::PatternScan(baseModule, "40 ?? 48 ?? ?? ?? 48 ?? ?? E8 ?? ?? ?? ?? 80 ?? ?? ?? ?? ?? 03 75 ?? 0F ?? ?? ?? ?? ?? ?? 48 ?? ?? C0 ?? 02");
-    if (LevelPostLoadScanResult) {
-        spdlog::info("LevelSequence:PostLoad: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)LevelPostLoadScanResult - (uintptr_t)baseModule);
-        static SafetyHookMid LevelPostLoadMidHook{};
-        LevelPostLoadMidHook = safetyhook::create_mid(LevelPostLoadScanResult,
-            [](SafetyHookContext& ctx) {
-                // r.Tonemapper.Sharpen
-                if (cvarSharpen && (cvarSharpen->GetFloat() != fSharpeningValue)) {
-                    // Flag jank
-                    *reinterpret_cast<int*>((uintptr_t)cvarSharpen + 0x18) = 0x0A000000;
-                    // Set value manually since this one is finicky
-                    *reinterpret_cast<float*>((uintptr_t)cvarSharpen + 0x60) = fSharpeningValue;
-                    *reinterpret_cast<float*>((uintptr_t)cvarSharpen + 0x64) = fSharpeningValue;
-                    spdlog::info("CVar: r.Tonemapper.Sharpen: Set to {}", cvarSharpen->GetFloat());
-                }
+    if (bCachedConsoleObjects) {
+        cvarSharpen = Unreal::FindCVAR("r.Tonemapper.Sharpen", ConsoleObjects);
+        cvarCA = Unreal::FindCVAR("r.SceneColorFringeQuality", ConsoleObjects);
+        cvarVignette = Unreal::FindCVAR("r.Tonemapper.Quality", ConsoleObjects);
+        cvarVSMEnable = Unreal::FindCVAR("r.Shadow.Virtual.Enable", ConsoleObjects);
 
-                // r.SceneColorFringeQuality
-                if (cvarCA && (cvarCA->GetInt() != (int)bChromaticAberration)) {
-                    cvarCA->Set(std::to_wstring((int)bChromaticAberration).c_str());
-                    spdlog::info("CVar: r.SceneColorFringeQuality: Set to {}", cvarCA->GetInt());
-                }
+        // ULevelSequence::PostLoad
+        // Set CVars after the level has loaded so that we override anything set by the game.
+        uint8_t* LevelPostLoadScanResult = Memory::PatternScan(baseModule, "45 ?? ?? 4C ?? ?? 41 ?? ?? 4C ?? ?? ?? 48 89 ?? ?? ?? ?? ?? 4D ?? ?? 49 8B ?? ?? ?? ?? ??");
+        if (LevelPostLoadScanResult) {
+            spdlog::info("LevelSequence:PostLoad: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)LevelPostLoadScanResult - (uintptr_t)baseModule);
+            static SafetyHookMid LevelPostLoadMidHook{};
+            LevelPostLoadMidHook = safetyhook::create_mid(LevelPostLoadScanResult,
+                [](SafetyHookContext& ctx) {
+                    // r.Tonemapper.Sharpen
+                    if (cvarSharpen && (cvarSharpen->GetFloat() != fSharpeningValue)) {
+                        // Flag jank
+                        *reinterpret_cast<int*>((uintptr_t)cvarSharpen + 0x18) = 0x0A000000;
+                        // Set value manually since this one is finicky
+                        *reinterpret_cast<float*>((uintptr_t)cvarSharpen + 0x60) = fSharpeningValue;
+                        *reinterpret_cast<float*>((uintptr_t)cvarSharpen + 0x64) = fSharpeningValue;
+                        spdlog::info("CVar: r.Tonemapper.Sharpen: Set to {}", cvarSharpen->GetFloat());
+                    }
 
-                // r.Tonemapper.Quality
-                if (cvarVignette && (cvarVignette->GetInt() != 1) && !bVignette) {
-                    cvarVignette->Set(L"1");
-                    spdlog::info("CVar: r.Tonemapper.Quality: Set to {}", cvarVignette->GetInt());
-                }
-            });
-    }
-    else if (!LevelPostLoadScanResult) {
-        spdlog::error("LevelSequence:PostLoad: Pattern scan failed.");
+                    // r.SceneColorFringeQuality
+                    if (cvarCA && (cvarCA->GetInt() != (int)bChromaticAberration)) {
+                        cvarCA->Set(std::to_wstring(bChromaticAberration).c_str());
+                        spdlog::info("CVar: r.SceneColorFringeQuality: Set to {}", cvarCA->GetInt());
+                    }
+
+                    // r.Tonemapper.Quality
+                    if (cvarVignette && !bVignette && (cvarVignette->GetInt() != 1)) {
+                        cvarVignette->Set(L"1"); // 1 for disabling vignette
+                        spdlog::info("CVar: r.Tonemapper.Quality: Set to {}", cvarVignette->GetInt());
+                    }
+
+                    // r.Shadow.Virtual.Enable
+                    if (cvarVSMEnable && (cvarVSMEnable->GetInt() != (int)bVirtualShadowmaps)) {
+                        cvarVSMEnable->Set(std::to_wstring(bVirtualShadowmaps).c_str());
+                        spdlog::info("CVar: r.Shadow.Virtual.Enable: Set to {}", cvarVSMEnable->GetInt());
+                    }
+                });
+        }
+        else if (!LevelPostLoadScanResult) {
+            spdlog::error("LevelSequence:PostLoad: Pattern scan failed.");
+        }
     }
 }
 
@@ -416,8 +413,8 @@ DWORD __stdcall Main(void*)
 {
     Logging();
     Configuration();
-    GetCVARs();
     EnableConsole();
+    GetCVARs();
     SetCVARs();
     Resolution();
     FOV();
