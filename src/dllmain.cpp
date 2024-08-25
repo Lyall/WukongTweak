@@ -188,7 +188,7 @@ void EnableConsole()
         SDK::UEngine* engine = nullptr;
 
         int i = 0;
-        while (i < 100) { // 10s
+        while (i < 300) { // 30s
             engine = SDK::UEngine::GetEngine();
 
             if (engine) {
@@ -202,7 +202,7 @@ void EnableConsole()
         }
 
         if (i == 100) {
-            spdlog::error("Construct Console: Failed to find GEngine address after 10 seconds.");
+            spdlog::error("Construct Console: Failed to find GEngine address after 30 seconds.");
             return;
         }
 
