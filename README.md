@@ -7,14 +7,17 @@ This is an ASI plugin for Black Myth: Wukong that features expanded ultrawide su
 ## Features
 ### General
 - Adjust gameplay FOV.
+- Enable developer console.
 
 ### Ultrawide
 - Remove 21:9 aspect ratio limit.
+- Fix cropped FOV at <16:9.
 
 ### Graphical Tweaks
 - Adjust forced sharpening.
 - Disable chromatic aberration.
 - Disable vignette (darkening at the edges of the screen).
+- Enable virtual shadow maps.
 
 ## Installation
 - If you used my [patch](https://github.com/Lyall/UltrawidePatches/tree/main/Black%20Myth%20Wukong) for the game before, make sure to delete `SUWSF.asi` and `SUWSF.ini` in the game folder.
