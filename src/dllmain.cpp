@@ -13,7 +13,7 @@ HMODULE baseModule = GetModuleHandle(NULL);
 
 // Version
 std::string sFixName = "WukongTweak";
-std::string sFixVer = "0.8.2";
+std::string sFixVer = "0.8.3";
 std::string sLogFile = sFixName + ".log";
 
 // Logger
@@ -27,7 +27,7 @@ std::string sConfigFile = sFixName + ".ini";
 std::pair DesktopDimensions = { 0,0 };
 
 // Ini variables
-bool bFixAspectLimit;
+bool bFixAspect;
 bool bFixFOV;
 bool bEnableConsole;
 float fSharpeningValue;
@@ -57,6 +57,7 @@ SDK::IConsoleVariable* cvarSharpen;
 SDK::IConsoleVariable* cvarCA;
 SDK::IConsoleVariable* cvarVignette;
 SDK::IConsoleVariable* cvarVSMEnable;
+uintptr_t FOVAxisAddr;
 
 void CalculateAspectRatio(bool bLog)
 {
@@ -149,7 +150,7 @@ void Configuration()
 
     // Parse config
     ini.strip_trailing_comments();
-    inipp::get_value(ini.sections["Remove Aspect Ratio Limit"], "Enabled", bFixAspectLimit);
+    inipp::get_value(ini.sections["Fix Aspect Ratio"], "Enabled", bFixAspect);
     inipp::get_value(ini.sections["Fix FOV"], "Enabled", bFixFOV);
     inipp::get_value(ini.sections["Developer Console"], "Enabled", bEnableConsole);
     inipp::get_value(ini.sections["Gameplay FOV"], "AdditionalFOV", fAdditionalFOV);
@@ -159,7 +160,7 @@ void Configuration()
     inipp::get_value(ini.sections["Virtual Shadow Maps"], "Enabled", bVirtualShadowmaps);
 
     spdlog::info("----------");
-    spdlog::info("Config Parse: bFixAspectLimit: {}", bFixAspectLimit);
+    spdlog::info("Config Parse: bFixAspect: {}", bFixAspect);
     spdlog::info("Config Parse: bFixFOV: {}", bFixFOV);
     spdlog::info("Config Parse: bEnableConsole: {}", bEnableConsole);
     if (fAdditionalFOV < (float)-80 || fAdditionalFOV >(float)80) {
@@ -177,7 +178,60 @@ void Configuration()
     DesktopDimensions = Util::GetPhysicalDesktopDimensions();
     iCurrentResX = DesktopDimensions.first;
     iCurrentResY = DesktopDimensions.second;
-    CalculateAspectRatio(true);
+    CalculateAspectRatio(false);
+}
+
+void CurrentResolution()
+{
+    // Startup resolution
+    uint8_t* StartupResolutionScanResult = Memory::PatternScan(baseModule, "8B ?? ?? ?? ?? ?? 48 8B ?? ?? ?? ?? ?? 89 ?? ?? ?? 41 ?? ?? 48 8D ?? ?? ?? ?? ?? FF ?? ?? ?? ?? ??");
+    if (StartupResolutionScanResult) {
+        spdlog::info("Startup Resolution: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)StartupResolutionScanResult - (uintptr_t)baseModule);
+        uintptr_t StartupResAddr = Memory::GetAbsolute((uintptr_t)StartupResolutionScanResult + 0x2);
+        if (StartupResAddr) {
+            int iResX = *reinterpret_cast<int*>(StartupResAddr);
+            int iResY = *reinterpret_cast<int*>(StartupResAddr + 0x4);
+
+            int i = 0;
+            while (iResX == 0 || iResY == 0 && i < 100) {
+                iResX = *reinterpret_cast<int*>(StartupResAddr);
+                iResY = *reinterpret_cast<int*>(StartupResAddr + 0x4);
+                std::this_thread::sleep_for(std::chrono::milliseconds(100));
+                i++;
+            }
+
+            iCurrentResX = iResX;
+            iCurrentResY = iResY;
+            CalculateAspectRatio(true);  
+        }
+    }
+    else if (!StartupResolutionScanResult) {
+        spdlog::error("Startup Resolution: Pattern scan failed.");
+    }
+
+    // Get current resolution
+    uint8_t* CurrResolutionScanResult = Memory::PatternScan(baseModule, "48 89 ?? ?? ?? 8D ?? ?? 44 89 ?? ?? ?? ?? ?? 44 89 ?? ?? ?? ?? ?? 44 89 ?? ?? ?? ?? ??");
+    if (CurrResolutionScanResult) {
+        spdlog::info("Current Resolution: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)CurrResolutionScanResult - (uintptr_t)baseModule);
+
+        static SafetyHookMid CurrResolutionMidHook{};
+        CurrResolutionMidHook = safetyhook::create_mid(CurrResolutionScanResult + 0x8,
+            [](SafetyHookContext& ctx) {
+                // Get ResX and ResY
+                int iResX = (int)ctx.r13;
+                int iResY = (int)ctx.r12;
+
+                // Only log on resolution change
+                if (iResX != iCurrentResX || iResY != iCurrentResY) {
+                    iCurrentResX = iResX;
+                    iCurrentResY = iResY;
+                    CalculateAspectRatio(true);
+                }
+            });
+    }
+    else if (!CurrResolutionScanResult) {
+        spdlog::error("Current Resolution: Pattern scan failed.");
+    }
 }
 
 void EnableConsole()
@@ -235,45 +289,6 @@ void EnableConsole()
     }
 }
 
-void Resolution()
-{
-    // Get current resolution
-    uint8_t* CurrResolutionScanResult = Memory::PatternScan(baseModule, "48 89 ?? ?? ?? 8D ?? ?? 44 89 ?? ?? ?? ?? ?? 44 89 ?? ?? ?? ?? ?? 44 89 ?? ?? ?? ?? ??");
-    if (CurrResolutionScanResult) {
-        spdlog::info("Current Resolution: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)CurrResolutionScanResult - (uintptr_t)baseModule);
-
-        static SafetyHookMid CurrResolutionMidHook{};
-        CurrResolutionMidHook = safetyhook::create_mid(CurrResolutionScanResult + 0x8,
-            [](SafetyHookContext& ctx) {
-                // Get ResX and ResY
-                int iResX = (int)ctx.r13;
-                int iResY = (int)ctx.r12;
-
-                // Only log on resolution change
-                if (iResX != iCurrentResX || iResY != iCurrentResY) {
-                    iCurrentResX = iResX;
-                    iCurrentResY = iResY;
-                    CalculateAspectRatio(true);
-                }
-            });
-    }
-    else if (!CurrResolutionScanResult) {
-        spdlog::error("Current Resolution: Pattern scan failed.");
-    }
-
-    // Remove aspect ratio limit
-    if (bFixAspectLimit) {
-        uint8_t* AspectRatioLimitScanResult = Memory::PatternScan(baseModule, "45 ?? ?? 74 ?? 0F ?? ?? 0F ?? ?? FE ?? 41 ?? ?? C3");
-        if (AspectRatioLimitScanResult) {
-            spdlog::info("Aspect Ratio Limit: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)AspectRatioLimitScanResult - (uintptr_t)baseModule);
-            Memory::PatchBytes((uintptr_t)AspectRatioLimitScanResult + 0x3, "\x90\x90", 2);
-            spdlog::info("Aspect Ratio Limit: Patched instruction.");
-        }
-        else if (!AspectRatioLimitScanResult) {
-            spdlog::error("Aspect Ratio Limit: Pattern scan failed.");
-        }
-    }
-}
 void GetCVARs()
 {
     // Get console objects
@@ -362,36 +377,88 @@ void SetCVARs()
     }
 }
 
-void FOV()
+void AspectFOV()
 {
     // FOV
     if (bFixFOV) {
-        uint8_t* AspectRatioFOVScanResult = Memory::PatternScan(baseModule, "F3 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? ?? 0F 57 ?? 8B ?? ?? ?? ?? ?? 89 ?? ?? 0F ?? ?? ?? ?? ?? ??");
-        if (AspectRatioFOVScanResult)
+        // Get FOV axis
+        uint8_t* FOVAxisScanResult = Memory::PatternScan(baseModule, "44 0F ?? ?? ?? ?? ?? ?? 8B ?? 8B ?? 48 89 ?? ?? ?? 48 8B ?? ?? ?? 48 83 ?? ?? 5F");
+        if (FOVAxisScanResult)
         {
-            spdlog::info("Aspect Ratio / FOV: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)AspectRatioFOVScanResult - (uintptr_t)baseModule);
+            spdlog::info("FOV Axis: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)FOVAxisScanResult - (uintptr_t)baseModule);
+            FOVAxisAddr = Memory::GetAbsolute((uintptr_t)FOVAxisScanResult + 0x4);
+        }
+        else if (!FOVAxisScanResult) {
+            spdlog::error("FOV Axis: Pattern scan failed.");
+        }
+    }
 
+    // Aspect ratio and FOV
+    uint8_t* AspectRatioFOVScanResult = Memory::PatternScan(baseModule, "F3 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? ?? 0F 57 ?? 8B ?? ?? ?? ?? ?? 89 ?? ?? 0F ?? ?? ?? ?? ?? ??");
+    if (AspectRatioFOVScanResult)
+    {
+        spdlog::info("Aspect Ratio/FOV: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)AspectRatioFOVScanResult - (uintptr_t)baseModule);
+
+        if (bFixFOV) {
             static SafetyHookMid FOVMidHook{};
             FOVMidHook = safetyhook::create_mid(AspectRatioFOVScanResult + 0x8,
                 [](SafetyHookContext& ctx) {
-                    // Fix cropped FOV when at <16:9
-                    if (fAspectRatio < fNativeAspect) {
-                        ctx.xmm0.f32[0] = atanf(tanf(ctx.xmm0.f32[0] * (fPi / 360)) / fAspectRatio * fNativeAspect) * (360 / fPi);
+                    if (FOVAxisAddr) {
+                        int iFOVAxis = *reinterpret_cast<int*>(FOVAxisAddr);
+
+                        // Automatic
+                        if (iFOVAxis == 0) {
+                            if (fAspectRatio < fNativeAspect) {
+                                ctx.xmm0.f32[0] = atanf(tanf(ctx.xmm0.f32[0] * (fPi / 360)) / (fAspectRatio) * (fNativeAspect)) * (360 / fPi);
+                            }
+                        }
+
+                        // 16:9
+                        if (iFOVAxis == 1) {
+                            if (fAspectRatio > fNativeAspect) {
+                                ctx.xmm0.f32[0] = atanf(tanf(ctx.xmm0.f32[0] * (fPi / 360)) / (fNativeAspect) * (fAspectRatio)) * (360 / fPi);
+                            }
+                        }
+
+                        // 21:9
+                        if (iFOVAxis == 2) {
+                            if (fAspectRatio < fNativeAspect) {
+                                ctx.xmm0.f32[0] = atanf(tanf(ctx.xmm0.f32[0] * (fPi / 360)) / (2.33333f) * (fNativeAspect)) * (360 / fPi);
+                            }
+
+                            if (fAspectRatio > fNativeAspect) {
+                                ctx.xmm0.f32[0] = atanf(tanf(ctx.xmm0.f32[0] * (fPi / 360)) / (2.33333f) * (fAspectRatio)) * (360 / fPi);
+                            }
+                        }
                     }
                 });
-            /*
+        }
+
+        if (bFixAspect) {
             static SafetyHookMid AspectRatioMidHook{};
             AspectRatioMidHook = safetyhook::create_mid(AspectRatioFOVScanResult + 0x16,
                 [](SafetyHookContext& ctx) {
                     ctx.rax = *(uint32_t*)&fAspectRatio;
                 });
-            */
-        }
-        else if (!AspectRatioFOVScanResult) {
-            spdlog::error("Aspect Ratio / FOV: Pattern scan failed.");
         }
     }
-       
+    else if (!AspectRatioFOVScanResult) {
+        spdlog::error("Aspect Ratio/FOV: Pattern scan failed.");
+    }
+
+    if (bFixAspect) {
+        // Remove aspect ratio limit
+        uint8_t* AspectRatioLimitScanResult = Memory::PatternScan(baseModule, "45 ?? ?? 74 ?? 0F ?? ?? 0F ?? ?? FE ?? 41 ?? ?? C3");
+        if (AspectRatioLimitScanResult) {
+            spdlog::info("Aspect Ratio Limit: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)AspectRatioLimitScanResult - (uintptr_t)baseModule);
+            Memory::PatchBytes((uintptr_t)AspectRatioLimitScanResult + 0x3, "\x90\x90", 2);
+            spdlog::info("Aspect Ratio Limit: Patched instruction.");
+        }
+        else if (!AspectRatioLimitScanResult) {
+            spdlog::error("Aspect Ratio Limit: Pattern scan failed.");
+        }
+    }
+ 
     // Gameplay FOV
     if (fAdditionalFOV != 0.00f) {
         uint8_t* GameplayFOVScanResult = Memory::PatternScan(baseModule, "F3 0F ?? ?? ?? 03 ?? ?? F3 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? ?? ?? ?? ?? 48 8B ?? ?? 48 8B ?? 83 ?? 00 F3 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? 48 8B ?? ?? 48 8B ?? 83 ?? 00"); // stupidly long pattern (:
@@ -413,11 +480,11 @@ DWORD __stdcall Main(void*)
 {
     Logging();
     Configuration();
+    CurrentResolution();
     EnableConsole();
     GetCVARs();
     SetCVARs();
-    Resolution();
-    FOV();
+    AspectFOV();
     return true;
 }
 
