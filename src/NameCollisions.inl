@@ -11,9 +11,13 @@
 
 namespace b1 { class UBGW_EventCollection; }
 
-namespace SimpleCharts { enum class ETriggerType : uint8; }
-
 namespace EnhancedInput { enum class ETriggerType : uint8; }
+
+namespace ABP_wukong_head_lingzhi { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace Abp_sts_dao { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace SimpleCharts { enum class ETriggerType : uint8; }
 
 
 namespace b1MinusManaged
@@ -32,6 +36,18 @@ namespace UnrealExtent
 	class UGSRetainerBox;
 	class UGSScrollBox;
 	class UGSTileView;
+}
+
+namespace Abp_ModularMeshCS
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace Abp_InteractiveActor
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
 }
 
 namespace GSEMinusProtobufDB

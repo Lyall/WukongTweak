@@ -16,6 +16,31 @@
 namespace SDK::Params
 {
 
+// Function BUI_EquipMain.BUI_EquipMain_C.SeqEvent_AnimObsMode
+// 0x0010 (0x0010 - 0x0000)
+struct BUI_EquipMain_C_SeqEvent_AnimObsMode final
+{
+public:
+	class FString                                 EventName;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BUI_EquipMain_C_SeqEvent_AnimObsMode) == 0x000008, "Wrong alignment on BUI_EquipMain_C_SeqEvent_AnimObsMode");
+static_assert(sizeof(BUI_EquipMain_C_SeqEvent_AnimObsMode) == 0x000010, "Wrong size on BUI_EquipMain_C_SeqEvent_AnimObsMode");
+static_assert(offsetof(BUI_EquipMain_C_SeqEvent_AnimObsMode, EventName) == 0x000000, "Member 'BUI_EquipMain_C_SeqEvent_AnimObsMode::EventName' has a wrong offset!");
+
+// Function BUI_EquipMain.BUI_EquipMain_C.ExecuteUbergraph_BUI_EquipMain
+// 0x0018 (0x0018 - 0x0000)
+struct BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 K2Node_CustomEvent_EventName;                      // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain) == 0x000008, "Wrong alignment on BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain");
+static_assert(sizeof(BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain) == 0x000018, "Wrong size on BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain");
+static_assert(offsetof(BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain, EntryPoint) == 0x000000, "Member 'BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain::EntryPoint' has a wrong offset!");
+static_assert(offsetof(BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain, K2Node_CustomEvent_EventName) == 0x000008, "Member 'BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain::K2Node_CustomEvent_EventName' has a wrong offset!");
+
 // Function BUI_EquipMain.BUI_EquipMain_C.DoCustomNavigation_0
 // 0x0020 (0x0020 - 0x0000)
 struct BUI_EquipMain_C_DoCustomNavigation_0 final
@@ -33,31 +58,6 @@ static_assert(offsetof(BUI_EquipMain_C_DoCustomNavigation_0, Navigation_0) == 0x
 static_assert(offsetof(BUI_EquipMain_C_DoCustomNavigation_0, ReturnValue) == 0x000008, "Member 'BUI_EquipMain_C_DoCustomNavigation_0::ReturnValue' has a wrong offset!");
 static_assert(offsetof(BUI_EquipMain_C_DoCustomNavigation_0, UIName) == 0x000010, "Member 'BUI_EquipMain_C_DoCustomNavigation_0::UIName' has a wrong offset!");
 static_assert(offsetof(BUI_EquipMain_C_DoCustomNavigation_0, CallFunc_GetWidgetFromName_ReturnValue) == 0x000018, "Member 'BUI_EquipMain_C_DoCustomNavigation_0::CallFunc_GetWidgetFromName_ReturnValue' has a wrong offset!");
-
-// Function BUI_EquipMain.BUI_EquipMain_C.ExecuteUbergraph_BUI_EquipMain
-// 0x0018 (0x0018 - 0x0000)
-struct BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 K2Node_CustomEvent_EventName;                      // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain) == 0x000008, "Wrong alignment on BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain");
-static_assert(sizeof(BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain) == 0x000018, "Wrong size on BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain");
-static_assert(offsetof(BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain, EntryPoint) == 0x000000, "Member 'BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain, K2Node_CustomEvent_EventName) == 0x000008, "Member 'BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain::K2Node_CustomEvent_EventName' has a wrong offset!");
-
-// Function BUI_EquipMain.BUI_EquipMain_C.SeqEvent_AnimObsMode
-// 0x0010 (0x0010 - 0x0000)
-struct BUI_EquipMain_C_SeqEvent_AnimObsMode final
-{
-public:
-	class FString                                 EventName;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BUI_EquipMain_C_SeqEvent_AnimObsMode) == 0x000008, "Wrong alignment on BUI_EquipMain_C_SeqEvent_AnimObsMode");
-static_assert(sizeof(BUI_EquipMain_C_SeqEvent_AnimObsMode) == 0x000010, "Wrong size on BUI_EquipMain_C_SeqEvent_AnimObsMode");
-static_assert(offsetof(BUI_EquipMain_C_SeqEvent_AnimObsMode, EventName) == 0x000000, "Member 'BUI_EquipMain_C_SeqEvent_AnimObsMode::EventName' has a wrong offset!");
 
 }
 

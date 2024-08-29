@@ -14,6 +14,28 @@
 namespace SDK::Params
 {
 
+// Function BI_GearItem_Tab.BI_GearItem_Tab_C.SeqFX_PlayConfig
+// 0x0008 (0x0008 - 0x0000)
+struct BI_GearItem_Tab_C_SeqFX_PlayConfig final
+{
+public:
+	class UNiagaraSystemWidget*                   UINS_Config_0;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_GearItem_Tab_C_SeqFX_PlayConfig) == 0x000008, "Wrong alignment on BI_GearItem_Tab_C_SeqFX_PlayConfig");
+static_assert(sizeof(BI_GearItem_Tab_C_SeqFX_PlayConfig) == 0x000008, "Wrong size on BI_GearItem_Tab_C_SeqFX_PlayConfig");
+static_assert(offsetof(BI_GearItem_Tab_C_SeqFX_PlayConfig, UINS_Config_0) == 0x000000, "Member 'BI_GearItem_Tab_C_SeqFX_PlayConfig::UINS_Config_0' has a wrong offset!");
+
+// Function BI_GearItem_Tab.BI_GearItem_Tab_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct BI_GearItem_Tab_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_GearItem_Tab_C_PreConstruct) == 0x000001, "Wrong alignment on BI_GearItem_Tab_C_PreConstruct");
+static_assert(sizeof(BI_GearItem_Tab_C_PreConstruct) == 0x000001, "Wrong size on BI_GearItem_Tab_C_PreConstruct");
+static_assert(offsetof(BI_GearItem_Tab_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_GearItem_Tab_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
 // Function BI_GearItem_Tab.BI_GearItem_Tab_C.ExecuteUbergraph_BI_GearItem_Tab
 // 0x0018 (0x0018 - 0x0000)
 struct BI_GearItem_Tab_C_ExecuteUbergraph_BI_GearItem_Tab final
@@ -29,28 +51,6 @@ static_assert(sizeof(BI_GearItem_Tab_C_ExecuteUbergraph_BI_GearItem_Tab) == 0x00
 static_assert(offsetof(BI_GearItem_Tab_C_ExecuteUbergraph_BI_GearItem_Tab, EntryPoint) == 0x000000, "Member 'BI_GearItem_Tab_C_ExecuteUbergraph_BI_GearItem_Tab::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BI_GearItem_Tab_C_ExecuteUbergraph_BI_GearItem_Tab, K2Node_CustomEvent_UINS_Config) == 0x000008, "Member 'BI_GearItem_Tab_C_ExecuteUbergraph_BI_GearItem_Tab::K2Node_CustomEvent_UINS_Config' has a wrong offset!");
 static_assert(offsetof(BI_GearItem_Tab_C_ExecuteUbergraph_BI_GearItem_Tab, K2Node_Event_IsDesignTime) == 0x000010, "Member 'BI_GearItem_Tab_C_ExecuteUbergraph_BI_GearItem_Tab::K2Node_Event_IsDesignTime' has a wrong offset!");
-
-// Function BI_GearItem_Tab.BI_GearItem_Tab_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct BI_GearItem_Tab_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_GearItem_Tab_C_PreConstruct) == 0x000001, "Wrong alignment on BI_GearItem_Tab_C_PreConstruct");
-static_assert(sizeof(BI_GearItem_Tab_C_PreConstruct) == 0x000001, "Wrong size on BI_GearItem_Tab_C_PreConstruct");
-static_assert(offsetof(BI_GearItem_Tab_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_GearItem_Tab_C_PreConstruct::IsDesignTime' has a wrong offset!");
-
-// Function BI_GearItem_Tab.BI_GearItem_Tab_C.SeqFX_PlayConfig
-// 0x0008 (0x0008 - 0x0000)
-struct BI_GearItem_Tab_C_SeqFX_PlayConfig final
-{
-public:
-	class UNiagaraSystemWidget*                   UINS_Config_0;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_GearItem_Tab_C_SeqFX_PlayConfig) == 0x000008, "Wrong alignment on BI_GearItem_Tab_C_SeqFX_PlayConfig");
-static_assert(sizeof(BI_GearItem_Tab_C_SeqFX_PlayConfig) == 0x000008, "Wrong size on BI_GearItem_Tab_C_SeqFX_PlayConfig");
-static_assert(offsetof(BI_GearItem_Tab_C_SeqFX_PlayConfig, UINS_Config_0) == 0x000000, "Member 'BI_GearItem_Tab_C_SeqFX_PlayConfig::UINS_Config_0' has a wrong offset!");
 
 }
 

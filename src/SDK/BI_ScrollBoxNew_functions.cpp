@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function BI_ScrollBoxNew.BI_ScrollBoxNew_C.ExecuteUbergraph_BI_ScrollBoxNew
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_ScrollBoxNew_C::ExecuteUbergraph_BI_ScrollBoxNew(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_ScrollBoxNew_C", "ExecuteUbergraph_BI_ScrollBoxNew");
-
-	Params::BI_ScrollBoxNew_C_ExecuteUbergraph_BI_ScrollBoxNew Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BI_ScrollBoxNew.BI_ScrollBoxNew_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -52,6 +32,26 @@ void UBI_ScrollBoxNew_C::PreConstruct(bool IsDesignTime)
 	Params::BI_ScrollBoxNew_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_ScrollBoxNew.BI_ScrollBoxNew_C.ExecuteUbergraph_BI_ScrollBoxNew
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_ScrollBoxNew_C::ExecuteUbergraph_BI_ScrollBoxNew(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_ScrollBoxNew_C", "ExecuteUbergraph_BI_ScrollBoxNew");
+
+	Params::BI_ScrollBoxNew_C_ExecuteUbergraph_BI_ScrollBoxNew Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -14,6 +14,149 @@
 namespace SDK::Params
 {
 
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_5
+// 0x0008 (0x0008 - 0x0000)
+struct BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_5 final
+{
+public:
+	class UNiagaraSystemWidget*                   UING_EquipSpark_Right_0;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_5) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_5");
+static_assert(sizeof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_5) == 0x000008, "Wrong size on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_5");
+static_assert(offsetof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_5, UING_EquipSpark_Right_0) == 0x000000, "Member 'BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_5::UING_EquipSpark_Right_0' has a wrong offset!");
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_4
+// 0x0008 (0x0008 - 0x0000)
+struct BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_4 final
+{
+public:
+	class UNiagaraSystemWidget*                   UING_EquipSpark_Right_0;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_4) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_4");
+static_assert(sizeof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_4) == 0x000008, "Wrong size on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_4");
+static_assert(offsetof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_4, UING_EquipSpark_Right_0) == 0x000000, "Member 'BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_4::UING_EquipSpark_Right_0' has a wrong offset!");
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_3
+// 0x0008 (0x0008 - 0x0000)
+struct BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_3 final
+{
+public:
+	class UNiagaraSystemWidget*                   UING_EquipSpark_Right_0;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_3) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_3");
+static_assert(sizeof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_3) == 0x000008, "Wrong size on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_3");
+static_assert(offsetof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_3, UING_EquipSpark_Right_0) == 0x000000, "Member 'BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_3::UING_EquipSpark_Right_0' has a wrong offset!");
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_2
+// 0x0008 (0x0008 - 0x0000)
+struct BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_2 final
+{
+public:
+	class UNiagaraSystemWidget*                   UING_EquipSpark_Right_0;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_2) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_2");
+static_assert(sizeof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_2) == 0x000008, "Wrong size on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_2");
+static_assert(offsetof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_2, UING_EquipSpark_Right_0) == 0x000000, "Member 'BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_2::UING_EquipSpark_Right_0' has a wrong offset!");
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_1
+// 0x0008 (0x0008 - 0x0000)
+struct BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_1 final
+{
+public:
+	class UNiagaraSystemWidget*                   UING_EquipSpark_Top_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_1) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_1");
+static_assert(sizeof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_1) == 0x000008, "Wrong size on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_1");
+static_assert(offsetof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_1, UING_EquipSpark_Top_0) == 0x000000, "Member 'BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_1::UING_EquipSpark_Top_0' has a wrong offset!");
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_0
+// 0x0008 (0x0008 - 0x0000)
+struct BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_0 final
+{
+public:
+	class UNiagaraSystemWidget*                   UING_EquipSpark_Top_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_0) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_0");
+static_assert(sizeof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_0) == 0x000008, "Wrong size on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_0");
+static_assert(offsetof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_0, UING_EquipSpark_Top_0) == 0x000000, "Member 'BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_0::UING_EquipSpark_Top_0' has a wrong offset!");
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Stop_Top
+// 0x0008 (0x0008 - 0x0000)
+struct BI_GearDetailBg_C_SeqFX_Stop_Top final
+{
+public:
+	class UNiagaraSystemWidget*                   UING_EquipSpark_Top_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_GearDetailBg_C_SeqFX_Stop_Top) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SeqFX_Stop_Top");
+static_assert(sizeof(BI_GearDetailBg_C_SeqFX_Stop_Top) == 0x000008, "Wrong size on BI_GearDetailBg_C_SeqFX_Stop_Top");
+static_assert(offsetof(BI_GearDetailBg_C_SeqFX_Stop_Top, UING_EquipSpark_Top_0) == 0x000000, "Member 'BI_GearDetailBg_C_SeqFX_Stop_Top::UING_EquipSpark_Top_0' has a wrong offset!");
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Stop_Right
+// 0x0008 (0x0008 - 0x0000)
+struct BI_GearDetailBg_C_SeqFX_Stop_Right final
+{
+public:
+	class UNiagaraSystemWidget*                   UING_EquipSpark_Right_0;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_GearDetailBg_C_SeqFX_Stop_Right) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SeqFX_Stop_Right");
+static_assert(sizeof(BI_GearDetailBg_C_SeqFX_Stop_Right) == 0x000008, "Wrong size on BI_GearDetailBg_C_SeqFX_Stop_Right");
+static_assert(offsetof(BI_GearDetailBg_C_SeqFX_Stop_Right, UING_EquipSpark_Right_0) == 0x000000, "Member 'BI_GearDetailBg_C_SeqFX_Stop_Right::UING_EquipSpark_Right_0' has a wrong offset!");
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Stop_Left
+// 0x0008 (0x0008 - 0x0000)
+struct BI_GearDetailBg_C_SeqFX_Stop_Left final
+{
+public:
+	class UNiagaraSystemWidget*                   UING_EquipSpark_Right_0;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_GearDetailBg_C_SeqFX_Stop_Left) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SeqFX_Stop_Left");
+static_assert(sizeof(BI_GearDetailBg_C_SeqFX_Stop_Left) == 0x000008, "Wrong size on BI_GearDetailBg_C_SeqFX_Stop_Left");
+static_assert(offsetof(BI_GearDetailBg_C_SeqFX_Stop_Left, UING_EquipSpark_Right_0) == 0x000000, "Member 'BI_GearDetailBg_C_SeqFX_Stop_Left::UING_EquipSpark_Right_0' has a wrong offset!");
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Play_Top
+// 0x0008 (0x0008 - 0x0000)
+struct BI_GearDetailBg_C_SeqFX_Play_Top final
+{
+public:
+	class UNiagaraSystemWidget*                   UING_EquipSpark_Top_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_GearDetailBg_C_SeqFX_Play_Top) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SeqFX_Play_Top");
+static_assert(sizeof(BI_GearDetailBg_C_SeqFX_Play_Top) == 0x000008, "Wrong size on BI_GearDetailBg_C_SeqFX_Play_Top");
+static_assert(offsetof(BI_GearDetailBg_C_SeqFX_Play_Top, UING_EquipSpark_Top_0) == 0x000000, "Member 'BI_GearDetailBg_C_SeqFX_Play_Top::UING_EquipSpark_Top_0' has a wrong offset!");
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Play_Right
+// 0x0008 (0x0008 - 0x0000)
+struct BI_GearDetailBg_C_SeqFX_Play_Right final
+{
+public:
+	class UNiagaraSystemWidget*                   UING_EquipSpark_Right_0;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_GearDetailBg_C_SeqFX_Play_Right) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SeqFX_Play_Right");
+static_assert(sizeof(BI_GearDetailBg_C_SeqFX_Play_Right) == 0x000008, "Wrong size on BI_GearDetailBg_C_SeqFX_Play_Right");
+static_assert(offsetof(BI_GearDetailBg_C_SeqFX_Play_Right, UING_EquipSpark_Right_0) == 0x000000, "Member 'BI_GearDetailBg_C_SeqFX_Play_Right::UING_EquipSpark_Right_0' has a wrong offset!");
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Play_Left
+// 0x0008 (0x0008 - 0x0000)
+struct BI_GearDetailBg_C_SeqFX_Play_Left final
+{
+public:
+	class UNiagaraSystemWidget*                   UING_EquipSpark_Right_0;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_GearDetailBg_C_SeqFX_Play_Left) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SeqFX_Play_Left");
+static_assert(sizeof(BI_GearDetailBg_C_SeqFX_Play_Left) == 0x000008, "Wrong size on BI_GearDetailBg_C_SeqFX_Play_Left");
+static_assert(offsetof(BI_GearDetailBg_C_SeqFX_Play_Left, UING_EquipSpark_Right_0) == 0x000000, "Member 'BI_GearDetailBg_C_SeqFX_Play_Left::UING_EquipSpark_Right_0' has a wrong offset!");
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct BI_GearDetailBg_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_GearDetailBg_C_PreConstruct) == 0x000001, "Wrong alignment on BI_GearDetailBg_C_PreConstruct");
+static_assert(sizeof(BI_GearDetailBg_C_PreConstruct) == 0x000001, "Wrong size on BI_GearDetailBg_C_PreConstruct");
+static_assert(offsetof(BI_GearDetailBg_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_GearDetailBg_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
 // Function BI_GearDetailBg.BI_GearDetailBg_C.ExecuteUbergraph_BI_GearDetailBg
 // 0x0058 (0x0058 - 0x0000)
 struct BI_GearDetailBg_C_ExecuteUbergraph_BI_GearDetailBg final
@@ -45,149 +188,6 @@ static_assert(offsetof(BI_GearDetailBg_C_ExecuteUbergraph_BI_GearDetailBg, CallF
 static_assert(offsetof(BI_GearDetailBg_C_ExecuteUbergraph_BI_GearDetailBg, CallFunc_PlayAnimation_ReturnValue_1) == 0x000040, "Member 'BI_GearDetailBg_C_ExecuteUbergraph_BI_GearDetailBg::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BI_GearDetailBg_C_ExecuteUbergraph_BI_GearDetailBg, CallFunc_PlayAnimation_ReturnValue_2) == 0x000048, "Member 'BI_GearDetailBg_C_ExecuteUbergraph_BI_GearDetailBg::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(BI_GearDetailBg_C_ExecuteUbergraph_BI_GearDetailBg, K2Node_Event_IsDesignTime) == 0x000050, "Member 'BI_GearDetailBg_C_ExecuteUbergraph_BI_GearDetailBg::K2Node_Event_IsDesignTime' has a wrong offset!");
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct BI_GearDetailBg_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_GearDetailBg_C_PreConstruct) == 0x000001, "Wrong alignment on BI_GearDetailBg_C_PreConstruct");
-static_assert(sizeof(BI_GearDetailBg_C_PreConstruct) == 0x000001, "Wrong size on BI_GearDetailBg_C_PreConstruct");
-static_assert(offsetof(BI_GearDetailBg_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_GearDetailBg_C_PreConstruct::IsDesignTime' has a wrong offset!");
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Play_Left
-// 0x0008 (0x0008 - 0x0000)
-struct BI_GearDetailBg_C_SeqFX_Play_Left final
-{
-public:
-	class UNiagaraSystemWidget*                   UING_EquipSpark_Right_0;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_GearDetailBg_C_SeqFX_Play_Left) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SeqFX_Play_Left");
-static_assert(sizeof(BI_GearDetailBg_C_SeqFX_Play_Left) == 0x000008, "Wrong size on BI_GearDetailBg_C_SeqFX_Play_Left");
-static_assert(offsetof(BI_GearDetailBg_C_SeqFX_Play_Left, UING_EquipSpark_Right_0) == 0x000000, "Member 'BI_GearDetailBg_C_SeqFX_Play_Left::UING_EquipSpark_Right_0' has a wrong offset!");
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Play_Right
-// 0x0008 (0x0008 - 0x0000)
-struct BI_GearDetailBg_C_SeqFX_Play_Right final
-{
-public:
-	class UNiagaraSystemWidget*                   UING_EquipSpark_Right_0;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_GearDetailBg_C_SeqFX_Play_Right) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SeqFX_Play_Right");
-static_assert(sizeof(BI_GearDetailBg_C_SeqFX_Play_Right) == 0x000008, "Wrong size on BI_GearDetailBg_C_SeqFX_Play_Right");
-static_assert(offsetof(BI_GearDetailBg_C_SeqFX_Play_Right, UING_EquipSpark_Right_0) == 0x000000, "Member 'BI_GearDetailBg_C_SeqFX_Play_Right::UING_EquipSpark_Right_0' has a wrong offset!");
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Play_Top
-// 0x0008 (0x0008 - 0x0000)
-struct BI_GearDetailBg_C_SeqFX_Play_Top final
-{
-public:
-	class UNiagaraSystemWidget*                   UING_EquipSpark_Top_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_GearDetailBg_C_SeqFX_Play_Top) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SeqFX_Play_Top");
-static_assert(sizeof(BI_GearDetailBg_C_SeqFX_Play_Top) == 0x000008, "Wrong size on BI_GearDetailBg_C_SeqFX_Play_Top");
-static_assert(offsetof(BI_GearDetailBg_C_SeqFX_Play_Top, UING_EquipSpark_Top_0) == 0x000000, "Member 'BI_GearDetailBg_C_SeqFX_Play_Top::UING_EquipSpark_Top_0' has a wrong offset!");
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Stop_Left
-// 0x0008 (0x0008 - 0x0000)
-struct BI_GearDetailBg_C_SeqFX_Stop_Left final
-{
-public:
-	class UNiagaraSystemWidget*                   UING_EquipSpark_Right_0;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_GearDetailBg_C_SeqFX_Stop_Left) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SeqFX_Stop_Left");
-static_assert(sizeof(BI_GearDetailBg_C_SeqFX_Stop_Left) == 0x000008, "Wrong size on BI_GearDetailBg_C_SeqFX_Stop_Left");
-static_assert(offsetof(BI_GearDetailBg_C_SeqFX_Stop_Left, UING_EquipSpark_Right_0) == 0x000000, "Member 'BI_GearDetailBg_C_SeqFX_Stop_Left::UING_EquipSpark_Right_0' has a wrong offset!");
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Stop_Right
-// 0x0008 (0x0008 - 0x0000)
-struct BI_GearDetailBg_C_SeqFX_Stop_Right final
-{
-public:
-	class UNiagaraSystemWidget*                   UING_EquipSpark_Right_0;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_GearDetailBg_C_SeqFX_Stop_Right) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SeqFX_Stop_Right");
-static_assert(sizeof(BI_GearDetailBg_C_SeqFX_Stop_Right) == 0x000008, "Wrong size on BI_GearDetailBg_C_SeqFX_Stop_Right");
-static_assert(offsetof(BI_GearDetailBg_C_SeqFX_Stop_Right, UING_EquipSpark_Right_0) == 0x000000, "Member 'BI_GearDetailBg_C_SeqFX_Stop_Right::UING_EquipSpark_Right_0' has a wrong offset!");
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Stop_Top
-// 0x0008 (0x0008 - 0x0000)
-struct BI_GearDetailBg_C_SeqFX_Stop_Top final
-{
-public:
-	class UNiagaraSystemWidget*                   UING_EquipSpark_Top_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_GearDetailBg_C_SeqFX_Stop_Top) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SeqFX_Stop_Top");
-static_assert(sizeof(BI_GearDetailBg_C_SeqFX_Stop_Top) == 0x000008, "Wrong size on BI_GearDetailBg_C_SeqFX_Stop_Top");
-static_assert(offsetof(BI_GearDetailBg_C_SeqFX_Stop_Top, UING_EquipSpark_Top_0) == 0x000000, "Member 'BI_GearDetailBg_C_SeqFX_Stop_Top::UING_EquipSpark_Top_0' has a wrong offset!");
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_0
-// 0x0008 (0x0008 - 0x0000)
-struct BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_0 final
-{
-public:
-	class UNiagaraSystemWidget*                   UING_EquipSpark_Top_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_0) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_0");
-static_assert(sizeof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_0) == 0x000008, "Wrong size on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_0");
-static_assert(offsetof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_0, UING_EquipSpark_Top_0) == 0x000000, "Member 'BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_0::UING_EquipSpark_Top_0' has a wrong offset!");
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_1
-// 0x0008 (0x0008 - 0x0000)
-struct BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_1 final
-{
-public:
-	class UNiagaraSystemWidget*                   UING_EquipSpark_Top_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_1) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_1");
-static_assert(sizeof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_1) == 0x000008, "Wrong size on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_1");
-static_assert(offsetof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_1, UING_EquipSpark_Top_0) == 0x000000, "Member 'BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_1::UING_EquipSpark_Top_0' has a wrong offset!");
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_2
-// 0x0008 (0x0008 - 0x0000)
-struct BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_2 final
-{
-public:
-	class UNiagaraSystemWidget*                   UING_EquipSpark_Right_0;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_2) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_2");
-static_assert(sizeof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_2) == 0x000008, "Wrong size on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_2");
-static_assert(offsetof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_2, UING_EquipSpark_Right_0) == 0x000000, "Member 'BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_2::UING_EquipSpark_Right_0' has a wrong offset!");
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_3
-// 0x0008 (0x0008 - 0x0000)
-struct BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_3 final
-{
-public:
-	class UNiagaraSystemWidget*                   UING_EquipSpark_Right_0;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_3) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_3");
-static_assert(sizeof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_3) == 0x000008, "Wrong size on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_3");
-static_assert(offsetof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_3, UING_EquipSpark_Right_0) == 0x000000, "Member 'BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_3::UING_EquipSpark_Right_0' has a wrong offset!");
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_4
-// 0x0008 (0x0008 - 0x0000)
-struct BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_4 final
-{
-public:
-	class UNiagaraSystemWidget*                   UING_EquipSpark_Right_0;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_4) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_4");
-static_assert(sizeof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_4) == 0x000008, "Wrong size on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_4");
-static_assert(offsetof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_4, UING_EquipSpark_Right_0) == 0x000000, "Member 'BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_4::UING_EquipSpark_Right_0' has a wrong offset!");
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_5
-// 0x0008 (0x0008 - 0x0000)
-struct BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_5 final
-{
-public:
-	class UNiagaraSystemWidget*                   UING_EquipSpark_Right_0;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_5) == 0x000008, "Wrong alignment on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_5");
-static_assert(sizeof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_5) == 0x000008, "Wrong size on BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_5");
-static_assert(offsetof(BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_5, UING_EquipSpark_Right_0) == 0x000000, "Member 'BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_5::UING_EquipSpark_Right_0' has a wrong offset!");
 
 }
 

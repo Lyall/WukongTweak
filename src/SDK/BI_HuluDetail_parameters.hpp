@@ -14,6 +14,83 @@
 namespace SDK::Params
 {
 
+// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Stop_Top
+// 0x0008 (0x0008 - 0x0000)
+struct BI_HuluDetail_C_SeqFX_Stop_Top final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Top_0;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_HuluDetail_C_SeqFX_Stop_Top) == 0x000008, "Wrong alignment on BI_HuluDetail_C_SeqFX_Stop_Top");
+static_assert(sizeof(BI_HuluDetail_C_SeqFX_Stop_Top) == 0x000008, "Wrong size on BI_HuluDetail_C_SeqFX_Stop_Top");
+static_assert(offsetof(BI_HuluDetail_C_SeqFX_Stop_Top, NGForgeSpark_Top_0) == 0x000000, "Member 'BI_HuluDetail_C_SeqFX_Stop_Top::NGForgeSpark_Top_0' has a wrong offset!");
+
+// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Stop_Right
+// 0x0008 (0x0008 - 0x0000)
+struct BI_HuluDetail_C_SeqFX_Stop_Right final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Right_0;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_HuluDetail_C_SeqFX_Stop_Right) == 0x000008, "Wrong alignment on BI_HuluDetail_C_SeqFX_Stop_Right");
+static_assert(sizeof(BI_HuluDetail_C_SeqFX_Stop_Right) == 0x000008, "Wrong size on BI_HuluDetail_C_SeqFX_Stop_Right");
+static_assert(offsetof(BI_HuluDetail_C_SeqFX_Stop_Right, NGForgeSpark_Right_0) == 0x000000, "Member 'BI_HuluDetail_C_SeqFX_Stop_Right::NGForgeSpark_Right_0' has a wrong offset!");
+
+// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Stop_Left
+// 0x0008 (0x0008 - 0x0000)
+struct BI_HuluDetail_C_SeqFX_Stop_Left final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Left_0;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_HuluDetail_C_SeqFX_Stop_Left) == 0x000008, "Wrong alignment on BI_HuluDetail_C_SeqFX_Stop_Left");
+static_assert(sizeof(BI_HuluDetail_C_SeqFX_Stop_Left) == 0x000008, "Wrong size on BI_HuluDetail_C_SeqFX_Stop_Left");
+static_assert(offsetof(BI_HuluDetail_C_SeqFX_Stop_Left, NGForgeSpark_Left_0) == 0x000000, "Member 'BI_HuluDetail_C_SeqFX_Stop_Left::NGForgeSpark_Left_0' has a wrong offset!");
+
+// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Play_Top
+// 0x0008 (0x0008 - 0x0000)
+struct BI_HuluDetail_C_SeqFX_Play_Top final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Top_0;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_HuluDetail_C_SeqFX_Play_Top) == 0x000008, "Wrong alignment on BI_HuluDetail_C_SeqFX_Play_Top");
+static_assert(sizeof(BI_HuluDetail_C_SeqFX_Play_Top) == 0x000008, "Wrong size on BI_HuluDetail_C_SeqFX_Play_Top");
+static_assert(offsetof(BI_HuluDetail_C_SeqFX_Play_Top, NGForgeSpark_Top_0) == 0x000000, "Member 'BI_HuluDetail_C_SeqFX_Play_Top::NGForgeSpark_Top_0' has a wrong offset!");
+
+// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Play_Right
+// 0x0008 (0x0008 - 0x0000)
+struct BI_HuluDetail_C_SeqFX_Play_Right final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Right_0;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_HuluDetail_C_SeqFX_Play_Right) == 0x000008, "Wrong alignment on BI_HuluDetail_C_SeqFX_Play_Right");
+static_assert(sizeof(BI_HuluDetail_C_SeqFX_Play_Right) == 0x000008, "Wrong size on BI_HuluDetail_C_SeqFX_Play_Right");
+static_assert(offsetof(BI_HuluDetail_C_SeqFX_Play_Right, NGForgeSpark_Right_0) == 0x000000, "Member 'BI_HuluDetail_C_SeqFX_Play_Right::NGForgeSpark_Right_0' has a wrong offset!");
+
+// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Play_Left
+// 0x0008 (0x0008 - 0x0000)
+struct BI_HuluDetail_C_SeqFX_Play_Left final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Left_0;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_HuluDetail_C_SeqFX_Play_Left) == 0x000008, "Wrong alignment on BI_HuluDetail_C_SeqFX_Play_Left");
+static_assert(sizeof(BI_HuluDetail_C_SeqFX_Play_Left) == 0x000008, "Wrong size on BI_HuluDetail_C_SeqFX_Play_Left");
+static_assert(offsetof(BI_HuluDetail_C_SeqFX_Play_Left, NGForgeSpark_Left_0) == 0x000000, "Member 'BI_HuluDetail_C_SeqFX_Play_Left::NGForgeSpark_Left_0' has a wrong offset!");
+
+// Function BI_HuluDetail.BI_HuluDetail_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct BI_HuluDetail_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_HuluDetail_C_PreConstruct) == 0x000001, "Wrong alignment on BI_HuluDetail_C_PreConstruct");
+static_assert(sizeof(BI_HuluDetail_C_PreConstruct) == 0x000001, "Wrong size on BI_HuluDetail_C_PreConstruct");
+static_assert(offsetof(BI_HuluDetail_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_HuluDetail_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
 // Function BI_HuluDetail.BI_HuluDetail_C.ExecuteUbergraph_BI_HuluDetail
 // 0x0038 (0x0038 - 0x0000)
 struct BI_HuluDetail_C_ExecuteUbergraph_BI_HuluDetail final
@@ -39,83 +116,6 @@ static_assert(offsetof(BI_HuluDetail_C_ExecuteUbergraph_BI_HuluDetail, K2Node_Cu
 static_assert(offsetof(BI_HuluDetail_C_ExecuteUbergraph_BI_HuluDetail, K2Node_CustomEvent_NGForgeSpark_Right_1) == 0x000020, "Member 'BI_HuluDetail_C_ExecuteUbergraph_BI_HuluDetail::K2Node_CustomEvent_NGForgeSpark_Right_1' has a wrong offset!");
 static_assert(offsetof(BI_HuluDetail_C_ExecuteUbergraph_BI_HuluDetail, K2Node_CustomEvent_NGForgeSpark_Left) == 0x000028, "Member 'BI_HuluDetail_C_ExecuteUbergraph_BI_HuluDetail::K2Node_CustomEvent_NGForgeSpark_Left' has a wrong offset!");
 static_assert(offsetof(BI_HuluDetail_C_ExecuteUbergraph_BI_HuluDetail, K2Node_CustomEvent_NGForgeSpark_Right) == 0x000030, "Member 'BI_HuluDetail_C_ExecuteUbergraph_BI_HuluDetail::K2Node_CustomEvent_NGForgeSpark_Right' has a wrong offset!");
-
-// Function BI_HuluDetail.BI_HuluDetail_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct BI_HuluDetail_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_HuluDetail_C_PreConstruct) == 0x000001, "Wrong alignment on BI_HuluDetail_C_PreConstruct");
-static_assert(sizeof(BI_HuluDetail_C_PreConstruct) == 0x000001, "Wrong size on BI_HuluDetail_C_PreConstruct");
-static_assert(offsetof(BI_HuluDetail_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_HuluDetail_C_PreConstruct::IsDesignTime' has a wrong offset!");
-
-// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Play_Left
-// 0x0008 (0x0008 - 0x0000)
-struct BI_HuluDetail_C_SeqFX_Play_Left final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Left_0;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_HuluDetail_C_SeqFX_Play_Left) == 0x000008, "Wrong alignment on BI_HuluDetail_C_SeqFX_Play_Left");
-static_assert(sizeof(BI_HuluDetail_C_SeqFX_Play_Left) == 0x000008, "Wrong size on BI_HuluDetail_C_SeqFX_Play_Left");
-static_assert(offsetof(BI_HuluDetail_C_SeqFX_Play_Left, NGForgeSpark_Left_0) == 0x000000, "Member 'BI_HuluDetail_C_SeqFX_Play_Left::NGForgeSpark_Left_0' has a wrong offset!");
-
-// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Play_Right
-// 0x0008 (0x0008 - 0x0000)
-struct BI_HuluDetail_C_SeqFX_Play_Right final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Right_0;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_HuluDetail_C_SeqFX_Play_Right) == 0x000008, "Wrong alignment on BI_HuluDetail_C_SeqFX_Play_Right");
-static_assert(sizeof(BI_HuluDetail_C_SeqFX_Play_Right) == 0x000008, "Wrong size on BI_HuluDetail_C_SeqFX_Play_Right");
-static_assert(offsetof(BI_HuluDetail_C_SeqFX_Play_Right, NGForgeSpark_Right_0) == 0x000000, "Member 'BI_HuluDetail_C_SeqFX_Play_Right::NGForgeSpark_Right_0' has a wrong offset!");
-
-// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Play_Top
-// 0x0008 (0x0008 - 0x0000)
-struct BI_HuluDetail_C_SeqFX_Play_Top final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Top_0;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_HuluDetail_C_SeqFX_Play_Top) == 0x000008, "Wrong alignment on BI_HuluDetail_C_SeqFX_Play_Top");
-static_assert(sizeof(BI_HuluDetail_C_SeqFX_Play_Top) == 0x000008, "Wrong size on BI_HuluDetail_C_SeqFX_Play_Top");
-static_assert(offsetof(BI_HuluDetail_C_SeqFX_Play_Top, NGForgeSpark_Top_0) == 0x000000, "Member 'BI_HuluDetail_C_SeqFX_Play_Top::NGForgeSpark_Top_0' has a wrong offset!");
-
-// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Stop_Left
-// 0x0008 (0x0008 - 0x0000)
-struct BI_HuluDetail_C_SeqFX_Stop_Left final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Left_0;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_HuluDetail_C_SeqFX_Stop_Left) == 0x000008, "Wrong alignment on BI_HuluDetail_C_SeqFX_Stop_Left");
-static_assert(sizeof(BI_HuluDetail_C_SeqFX_Stop_Left) == 0x000008, "Wrong size on BI_HuluDetail_C_SeqFX_Stop_Left");
-static_assert(offsetof(BI_HuluDetail_C_SeqFX_Stop_Left, NGForgeSpark_Left_0) == 0x000000, "Member 'BI_HuluDetail_C_SeqFX_Stop_Left::NGForgeSpark_Left_0' has a wrong offset!");
-
-// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Stop_Right
-// 0x0008 (0x0008 - 0x0000)
-struct BI_HuluDetail_C_SeqFX_Stop_Right final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Right_0;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_HuluDetail_C_SeqFX_Stop_Right) == 0x000008, "Wrong alignment on BI_HuluDetail_C_SeqFX_Stop_Right");
-static_assert(sizeof(BI_HuluDetail_C_SeqFX_Stop_Right) == 0x000008, "Wrong size on BI_HuluDetail_C_SeqFX_Stop_Right");
-static_assert(offsetof(BI_HuluDetail_C_SeqFX_Stop_Right, NGForgeSpark_Right_0) == 0x000000, "Member 'BI_HuluDetail_C_SeqFX_Stop_Right::NGForgeSpark_Right_0' has a wrong offset!");
-
-// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Stop_Top
-// 0x0008 (0x0008 - 0x0000)
-struct BI_HuluDetail_C_SeqFX_Stop_Top final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Top_0;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_HuluDetail_C_SeqFX_Stop_Top) == 0x000008, "Wrong alignment on BI_HuluDetail_C_SeqFX_Stop_Top");
-static_assert(sizeof(BI_HuluDetail_C_SeqFX_Stop_Top) == 0x000008, "Wrong size on BI_HuluDetail_C_SeqFX_Stop_Top");
-static_assert(offsetof(BI_HuluDetail_C_SeqFX_Stop_Top, NGForgeSpark_Top_0) == 0x000000, "Member 'BI_HuluDetail_C_SeqFX_Stop_Top::NGForgeSpark_Top_0' has a wrong offset!");
 
 }
 

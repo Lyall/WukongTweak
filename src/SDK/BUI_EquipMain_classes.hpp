@@ -81,30 +81,30 @@ public:
 	class UGSRichScaleText*                       TxtQuickItemTitleRuby;                             // 0x0590(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void DebugHide();
-	void DebugHideSub();
-	void DebugShow();
-	void DebugShowSub();
-	class UWidget* DoCustomNavigation_0(EUINavigation Navigation_0);
-	void ExecuteUbergraph_BUI_EquipMain(int32 EntryPoint);
-	void SeqAnim_Hide();
-	void SeqAnim_ObsFold();
-	void SeqAnim_ObsUnfold();
-	void SeqAnim_Show();
-	void SeqAnim_SubHide();
-	void SeqAnim_SubShow();
-	void SeqEvent_AnimObsMode(const class FString& EventName);
-	void SequenceEvent__ENTRYPOINTBUI_EquipMain_0();
-	void SequenceEvent__ENTRYPOINTBUI_EquipMain_1();
-	void SequenceEvent__ENTRYPOINTBUI_EquipMain_10();
-	void SequenceEvent__ENTRYPOINTBUI_EquipMain_2();
-	void SequenceEvent__ENTRYPOINTBUI_EquipMain_3();
-	void SequenceEvent__ENTRYPOINTBUI_EquipMain_4();
-	void SequenceEvent__ENTRYPOINTBUI_EquipMain_5();
-	void SequenceEvent__ENTRYPOINTBUI_EquipMain_6();
-	void SequenceEvent__ENTRYPOINTBUI_EquipMain_7();
-	void SequenceEvent__ENTRYPOINTBUI_EquipMain_8();
 	void SequenceEvent__ENTRYPOINTBUI_EquipMain_9();
+	void SequenceEvent__ENTRYPOINTBUI_EquipMain_8();
+	void SequenceEvent__ENTRYPOINTBUI_EquipMain_7();
+	void SequenceEvent__ENTRYPOINTBUI_EquipMain_6();
+	void SequenceEvent__ENTRYPOINTBUI_EquipMain_5();
+	void SequenceEvent__ENTRYPOINTBUI_EquipMain_4();
+	void SequenceEvent__ENTRYPOINTBUI_EquipMain_3();
+	void SequenceEvent__ENTRYPOINTBUI_EquipMain_2();
+	void SequenceEvent__ENTRYPOINTBUI_EquipMain_10();
+	void SequenceEvent__ENTRYPOINTBUI_EquipMain_1();
+	void SequenceEvent__ENTRYPOINTBUI_EquipMain_0();
+	void SeqEvent_AnimObsMode(const class FString& EventName);
+	void SeqAnim_SubShow();
+	void SeqAnim_SubHide();
+	void SeqAnim_Show();
+	void SeqAnim_ObsUnfold();
+	void SeqAnim_ObsFold();
+	void SeqAnim_Hide();
+	void ExecuteUbergraph_BUI_EquipMain(int32 EntryPoint);
+	class UWidget* DoCustomNavigation_0(EUINavigation Navigation_0);
+	void DebugShowSub();
+	void DebugShow();
+	void DebugHideSub();
+	void DebugHide();
 
 public:
 	static class UClass* StaticClass()

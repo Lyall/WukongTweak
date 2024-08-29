@@ -14,6 +14,17 @@
 namespace SDK::Params
 {
 
+// Function BI_RoleLevel.BI_RoleLevel_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct BI_RoleLevel_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_RoleLevel_C_PreConstruct) == 0x000001, "Wrong alignment on BI_RoleLevel_C_PreConstruct");
+static_assert(sizeof(BI_RoleLevel_C_PreConstruct) == 0x000001, "Wrong size on BI_RoleLevel_C_PreConstruct");
+static_assert(offsetof(BI_RoleLevel_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_RoleLevel_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
 // Function BI_RoleLevel.BI_RoleLevel_C.ExecuteUbergraph_BI_RoleLevel
 // 0x0008 (0x0008 - 0x0000)
 struct BI_RoleLevel_C_ExecuteUbergraph_BI_RoleLevel final
@@ -26,17 +37,6 @@ static_assert(alignof(BI_RoleLevel_C_ExecuteUbergraph_BI_RoleLevel) == 0x000004,
 static_assert(sizeof(BI_RoleLevel_C_ExecuteUbergraph_BI_RoleLevel) == 0x000008, "Wrong size on BI_RoleLevel_C_ExecuteUbergraph_BI_RoleLevel");
 static_assert(offsetof(BI_RoleLevel_C_ExecuteUbergraph_BI_RoleLevel, EntryPoint) == 0x000000, "Member 'BI_RoleLevel_C_ExecuteUbergraph_BI_RoleLevel::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BI_RoleLevel_C_ExecuteUbergraph_BI_RoleLevel, K2Node_Event_IsDesignTime) == 0x000004, "Member 'BI_RoleLevel_C_ExecuteUbergraph_BI_RoleLevel::K2Node_Event_IsDesignTime' has a wrong offset!");
-
-// Function BI_RoleLevel.BI_RoleLevel_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct BI_RoleLevel_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_RoleLevel_C_PreConstruct) == 0x000001, "Wrong alignment on BI_RoleLevel_C_PreConstruct");
-static_assert(sizeof(BI_RoleLevel_C_PreConstruct) == 0x000001, "Wrong size on BI_RoleLevel_C_PreConstruct");
-static_assert(offsetof(BI_RoleLevel_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_RoleLevel_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }
 

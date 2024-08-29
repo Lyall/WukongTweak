@@ -17,337 +17,19 @@
 namespace SDK
 {
 
-// Function BI_GearDetailBg.BI_GearDetailBg_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UBI_GearDetailBg_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.EventAnim_Equiped_Play
-// (BlueprintCallable, BlueprintEvent)
-
-void UBI_GearDetailBg_C::EventAnim_Equiped_Play()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "EventAnim_Equiped_Play");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.EventAnim_Equiped_Stop
-// (BlueprintCallable, BlueprintEvent)
-
-void UBI_GearDetailBg_C::EventAnim_Equiped_Stop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "EventAnim_Equiped_Stop");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.EventAnim_Forged_Play
-// (BlueprintCallable, BlueprintEvent)
-
-void UBI_GearDetailBg_C::EventAnim_Forged_Play()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "EventAnim_Forged_Play");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.EventAnim_Forged_Stop
-// (BlueprintCallable, BlueprintEvent)
-
-void UBI_GearDetailBg_C::EventAnim_Forged_Stop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "EventAnim_Forged_Stop");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.EventAnim_Upgrade_Play
-// (BlueprintCallable, BlueprintEvent)
-
-void UBI_GearDetailBg_C::EventAnim_Upgrade_Play()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "EventAnim_Upgrade_Play");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.EventAnim_Upgrade_Stop
-// (BlueprintCallable, BlueprintEvent)
-
-void UBI_GearDetailBg_C::EventAnim_Upgrade_Stop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "EventAnim_Upgrade_Stop");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.ExecuteUbergraph_BI_GearDetailBg
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_GearDetailBg_C::ExecuteUbergraph_BI_GearDetailBg(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "ExecuteUbergraph_BI_GearDetailBg");
-
-	Params::BI_GearDetailBg_C_ExecuteUbergraph_BI_GearDetailBg Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_GearDetailBg_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "PreConstruct");
-
-	Params::BI_GearDetailBg_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Play_Left
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UNiagaraSystemWidget*             UING_EquipSpark_Right_0                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_GearDetailBg_C::SeqFX_Play_Left(class UNiagaraSystemWidget* UING_EquipSpark_Right_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "SeqFX_Play_Left");
-
-	Params::BI_GearDetailBg_C_SeqFX_Play_Left Parms{};
-
-	Parms.UING_EquipSpark_Right_0 = UING_EquipSpark_Right_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Play_Right
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UNiagaraSystemWidget*             UING_EquipSpark_Right_0                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_GearDetailBg_C::SeqFX_Play_Right(class UNiagaraSystemWidget* UING_EquipSpark_Right_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "SeqFX_Play_Right");
-
-	Params::BI_GearDetailBg_C_SeqFX_Play_Right Parms{};
-
-	Parms.UING_EquipSpark_Right_0 = UING_EquipSpark_Right_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Play_Top
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UNiagaraSystemWidget*             UING_EquipSpark_Top_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_GearDetailBg_C::SeqFX_Play_Top(class UNiagaraSystemWidget* UING_EquipSpark_Top_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "SeqFX_Play_Top");
-
-	Params::BI_GearDetailBg_C_SeqFX_Play_Top Parms{};
-
-	Parms.UING_EquipSpark_Top_0 = UING_EquipSpark_Top_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Stop_Left
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UNiagaraSystemWidget*             UING_EquipSpark_Right_0                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_GearDetailBg_C::SeqFX_Stop_Left(class UNiagaraSystemWidget* UING_EquipSpark_Right_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "SeqFX_Stop_Left");
-
-	Params::BI_GearDetailBg_C_SeqFX_Stop_Left Parms{};
-
-	Parms.UING_EquipSpark_Right_0 = UING_EquipSpark_Right_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Stop_Right
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UNiagaraSystemWidget*             UING_EquipSpark_Right_0                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_GearDetailBg_C::SeqFX_Stop_Right(class UNiagaraSystemWidget* UING_EquipSpark_Right_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "SeqFX_Stop_Right");
-
-	Params::BI_GearDetailBg_C_SeqFX_Stop_Right Parms{};
-
-	Parms.UING_EquipSpark_Right_0 = UING_EquipSpark_Right_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Stop_Top
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UNiagaraSystemWidget*             UING_EquipSpark_Top_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_GearDetailBg_C::SeqFX_Stop_Top(class UNiagaraSystemWidget* UING_EquipSpark_Top_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "SeqFX_Stop_Top");
-
-	Params::BI_GearDetailBg_C_SeqFX_Stop_Top Parms{};
-
-	Parms.UING_EquipSpark_Top_0 = UING_EquipSpark_Top_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_0
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UNiagaraSystemWidget*             UING_EquipSpark_Top_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_GearDetailBg_C::SequenceEvent__ENTRYPOINTBI_GearDetailBg_0(class UNiagaraSystemWidget* UING_EquipSpark_Top_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "SequenceEvent__ENTRYPOINTBI_GearDetailBg_0");
-
-	Params::BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_0 Parms{};
-
-	Parms.UING_EquipSpark_Top_0 = UING_EquipSpark_Top_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_1
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UNiagaraSystemWidget*             UING_EquipSpark_Top_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_GearDetailBg_C::SequenceEvent__ENTRYPOINTBI_GearDetailBg_1(class UNiagaraSystemWidget* UING_EquipSpark_Top_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "SequenceEvent__ENTRYPOINTBI_GearDetailBg_1");
-
-	Params::BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_1 Parms{};
-
-	Parms.UING_EquipSpark_Top_0 = UING_EquipSpark_Top_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_2
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_5
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UNiagaraSystemWidget*             UING_EquipSpark_Right_0                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_GearDetailBg_C::SequenceEvent__ENTRYPOINTBI_GearDetailBg_2(class UNiagaraSystemWidget* UING_EquipSpark_Right_0)
+void UBI_GearDetailBg_C::SequenceEvent__ENTRYPOINTBI_GearDetailBg_5(class UNiagaraSystemWidget* UING_EquipSpark_Right_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "SequenceEvent__ENTRYPOINTBI_GearDetailBg_2");
+		Func = Class->GetFunction("BI_GearDetailBg_C", "SequenceEvent__ENTRYPOINTBI_GearDetailBg_5");
 
-	Params::BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_2 Parms{};
-
-	Parms.UING_EquipSpark_Right_0 = UING_EquipSpark_Right_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_3
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UNiagaraSystemWidget*             UING_EquipSpark_Right_0                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_GearDetailBg_C::SequenceEvent__ENTRYPOINTBI_GearDetailBg_3(class UNiagaraSystemWidget* UING_EquipSpark_Right_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "SequenceEvent__ENTRYPOINTBI_GearDetailBg_3");
-
-	Params::BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_3 Parms{};
+	Params::BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_5 Parms{};
 
 	Parms.UING_EquipSpark_Right_0 = UING_EquipSpark_Right_0;
 
@@ -375,23 +57,341 @@ void UBI_GearDetailBg_C::SequenceEvent__ENTRYPOINTBI_GearDetailBg_4(class UNiaga
 }
 
 
-// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_5
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_3
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UNiagaraSystemWidget*             UING_EquipSpark_Right_0                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_GearDetailBg_C::SequenceEvent__ENTRYPOINTBI_GearDetailBg_5(class UNiagaraSystemWidget* UING_EquipSpark_Right_0)
+void UBI_GearDetailBg_C::SequenceEvent__ENTRYPOINTBI_GearDetailBg_3(class UNiagaraSystemWidget* UING_EquipSpark_Right_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearDetailBg_C", "SequenceEvent__ENTRYPOINTBI_GearDetailBg_5");
+		Func = Class->GetFunction("BI_GearDetailBg_C", "SequenceEvent__ENTRYPOINTBI_GearDetailBg_3");
 
-	Params::BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_5 Parms{};
+	Params::BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_3 Parms{};
 
 	Parms.UING_EquipSpark_Right_0 = UING_EquipSpark_Right_0;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_2
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UNiagaraSystemWidget*             UING_EquipSpark_Right_0                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_GearDetailBg_C::SequenceEvent__ENTRYPOINTBI_GearDetailBg_2(class UNiagaraSystemWidget* UING_EquipSpark_Right_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_GearDetailBg_C", "SequenceEvent__ENTRYPOINTBI_GearDetailBg_2");
+
+	Params::BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_2 Parms{};
+
+	Parms.UING_EquipSpark_Right_0 = UING_EquipSpark_Right_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_1
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UNiagaraSystemWidget*             UING_EquipSpark_Top_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_GearDetailBg_C::SequenceEvent__ENTRYPOINTBI_GearDetailBg_1(class UNiagaraSystemWidget* UING_EquipSpark_Top_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_GearDetailBg_C", "SequenceEvent__ENTRYPOINTBI_GearDetailBg_1");
+
+	Params::BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_1 Parms{};
+
+	Parms.UING_EquipSpark_Top_0 = UING_EquipSpark_Top_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SequenceEvent__ENTRYPOINTBI_GearDetailBg_0
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UNiagaraSystemWidget*             UING_EquipSpark_Top_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_GearDetailBg_C::SequenceEvent__ENTRYPOINTBI_GearDetailBg_0(class UNiagaraSystemWidget* UING_EquipSpark_Top_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_GearDetailBg_C", "SequenceEvent__ENTRYPOINTBI_GearDetailBg_0");
+
+	Params::BI_GearDetailBg_C_SequenceEvent__ENTRYPOINTBI_GearDetailBg_0 Parms{};
+
+	Parms.UING_EquipSpark_Top_0 = UING_EquipSpark_Top_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Stop_Top
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UNiagaraSystemWidget*             UING_EquipSpark_Top_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_GearDetailBg_C::SeqFX_Stop_Top(class UNiagaraSystemWidget* UING_EquipSpark_Top_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_GearDetailBg_C", "SeqFX_Stop_Top");
+
+	Params::BI_GearDetailBg_C_SeqFX_Stop_Top Parms{};
+
+	Parms.UING_EquipSpark_Top_0 = UING_EquipSpark_Top_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Stop_Right
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UNiagaraSystemWidget*             UING_EquipSpark_Right_0                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_GearDetailBg_C::SeqFX_Stop_Right(class UNiagaraSystemWidget* UING_EquipSpark_Right_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_GearDetailBg_C", "SeqFX_Stop_Right");
+
+	Params::BI_GearDetailBg_C_SeqFX_Stop_Right Parms{};
+
+	Parms.UING_EquipSpark_Right_0 = UING_EquipSpark_Right_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Stop_Left
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UNiagaraSystemWidget*             UING_EquipSpark_Right_0                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_GearDetailBg_C::SeqFX_Stop_Left(class UNiagaraSystemWidget* UING_EquipSpark_Right_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_GearDetailBg_C", "SeqFX_Stop_Left");
+
+	Params::BI_GearDetailBg_C_SeqFX_Stop_Left Parms{};
+
+	Parms.UING_EquipSpark_Right_0 = UING_EquipSpark_Right_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Play_Top
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UNiagaraSystemWidget*             UING_EquipSpark_Top_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_GearDetailBg_C::SeqFX_Play_Top(class UNiagaraSystemWidget* UING_EquipSpark_Top_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_GearDetailBg_C", "SeqFX_Play_Top");
+
+	Params::BI_GearDetailBg_C_SeqFX_Play_Top Parms{};
+
+	Parms.UING_EquipSpark_Top_0 = UING_EquipSpark_Top_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Play_Right
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UNiagaraSystemWidget*             UING_EquipSpark_Right_0                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_GearDetailBg_C::SeqFX_Play_Right(class UNiagaraSystemWidget* UING_EquipSpark_Right_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_GearDetailBg_C", "SeqFX_Play_Right");
+
+	Params::BI_GearDetailBg_C_SeqFX_Play_Right Parms{};
+
+	Parms.UING_EquipSpark_Right_0 = UING_EquipSpark_Right_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.SeqFX_Play_Left
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UNiagaraSystemWidget*             UING_EquipSpark_Right_0                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_GearDetailBg_C::SeqFX_Play_Left(class UNiagaraSystemWidget* UING_EquipSpark_Right_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_GearDetailBg_C", "SeqFX_Play_Left");
+
+	Params::BI_GearDetailBg_C_SeqFX_Play_Left Parms{};
+
+	Parms.UING_EquipSpark_Right_0 = UING_EquipSpark_Right_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_GearDetailBg_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_GearDetailBg_C", "PreConstruct");
+
+	Params::BI_GearDetailBg_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.ExecuteUbergraph_BI_GearDetailBg
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_GearDetailBg_C::ExecuteUbergraph_BI_GearDetailBg(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_GearDetailBg_C", "ExecuteUbergraph_BI_GearDetailBg");
+
+	Params::BI_GearDetailBg_C_ExecuteUbergraph_BI_GearDetailBg Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.EventAnim_Upgrade_Stop
+// (BlueprintCallable, BlueprintEvent)
+
+void UBI_GearDetailBg_C::EventAnim_Upgrade_Stop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_GearDetailBg_C", "EventAnim_Upgrade_Stop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.EventAnim_Upgrade_Play
+// (BlueprintCallable, BlueprintEvent)
+
+void UBI_GearDetailBg_C::EventAnim_Upgrade_Play()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_GearDetailBg_C", "EventAnim_Upgrade_Play");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.EventAnim_Forged_Stop
+// (BlueprintCallable, BlueprintEvent)
+
+void UBI_GearDetailBg_C::EventAnim_Forged_Stop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_GearDetailBg_C", "EventAnim_Forged_Stop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.EventAnim_Forged_Play
+// (BlueprintCallable, BlueprintEvent)
+
+void UBI_GearDetailBg_C::EventAnim_Forged_Play()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_GearDetailBg_C", "EventAnim_Forged_Play");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.EventAnim_Equiped_Stop
+// (BlueprintCallable, BlueprintEvent)
+
+void UBI_GearDetailBg_C::EventAnim_Equiped_Stop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_GearDetailBg_C", "EventAnim_Equiped_Stop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.EventAnim_Equiped_Play
+// (BlueprintCallable, BlueprintEvent)
+
+void UBI_GearDetailBg_C::EventAnim_Equiped_Play()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_GearDetailBg_C", "EventAnim_Equiped_Play");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_GearDetailBg.BI_GearDetailBg_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UBI_GearDetailBg_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_GearDetailBg_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

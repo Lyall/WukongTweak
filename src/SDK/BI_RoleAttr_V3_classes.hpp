@@ -73,17 +73,17 @@ public:
 	class UImage*                                 ProgBGUnfold;                                      // 0x0558(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void EventAnimHide_Play();
-	void EventAnimHide_Stop();
-	void EventAnimObsFold_Play();
-	void EventAnimObsFold_Stop();
-	void EventAnimObsUnfold_Play();
-	void EventAnimObsUnfold_Stop();
-	void EventAnimShow_Play();
-	void EventAnimShow_Stop();
-	void ExecuteUbergraph_BI_RoleAttr_V3(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_BI_RoleAttr_V3(int32 EntryPoint);
+	void EventAnimShow_Stop();
+	void EventAnimShow_Play();
+	void EventAnimObsUnfold_Stop();
+	void EventAnimObsUnfold_Play();
+	void EventAnimObsFold_Stop();
+	void EventAnimObsFold_Play();
+	void EventAnimHide_Stop();
+	void EventAnimHide_Play();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

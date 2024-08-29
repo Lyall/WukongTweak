@@ -34,17 +34,17 @@ public:
 	struct FLinearColor                           StoryBarTint;                                      // 0x0418(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void EventAnimHide_Play();
-	void EventAnimHide_Stop();
-	void EventAnimObsFold_Play();
-	void EventAnimObsFold_Stop();
-	void EventAnimObsUnfold_Play();
-	void EventAnimObsUnfold_Stop();
-	void EventAnimShow_Play();
-	void EventAnimShow_Stop();
-	void ExecuteUbergraph_BI_ItemStory(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_BI_ItemStory(int32 EntryPoint);
+	void EventAnimShow_Stop();
+	void EventAnimShow_Play();
+	void EventAnimObsUnfold_Stop();
+	void EventAnimObsUnfold_Play();
+	void EventAnimObsFold_Stop();
+	void EventAnimObsFold_Play();
+	void EventAnimHide_Stop();
+	void EventAnimHide_Play();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

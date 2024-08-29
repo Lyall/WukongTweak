@@ -14,6 +14,17 @@
 namespace SDK::Params
 {
 
+// Function BI_CommTxtTab.BI_CommTxtTab_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct BI_CommTxtTab_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_CommTxtTab_C_PreConstruct) == 0x000001, "Wrong alignment on BI_CommTxtTab_C_PreConstruct");
+static_assert(sizeof(BI_CommTxtTab_C_PreConstruct) == 0x000001, "Wrong size on BI_CommTxtTab_C_PreConstruct");
+static_assert(offsetof(BI_CommTxtTab_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_CommTxtTab_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
 // Function BI_CommTxtTab.BI_CommTxtTab_C.ExecuteUbergraph_BI_CommTxtTab
 // 0x0008 (0x0008 - 0x0000)
 struct BI_CommTxtTab_C_ExecuteUbergraph_BI_CommTxtTab final
@@ -26,17 +37,6 @@ static_assert(alignof(BI_CommTxtTab_C_ExecuteUbergraph_BI_CommTxtTab) == 0x00000
 static_assert(sizeof(BI_CommTxtTab_C_ExecuteUbergraph_BI_CommTxtTab) == 0x000008, "Wrong size on BI_CommTxtTab_C_ExecuteUbergraph_BI_CommTxtTab");
 static_assert(offsetof(BI_CommTxtTab_C_ExecuteUbergraph_BI_CommTxtTab, EntryPoint) == 0x000000, "Member 'BI_CommTxtTab_C_ExecuteUbergraph_BI_CommTxtTab::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BI_CommTxtTab_C_ExecuteUbergraph_BI_CommTxtTab, K2Node_Event_IsDesignTime) == 0x000004, "Member 'BI_CommTxtTab_C_ExecuteUbergraph_BI_CommTxtTab::K2Node_Event_IsDesignTime' has a wrong offset!");
-
-// Function BI_CommTxtTab.BI_CommTxtTab_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct BI_CommTxtTab_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_CommTxtTab_C_PreConstruct) == 0x000001, "Wrong alignment on BI_CommTxtTab_C_PreConstruct");
-static_assert(sizeof(BI_CommTxtTab_C_PreConstruct) == 0x000001, "Wrong size on BI_CommTxtTab_C_PreConstruct");
-static_assert(offsetof(BI_CommTxtTab_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_CommTxtTab_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }
 

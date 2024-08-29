@@ -14,6 +14,17 @@
 namespace SDK::Params
 {
 
+// Function BI_TileView.BI_TileView_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct BI_TileView_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_TileView_C_PreConstruct) == 0x000001, "Wrong alignment on BI_TileView_C_PreConstruct");
+static_assert(sizeof(BI_TileView_C_PreConstruct) == 0x000001, "Wrong size on BI_TileView_C_PreConstruct");
+static_assert(offsetof(BI_TileView_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_TileView_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
 // Function BI_TileView.BI_TileView_C.ExecuteUbergraph_BI_TileView
 // 0x0008 (0x0008 - 0x0000)
 struct BI_TileView_C_ExecuteUbergraph_BI_TileView final
@@ -26,17 +37,6 @@ static_assert(alignof(BI_TileView_C_ExecuteUbergraph_BI_TileView) == 0x000004, "
 static_assert(sizeof(BI_TileView_C_ExecuteUbergraph_BI_TileView) == 0x000008, "Wrong size on BI_TileView_C_ExecuteUbergraph_BI_TileView");
 static_assert(offsetof(BI_TileView_C_ExecuteUbergraph_BI_TileView, EntryPoint) == 0x000000, "Member 'BI_TileView_C_ExecuteUbergraph_BI_TileView::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BI_TileView_C_ExecuteUbergraph_BI_TileView, K2Node_Event_IsDesignTime) == 0x000004, "Member 'BI_TileView_C_ExecuteUbergraph_BI_TileView::K2Node_Event_IsDesignTime' has a wrong offset!");
-
-// Function BI_TileView.BI_TileView_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct BI_TileView_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_TileView_C_PreConstruct) == 0x000001, "Wrong alignment on BI_TileView_C_PreConstruct");
-static_assert(sizeof(BI_TileView_C_PreConstruct) == 0x000001, "Wrong size on BI_TileView_C_PreConstruct");
-static_assert(offsetof(BI_TileView_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_TileView_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }
 

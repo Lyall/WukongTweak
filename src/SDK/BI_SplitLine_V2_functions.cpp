@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function BI_SplitLine_V2.BI_SplitLine_V2_C.ExecuteUbergraph_BI_SplitLine_V2
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_SplitLine_V2_C::ExecuteUbergraph_BI_SplitLine_V2(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_SplitLine_V2_C", "ExecuteUbergraph_BI_SplitLine_V2");
-
-	Params::BI_SplitLine_V2_C_ExecuteUbergraph_BI_SplitLine_V2 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BI_SplitLine_V2.BI_SplitLine_V2_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -52,6 +32,26 @@ void UBI_SplitLine_V2_C::PreConstruct(bool IsDesignTime)
 	Params::BI_SplitLine_V2_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_SplitLine_V2.BI_SplitLine_V2_C.ExecuteUbergraph_BI_SplitLine_V2
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_SplitLine_V2_C::ExecuteUbergraph_BI_SplitLine_V2(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_SplitLine_V2_C", "ExecuteUbergraph_BI_SplitLine_V2");
+
+	Params::BI_SplitLine_V2_C_ExecuteUbergraph_BI_SplitLine_V2 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

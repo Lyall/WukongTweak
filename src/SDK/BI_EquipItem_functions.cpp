@@ -17,89 +17,21 @@
 namespace SDK
 {
 
-// Function BI_EquipItem.BI_EquipItem_C.BP_OnEntryReleased
-// (Event, Protected, BlueprintEvent)
-
-void UBI_EquipItem_C::BP_OnEntryReleased()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_EquipItem_C", "BP_OnEntryReleased");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_EquipItem.BI_EquipItem_C.BP_OnItemExpansionChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_EquipItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_EquipItem_C", "BP_OnItemExpansionChanged");
-
-	Params::BI_EquipItem_C_BP_OnItemExpansionChanged Parms{};
-
-	Parms.bIsExpanded = bIsExpanded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_EquipItem.BI_EquipItem_C.BP_OnItemSelectionChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_EquipItem_C::BP_OnItemSelectionChanged(bool bIsSelected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_EquipItem_C", "BP_OnItemSelectionChanged");
-
-	Params::BI_EquipItem_C_BP_OnItemSelectionChanged Parms{};
-
-	Parms.bIsSelected = bIsSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_EquipItem.BI_EquipItem_C.Construct
+// Function BI_EquipItem.BI_EquipItem_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UBI_EquipItem_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_EquipItem_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_EquipItem.BI_EquipItem_C.ExecuteUbergraph_BI_EquipItem
-// (Final, UbergraphFunction)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_EquipItem_C::ExecuteUbergraph_BI_EquipItem(int32 EntryPoint)
+void UBI_EquipItem_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_EquipItem_C", "ExecuteUbergraph_BI_EquipItem");
+		Func = Class->GetFunction("BI_EquipItem_C", "PreConstruct");
 
-	Params::BI_EquipItem_C_ExecuteUbergraph_BI_EquipItem Parms{};
+	Params::BI_EquipItem_C_PreConstruct Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -125,23 +57,91 @@ void UBI_EquipItem_C::OnListItemObjectSet(class UObject* ListItemObject)
 }
 
 
-// Function BI_EquipItem.BI_EquipItem_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function BI_EquipItem.BI_EquipItem_C.ExecuteUbergraph_BI_EquipItem
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_EquipItem_C::PreConstruct(bool IsDesignTime)
+void UBI_EquipItem_C::ExecuteUbergraph_BI_EquipItem(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_EquipItem_C", "PreConstruct");
+		Func = Class->GetFunction("BI_EquipItem_C", "ExecuteUbergraph_BI_EquipItem");
 
-	Params::BI_EquipItem_C_PreConstruct Parms{};
+	Params::BI_EquipItem_C_ExecuteUbergraph_BI_EquipItem Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_EquipItem.BI_EquipItem_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UBI_EquipItem_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_EquipItem_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_EquipItem.BI_EquipItem_C.BP_OnItemSelectionChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_EquipItem_C::BP_OnItemSelectionChanged(bool bIsSelected)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_EquipItem_C", "BP_OnItemSelectionChanged");
+
+	Params::BI_EquipItem_C_BP_OnItemSelectionChanged Parms{};
+
+	Parms.bIsSelected = bIsSelected;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_EquipItem.BI_EquipItem_C.BP_OnItemExpansionChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_EquipItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_EquipItem_C", "BP_OnItemExpansionChanged");
+
+	Params::BI_EquipItem_C_BP_OnItemExpansionChanged Parms{};
+
+	Parms.bIsExpanded = bIsExpanded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_EquipItem.BI_EquipItem_C.BP_OnEntryReleased
+// (Event, Protected, BlueprintEvent)
+
+void UBI_EquipItem_C::BP_OnEntryReleased()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_EquipItem_C", "BP_OnEntryReleased");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

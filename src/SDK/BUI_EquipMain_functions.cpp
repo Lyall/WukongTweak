@@ -17,59 +17,281 @@
 namespace SDK
 {
 
-// Function BUI_EquipMain.BUI_EquipMain_C.DebugHide
-// (BlueprintCallable, BlueprintEvent)
+// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_9
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UBUI_EquipMain_C::DebugHide()
+void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_9()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "DebugHide");
+		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_9");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BUI_EquipMain.BUI_EquipMain_C.DebugHideSub
-// (BlueprintCallable, BlueprintEvent)
+// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_8
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UBUI_EquipMain_C::DebugHideSub()
+void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_8()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "DebugHideSub");
+		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_8");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BUI_EquipMain.BUI_EquipMain_C.DebugShow
-// (BlueprintCallable, BlueprintEvent)
+// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_7
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UBUI_EquipMain_C::DebugShow()
+void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_7()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "DebugShow");
+		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_7");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BUI_EquipMain.BUI_EquipMain_C.DebugShowSub
-// (BlueprintCallable, BlueprintEvent)
+// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_6
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UBUI_EquipMain_C::DebugShowSub()
+void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_6()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "DebugShowSub");
+		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_6");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_5
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_5()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_5");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_4
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_4()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_4");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_3
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_3()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_3");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_2
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_2()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_2");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_10
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_10()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_10");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_1
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_1()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_1");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_0
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_0()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_0");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BUI_EquipMain.BUI_EquipMain_C.SeqEvent_AnimObsMode
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                           EventName                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UBUI_EquipMain_C::SeqEvent_AnimObsMode(const class FString& EventName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BUI_EquipMain_C", "SeqEvent_AnimObsMode");
+
+	Params::BUI_EquipMain_C_SeqEvent_AnimObsMode Parms{};
+
+	Parms.EventName = std::move(EventName);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BUI_EquipMain.BUI_EquipMain_C.SeqAnim_SubShow
+// (BlueprintCallable, BlueprintEvent)
+
+void UBUI_EquipMain_C::SeqAnim_SubShow()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BUI_EquipMain_C", "SeqAnim_SubShow");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BUI_EquipMain.BUI_EquipMain_C.SeqAnim_SubHide
+// (BlueprintCallable, BlueprintEvent)
+
+void UBUI_EquipMain_C::SeqAnim_SubHide()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BUI_EquipMain_C", "SeqAnim_SubHide");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BUI_EquipMain.BUI_EquipMain_C.SeqAnim_Show
+// (BlueprintCallable, BlueprintEvent)
+
+void UBUI_EquipMain_C::SeqAnim_Show()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BUI_EquipMain_C", "SeqAnim_Show");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BUI_EquipMain.BUI_EquipMain_C.SeqAnim_ObsUnfold
+// (BlueprintCallable, BlueprintEvent)
+
+void UBUI_EquipMain_C::SeqAnim_ObsUnfold()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BUI_EquipMain_C", "SeqAnim_ObsUnfold");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BUI_EquipMain.BUI_EquipMain_C.SeqAnim_ObsFold
+// (BlueprintCallable, BlueprintEvent)
+
+void UBUI_EquipMain_C::SeqAnim_ObsFold()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BUI_EquipMain_C", "SeqAnim_ObsFold");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BUI_EquipMain.BUI_EquipMain_C.SeqAnim_Hide
+// (BlueprintCallable, BlueprintEvent)
+
+void UBUI_EquipMain_C::SeqAnim_Hide()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BUI_EquipMain_C", "SeqAnim_Hide");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BUI_EquipMain.BUI_EquipMain_C.ExecuteUbergraph_BUI_EquipMain
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBUI_EquipMain_C::ExecuteUbergraph_BUI_EquipMain(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BUI_EquipMain_C", "ExecuteUbergraph_BUI_EquipMain");
+
+	Params::BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -96,279 +318,57 @@ class UWidget* UBUI_EquipMain_C::DoCustomNavigation_0(EUINavigation Navigation_0
 }
 
 
-// Function BUI_EquipMain.BUI_EquipMain_C.ExecuteUbergraph_BUI_EquipMain
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBUI_EquipMain_C::ExecuteUbergraph_BUI_EquipMain(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "ExecuteUbergraph_BUI_EquipMain");
-
-	Params::BUI_EquipMain_C_ExecuteUbergraph_BUI_EquipMain Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BUI_EquipMain.BUI_EquipMain_C.SeqAnim_Hide
+// Function BUI_EquipMain.BUI_EquipMain_C.DebugShowSub
 // (BlueprintCallable, BlueprintEvent)
 
-void UBUI_EquipMain_C::SeqAnim_Hide()
+void UBUI_EquipMain_C::DebugShowSub()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "SeqAnim_Hide");
+		Func = Class->GetFunction("BUI_EquipMain_C", "DebugShowSub");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BUI_EquipMain.BUI_EquipMain_C.SeqAnim_ObsFold
+// Function BUI_EquipMain.BUI_EquipMain_C.DebugShow
 // (BlueprintCallable, BlueprintEvent)
 
-void UBUI_EquipMain_C::SeqAnim_ObsFold()
+void UBUI_EquipMain_C::DebugShow()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "SeqAnim_ObsFold");
+		Func = Class->GetFunction("BUI_EquipMain_C", "DebugShow");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BUI_EquipMain.BUI_EquipMain_C.SeqAnim_ObsUnfold
+// Function BUI_EquipMain.BUI_EquipMain_C.DebugHideSub
 // (BlueprintCallable, BlueprintEvent)
 
-void UBUI_EquipMain_C::SeqAnim_ObsUnfold()
+void UBUI_EquipMain_C::DebugHideSub()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "SeqAnim_ObsUnfold");
+		Func = Class->GetFunction("BUI_EquipMain_C", "DebugHideSub");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BUI_EquipMain.BUI_EquipMain_C.SeqAnim_Show
+// Function BUI_EquipMain.BUI_EquipMain_C.DebugHide
 // (BlueprintCallable, BlueprintEvent)
 
-void UBUI_EquipMain_C::SeqAnim_Show()
+void UBUI_EquipMain_C::DebugHide()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "SeqAnim_Show");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BUI_EquipMain.BUI_EquipMain_C.SeqAnim_SubHide
-// (BlueprintCallable, BlueprintEvent)
-
-void UBUI_EquipMain_C::SeqAnim_SubHide()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "SeqAnim_SubHide");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BUI_EquipMain.BUI_EquipMain_C.SeqAnim_SubShow
-// (BlueprintCallable, BlueprintEvent)
-
-void UBUI_EquipMain_C::SeqAnim_SubShow()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "SeqAnim_SubShow");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BUI_EquipMain.BUI_EquipMain_C.SeqEvent_AnimObsMode
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           EventName                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UBUI_EquipMain_C::SeqEvent_AnimObsMode(const class FString& EventName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "SeqEvent_AnimObsMode");
-
-	Params::BUI_EquipMain_C_SeqEvent_AnimObsMode Parms{};
-
-	Parms.EventName = std::move(EventName);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_0
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_0");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_1
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_10
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_10()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_10");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_2
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_3
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_3()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_3");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_4
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_4()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_4");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_5
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_5()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_5");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_6
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_6()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_6");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_7
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_7()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_7");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_8
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_8()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_8");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BUI_EquipMain.BUI_EquipMain_C.SequenceEvent__ENTRYPOINTBUI_EquipMain_9
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBUI_EquipMain_C::SequenceEvent__ENTRYPOINTBUI_EquipMain_9()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BUI_EquipMain_C", "SequenceEvent__ENTRYPOINTBUI_EquipMain_9");
+		Func = Class->GetFunction("BUI_EquipMain_C", "DebugHide");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

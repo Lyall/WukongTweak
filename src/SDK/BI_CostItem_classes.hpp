@@ -33,10 +33,10 @@ public:
 	class UTextBlock*                             TxtOwn;                                            // 0x04F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BI_CostItem(int32 EntryPoint);
 	void InitTxt(class UTextBlock* TxtObj, const struct FAnchors& TxtAnchors, const struct FVector2D& TxtAlignment, const struct FVector2D& TxtPos, const struct FSlateColor& TxtColor, const struct FSlateFontInfo& TxtFont, const struct FVector2D& TxtShadowOffset, const struct FLinearColor& TxtShadowColor, ETextJustify TxtJustification);
-	void InitUI(class UImage* Obj, const struct FSlateBrush& Brush, const struct FVector2D& Size, const struct FVector2D& Pos);
+	void ExecuteUbergraph_BI_CostItem(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
+	void InitUI(class UImage* Obj, const struct FSlateBrush& Brush, const struct FVector2D& Size, const struct FVector2D& Pos);
 
 public:
 	static class UClass* StaticClass()

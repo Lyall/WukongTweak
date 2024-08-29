@@ -33,17 +33,17 @@ public:
 	class UImage*                                 ImgBgMask;                                         // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void AnimBuildCheckIsCompareEvent(const class FString& EventName);
-	void AnimBuildCheckNotCompareEvent(const class FString& EventName);
-	void ExecuteUbergraph_BI_EquipDetailCompare(int32 EntryPoint);
-	void SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_0();
-	void SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_1();
-	void SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_2();
-	void SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_3();
-	void SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_4();
-	void SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_5();
-	void SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_6();
 	void SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_7();
+	void SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_6();
+	void SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_5();
+	void SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_4();
+	void SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_3();
+	void SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_2();
+	void SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_1();
+	void SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_0();
+	void ExecuteUbergraph_BI_EquipDetailCompare(int32 EntryPoint);
+	void AnimBuildCheckNotCompareEvent(const class FString& EventName);
+	void AnimBuildCheckIsCompareEvent(const class FString& EventName);
 
 public:
 	static class UClass* StaticClass()

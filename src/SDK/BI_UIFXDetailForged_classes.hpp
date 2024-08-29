@@ -38,40 +38,40 @@ public:
 	float                                         SparkSize;                                         // 0x0440(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void EventAnim_Destroyed_Play();
-	void EventAnim_Destroyed_Stop();
-	void EventAnim_Forged_Play();
-	void EventAnim_Forged_Stop();
-	void EventAnim_Upgrade_Play();
-	void EventAnim_Upgrade_Stop();
-	void ExecuteUbergraph_BI_UIFXDetailForged(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
-	void SeqFX_Play_Destroyed(class UNiagaraSystemWidget* UINS_DestroyedSpark_0);
-	void SeqFX_Play_Left(class UNiagaraSystemWidget* NGForgeSpark_Left);
-	void SeqFX_Play_Right(class UNiagaraSystemWidget* NGForgeSpark_Right);
-	void SeqFX_Play_Top(class UNiagaraSystemWidget* NGForgeSpark_Top);
-	void SeqFX_Stop_Destroyed(class UNiagaraSystemWidget* UINS_DestroyedSpark_0);
-	void SeqFX_Stop_Left(class UNiagaraSystemWidget* NGForgeSpark_Left);
-	void SeqFX_Stop_Right(class UNiagaraSystemWidget* NGForgeSpark_Right);
-	void SeqFX_Stop_Top(class UNiagaraSystemWidget* NGForgeSpark_Top);
-	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_0(class UNiagaraSystemWidget* UINS_DestroyedSpark_0);
-	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_1(class UNiagaraSystemWidget* UINS_DestroyedSpark_0);
-	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_10(class UNiagaraSystemWidget* NGForgeSpark_Top);
-	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_11(class UNiagaraSystemWidget* NGForgeSpark_Right);
-	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_12(class UNiagaraSystemWidget* NGForgeSpark_Right);
-	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_13(class UNiagaraSystemWidget* NGForgeSpark_Left);
-	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_14(class UNiagaraSystemWidget* NGForgeSpark_Left);
-	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_15(class UNiagaraSystemWidget* UINS_DestroyedSpark_0);
-	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_16(class UNiagaraSystemWidget* UINS_DestroyedSpark_0);
-	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_17(class UNiagaraSystemWidget* UINS_DestroyedSpark_0);
-	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_2(class UNiagaraSystemWidget* UINS_DestroyedSpark_0);
-	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_3(class UNiagaraSystemWidget* NGForgeSpark_Left);
-	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_4(class UNiagaraSystemWidget* NGForgeSpark_Left);
-	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_5(class UNiagaraSystemWidget* NGForgeSpark_Right);
-	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_6(class UNiagaraSystemWidget* NGForgeSpark_Right);
-	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_7(class UNiagaraSystemWidget* NGForgeSpark_Top);
-	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_8(class UNiagaraSystemWidget* NGForgeSpark_Top);
 	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_9(class UNiagaraSystemWidget* NGForgeSpark_Top);
+	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_8(class UNiagaraSystemWidget* NGForgeSpark_Top);
+	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_7(class UNiagaraSystemWidget* NGForgeSpark_Top);
+	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_6(class UNiagaraSystemWidget* NGForgeSpark_Right);
+	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_5(class UNiagaraSystemWidget* NGForgeSpark_Right);
+	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_4(class UNiagaraSystemWidget* NGForgeSpark_Left);
+	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_3(class UNiagaraSystemWidget* NGForgeSpark_Left);
+	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_2(class UNiagaraSystemWidget* UINS_DestroyedSpark_0);
+	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_17(class UNiagaraSystemWidget* UINS_DestroyedSpark_0);
+	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_16(class UNiagaraSystemWidget* UINS_DestroyedSpark_0);
+	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_15(class UNiagaraSystemWidget* UINS_DestroyedSpark_0);
+	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_14(class UNiagaraSystemWidget* NGForgeSpark_Left);
+	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_13(class UNiagaraSystemWidget* NGForgeSpark_Left);
+	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_12(class UNiagaraSystemWidget* NGForgeSpark_Right);
+	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_11(class UNiagaraSystemWidget* NGForgeSpark_Right);
+	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_10(class UNiagaraSystemWidget* NGForgeSpark_Top);
+	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_1(class UNiagaraSystemWidget* UINS_DestroyedSpark_0);
+	void SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_0(class UNiagaraSystemWidget* UINS_DestroyedSpark_0);
+	void SeqFX_Stop_Top(class UNiagaraSystemWidget* NGForgeSpark_Top);
+	void SeqFX_Stop_Right(class UNiagaraSystemWidget* NGForgeSpark_Right);
+	void SeqFX_Stop_Left(class UNiagaraSystemWidget* NGForgeSpark_Left);
+	void SeqFX_Stop_Destroyed(class UNiagaraSystemWidget* UINS_DestroyedSpark_0);
+	void SeqFX_Play_Top(class UNiagaraSystemWidget* NGForgeSpark_Top);
+	void SeqFX_Play_Right(class UNiagaraSystemWidget* NGForgeSpark_Right);
+	void SeqFX_Play_Left(class UNiagaraSystemWidget* NGForgeSpark_Left);
+	void SeqFX_Play_Destroyed(class UNiagaraSystemWidget* UINS_DestroyedSpark_0);
+	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_BI_UIFXDetailForged(int32 EntryPoint);
+	void EventAnim_Upgrade_Stop();
+	void EventAnim_Upgrade_Play();
+	void EventAnim_Forged_Stop();
+	void EventAnim_Forged_Play();
+	void EventAnim_Destroyed_Stop();
+	void EventAnim_Destroyed_Play();
 
 public:
 	static class UClass* StaticClass()

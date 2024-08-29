@@ -45,9 +45,9 @@ public:
 	class UImage*                                 ResizeWidget;                                      // 0x0558(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_BI_CommTxtTab(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_BI_CommTxtTab(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

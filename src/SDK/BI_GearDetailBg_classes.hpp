@@ -34,27 +34,27 @@ public:
 	class UNiagaraSystemWidget*                   UING_EquipSpark_Top;                               // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void EventAnim_Equiped_Play();
-	void EventAnim_Equiped_Stop();
-	void EventAnim_Forged_Play();
-	void EventAnim_Forged_Stop();
-	void EventAnim_Upgrade_Play();
-	void EventAnim_Upgrade_Stop();
-	void ExecuteUbergraph_BI_GearDetailBg(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
-	void SeqFX_Play_Left(class UNiagaraSystemWidget* UING_EquipSpark_Right_0);
-	void SeqFX_Play_Right(class UNiagaraSystemWidget* UING_EquipSpark_Right_0);
-	void SeqFX_Play_Top(class UNiagaraSystemWidget* UING_EquipSpark_Top_0);
-	void SeqFX_Stop_Left(class UNiagaraSystemWidget* UING_EquipSpark_Right_0);
-	void SeqFX_Stop_Right(class UNiagaraSystemWidget* UING_EquipSpark_Right_0);
-	void SeqFX_Stop_Top(class UNiagaraSystemWidget* UING_EquipSpark_Top_0);
-	void SequenceEvent__ENTRYPOINTBI_GearDetailBg_0(class UNiagaraSystemWidget* UING_EquipSpark_Top_0);
-	void SequenceEvent__ENTRYPOINTBI_GearDetailBg_1(class UNiagaraSystemWidget* UING_EquipSpark_Top_0);
-	void SequenceEvent__ENTRYPOINTBI_GearDetailBg_2(class UNiagaraSystemWidget* UING_EquipSpark_Right_0);
-	void SequenceEvent__ENTRYPOINTBI_GearDetailBg_3(class UNiagaraSystemWidget* UING_EquipSpark_Right_0);
-	void SequenceEvent__ENTRYPOINTBI_GearDetailBg_4(class UNiagaraSystemWidget* UING_EquipSpark_Right_0);
 	void SequenceEvent__ENTRYPOINTBI_GearDetailBg_5(class UNiagaraSystemWidget* UING_EquipSpark_Right_0);
+	void SequenceEvent__ENTRYPOINTBI_GearDetailBg_4(class UNiagaraSystemWidget* UING_EquipSpark_Right_0);
+	void SequenceEvent__ENTRYPOINTBI_GearDetailBg_3(class UNiagaraSystemWidget* UING_EquipSpark_Right_0);
+	void SequenceEvent__ENTRYPOINTBI_GearDetailBg_2(class UNiagaraSystemWidget* UING_EquipSpark_Right_0);
+	void SequenceEvent__ENTRYPOINTBI_GearDetailBg_1(class UNiagaraSystemWidget* UING_EquipSpark_Top_0);
+	void SequenceEvent__ENTRYPOINTBI_GearDetailBg_0(class UNiagaraSystemWidget* UING_EquipSpark_Top_0);
+	void SeqFX_Stop_Top(class UNiagaraSystemWidget* UING_EquipSpark_Top_0);
+	void SeqFX_Stop_Right(class UNiagaraSystemWidget* UING_EquipSpark_Right_0);
+	void SeqFX_Stop_Left(class UNiagaraSystemWidget* UING_EquipSpark_Right_0);
+	void SeqFX_Play_Top(class UNiagaraSystemWidget* UING_EquipSpark_Top_0);
+	void SeqFX_Play_Right(class UNiagaraSystemWidget* UING_EquipSpark_Right_0);
+	void SeqFX_Play_Left(class UNiagaraSystemWidget* UING_EquipSpark_Right_0);
+	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_BI_GearDetailBg(int32 EntryPoint);
+	void EventAnim_Upgrade_Stop();
+	void EventAnim_Upgrade_Play();
+	void EventAnim_Forged_Stop();
+	void EventAnim_Forged_Play();
+	void EventAnim_Equiped_Stop();
+	void EventAnim_Equiped_Play();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

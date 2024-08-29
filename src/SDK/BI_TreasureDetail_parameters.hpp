@@ -14,6 +14,17 @@
 namespace SDK::Params
 {
 
+// Function BI_TreasureDetail.BI_TreasureDetail_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct BI_TreasureDetail_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_TreasureDetail_C_PreConstruct) == 0x000001, "Wrong alignment on BI_TreasureDetail_C_PreConstruct");
+static_assert(sizeof(BI_TreasureDetail_C_PreConstruct) == 0x000001, "Wrong size on BI_TreasureDetail_C_PreConstruct");
+static_assert(offsetof(BI_TreasureDetail_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_TreasureDetail_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
 // Function BI_TreasureDetail.BI_TreasureDetail_C.ExecuteUbergraph_BI_TreasureDetail
 // 0x0008 (0x0008 - 0x0000)
 struct BI_TreasureDetail_C_ExecuteUbergraph_BI_TreasureDetail final
@@ -26,17 +37,6 @@ static_assert(alignof(BI_TreasureDetail_C_ExecuteUbergraph_BI_TreasureDetail) ==
 static_assert(sizeof(BI_TreasureDetail_C_ExecuteUbergraph_BI_TreasureDetail) == 0x000008, "Wrong size on BI_TreasureDetail_C_ExecuteUbergraph_BI_TreasureDetail");
 static_assert(offsetof(BI_TreasureDetail_C_ExecuteUbergraph_BI_TreasureDetail, EntryPoint) == 0x000000, "Member 'BI_TreasureDetail_C_ExecuteUbergraph_BI_TreasureDetail::EntryPoint' has a wrong offset!");
 static_assert(offsetof(BI_TreasureDetail_C_ExecuteUbergraph_BI_TreasureDetail, K2Node_Event_IsDesignTime) == 0x000004, "Member 'BI_TreasureDetail_C_ExecuteUbergraph_BI_TreasureDetail::K2Node_Event_IsDesignTime' has a wrong offset!");
-
-// Function BI_TreasureDetail.BI_TreasureDetail_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct BI_TreasureDetail_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_TreasureDetail_C_PreConstruct) == 0x000001, "Wrong alignment on BI_TreasureDetail_C_PreConstruct");
-static_assert(sizeof(BI_TreasureDetail_C_PreConstruct) == 0x000001, "Wrong size on BI_TreasureDetail_C_PreConstruct");
-static_assert(offsetof(BI_TreasureDetail_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_TreasureDetail_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }
 

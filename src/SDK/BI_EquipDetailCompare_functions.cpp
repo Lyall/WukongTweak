@@ -17,21 +17,133 @@
 namespace SDK
 {
 
-// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.AnimBuildCheckIsCompareEvent
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FString                           EventName                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_7
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UBI_EquipDetailCompare_C::AnimBuildCheckIsCompareEvent(const class FString& EventName)
+void UBI_EquipDetailCompare_C::SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_7()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_EquipDetailCompare_C", "AnimBuildCheckIsCompareEvent");
+		Func = Class->GetFunction("BI_EquipDetailCompare_C", "SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_7");
 
-	Params::BI_EquipDetailCompare_C_AnimBuildCheckIsCompareEvent Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EventName = std::move(EventName);
+
+// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_6
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBI_EquipDetailCompare_C::SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_6()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_EquipDetailCompare_C", "SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_6");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_5
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBI_EquipDetailCompare_C::SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_5()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_EquipDetailCompare_C", "SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_5");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_4
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBI_EquipDetailCompare_C::SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_4()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_EquipDetailCompare_C", "SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_4");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_3
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBI_EquipDetailCompare_C::SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_3()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_EquipDetailCompare_C", "SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_3");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_2
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBI_EquipDetailCompare_C::SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_2()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_EquipDetailCompare_C", "SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_2");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_1
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBI_EquipDetailCompare_C::SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_1()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_EquipDetailCompare_C", "SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_1");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_0
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBI_EquipDetailCompare_C::SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_0()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_EquipDetailCompare_C", "SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_0");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.ExecuteUbergraph_BI_EquipDetailCompare
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_EquipDetailCompare_C::ExecuteUbergraph_BI_EquipDetailCompare(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_EquipDetailCompare_C", "ExecuteUbergraph_BI_EquipDetailCompare");
+
+	Params::BI_EquipDetailCompare_C_ExecuteUbergraph_BI_EquipDetailCompare Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,135 +169,23 @@ void UBI_EquipDetailCompare_C::AnimBuildCheckNotCompareEvent(const class FString
 }
 
 
-// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.ExecuteUbergraph_BI_EquipDetailCompare
-// (Final, UbergraphFunction)
+// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.AnimBuildCheckIsCompareEvent
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                           EventName                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UBI_EquipDetailCompare_C::ExecuteUbergraph_BI_EquipDetailCompare(int32 EntryPoint)
+void UBI_EquipDetailCompare_C::AnimBuildCheckIsCompareEvent(const class FString& EventName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_EquipDetailCompare_C", "ExecuteUbergraph_BI_EquipDetailCompare");
+		Func = Class->GetFunction("BI_EquipDetailCompare_C", "AnimBuildCheckIsCompareEvent");
 
-	Params::BI_EquipDetailCompare_C_ExecuteUbergraph_BI_EquipDetailCompare Parms{};
+	Params::BI_EquipDetailCompare_C_AnimBuildCheckIsCompareEvent Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.EventName = std::move(EventName);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_0
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBI_EquipDetailCompare_C::SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_EquipDetailCompare_C", "SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_0");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_1
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBI_EquipDetailCompare_C::SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_EquipDetailCompare_C", "SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_2
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBI_EquipDetailCompare_C::SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_EquipDetailCompare_C", "SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_3
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBI_EquipDetailCompare_C::SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_3()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_EquipDetailCompare_C", "SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_3");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_4
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBI_EquipDetailCompare_C::SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_4()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_EquipDetailCompare_C", "SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_4");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_5
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBI_EquipDetailCompare_C::SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_5()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_EquipDetailCompare_C", "SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_5");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_6
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBI_EquipDetailCompare_C::SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_6()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_EquipDetailCompare_C", "SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_6");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_EquipDetailCompare.BI_EquipDetailCompare_C.SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_7
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBI_EquipDetailCompare_C::SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_7()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_EquipDetailCompare_C", "SequenceEvent__ENTRYPOINTBI_EquipDetailCompare_7");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

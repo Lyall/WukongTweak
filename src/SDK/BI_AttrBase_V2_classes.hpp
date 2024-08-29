@@ -29,11 +29,11 @@ public:
 	class UTextBlock*                             TxtAttrChange;                                     // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BI_AttrBase_V2(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
-	void SequenceEvent_0(const class FString& EventName);
-	void SequenceEvent__ENTRYPOINTBI_AttrBase_V2_0();
 	void SequenceEvent__ENTRYPOINTBI_AttrBase_V2_1();
+	void SequenceEvent__ENTRYPOINTBI_AttrBase_V2_0();
+	void SequenceEvent_0(const class FString& EventName);
+	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_BI_AttrBase_V2(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

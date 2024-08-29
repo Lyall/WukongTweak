@@ -18,19 +18,6 @@
 namespace SDK::Params
 {
 
-// Function BI_CostItemKey.BI_CostItemKey_C.ExecuteUbergraph_BI_CostItemKey
-// 0x0008 (0x0008 - 0x0000)
-struct BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey) == 0x000004, "Wrong alignment on BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey");
-static_assert(sizeof(BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey) == 0x000008, "Wrong size on BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey");
-static_assert(offsetof(BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey, EntryPoint) == 0x000000, "Member 'BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey, K2Node_Event_IsDesignTime) == 0x000004, "Member 'BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey::K2Node_Event_IsDesignTime' has a wrong offset!");
-
 // Function BI_CostItemKey.BI_CostItemKey_C.InitTxt
 // 0x0120 (0x0120 - 0x0000)
 struct BI_CostItemKey_C_InitTxt final
@@ -64,6 +51,30 @@ static_assert(offsetof(BI_CostItemKey_C_InitTxt, TxtJustification) == 0x000108, 
 static_assert(offsetof(BI_CostItemKey_C_InitTxt, K2Node_DynamicCast_As_____) == 0x000110, "Member 'BI_CostItemKey_C_InitTxt::K2Node_DynamicCast_As_____' has a wrong offset!");
 static_assert(offsetof(BI_CostItemKey_C_InitTxt, K2Node_DynamicCast_bSuccess) == 0x000118, "Member 'BI_CostItemKey_C_InitTxt::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
+// Function BI_CostItemKey.BI_CostItemKey_C.ExecuteUbergraph_BI_CostItemKey
+// 0x0008 (0x0008 - 0x0000)
+struct BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey) == 0x000004, "Wrong alignment on BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey");
+static_assert(sizeof(BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey) == 0x000008, "Wrong size on BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey");
+static_assert(offsetof(BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey, EntryPoint) == 0x000000, "Member 'BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey::EntryPoint' has a wrong offset!");
+static_assert(offsetof(BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey, K2Node_Event_IsDesignTime) == 0x000004, "Member 'BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey::K2Node_Event_IsDesignTime' has a wrong offset!");
+
+// Function BI_CostItemKey.BI_CostItemKey_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct BI_CostItemKey_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_CostItemKey_C_PreConstruct) == 0x000001, "Wrong alignment on BI_CostItemKey_C_PreConstruct");
+static_assert(sizeof(BI_CostItemKey_C_PreConstruct) == 0x000001, "Wrong size on BI_CostItemKey_C_PreConstruct");
+static_assert(offsetof(BI_CostItemKey_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_CostItemKey_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
 // Function BI_CostItemKey.BI_CostItemKey_C.InitUI
 // 0x0110 (0x0110 - 0x0000)
 struct BI_CostItemKey_C_InitUI final
@@ -85,17 +96,6 @@ static_assert(offsetof(BI_CostItemKey_C_InitUI, Size) == 0x0000E0, "Member 'BI_C
 static_assert(offsetof(BI_CostItemKey_C_InitUI, Pos) == 0x0000F0, "Member 'BI_CostItemKey_C_InitUI::Pos' has a wrong offset!");
 static_assert(offsetof(BI_CostItemKey_C_InitUI, K2Node_DynamicCast_As_____) == 0x000100, "Member 'BI_CostItemKey_C_InitUI::K2Node_DynamicCast_As_____' has a wrong offset!");
 static_assert(offsetof(BI_CostItemKey_C_InitUI, K2Node_DynamicCast_bSuccess) == 0x000108, "Member 'BI_CostItemKey_C_InitUI::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-
-// Function BI_CostItemKey.BI_CostItemKey_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct BI_CostItemKey_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_CostItemKey_C_PreConstruct) == 0x000001, "Wrong alignment on BI_CostItemKey_C_PreConstruct");
-static_assert(sizeof(BI_CostItemKey_C_PreConstruct) == 0x000001, "Wrong size on BI_CostItemKey_C_PreConstruct");
-static_assert(offsetof(BI_CostItemKey_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_CostItemKey_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }
 

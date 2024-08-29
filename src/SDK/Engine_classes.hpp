@@ -24404,7 +24404,7 @@ static_assert(sizeof(ULevelInstanceSubsystem) == 0x000170, "Wrong size on ULevel
 
 // Class Engine.LevelScriptActor
 // 0x0008 (0x0280 - 0x0278)
-class ALevelScriptActor final : public AActor
+class ALevelScriptActor : public AActor
 {
 public:
 	uint8                                         bInputEnabled : 1;                                 // 0x0278(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))

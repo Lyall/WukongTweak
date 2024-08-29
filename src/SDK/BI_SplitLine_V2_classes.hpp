@@ -31,8 +31,8 @@ public:
 	struct FVector2D                              Size;                                              // 0x04C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BI_SplitLine_V2(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_BI_SplitLine_V2(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

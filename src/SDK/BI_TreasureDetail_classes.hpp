@@ -54,10 +54,10 @@ public:
 	float                                         SparkSize;                                         // 0x04C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BI_TreasureDetail(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
-	void SeqAnim_DetailBg_Equiped();
 	void SequenceEvent__ENTRYPOINTBI_TreasureDetail_0();
+	void SeqAnim_DetailBg_Equiped();
+	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_BI_TreasureDetail(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

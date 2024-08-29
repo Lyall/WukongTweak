@@ -14,6 +14,303 @@
 namespace SDK::Params
 {
 
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_9
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_9 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_9) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_9");
+static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_9) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_9");
+static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_9, NGForgeSpark_Top) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_9::NGForgeSpark_Top' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_8
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_8 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_8) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_8");
+static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_8) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_8");
+static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_8, NGForgeSpark_Top) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_8::NGForgeSpark_Top' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_7
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_7 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_7) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_7");
+static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_7) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_7");
+static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_7, NGForgeSpark_Top) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_7::NGForgeSpark_Top' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_6
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_6 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Right;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_6) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_6");
+static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_6) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_6");
+static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_6, NGForgeSpark_Right) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_6::NGForgeSpark_Right' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_5
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_5 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Right;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_5) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_5");
+static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_5) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_5");
+static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_5, NGForgeSpark_Right) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_5::NGForgeSpark_Right' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_4
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_4 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Left;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_4) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_4");
+static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_4) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_4");
+static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_4, NGForgeSpark_Left) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_4::NGForgeSpark_Left' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_3
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_3 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Left;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_3) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_3");
+static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_3) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_3");
+static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_3, NGForgeSpark_Left) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_3::NGForgeSpark_Left' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_2
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_2 final
+{
+public:
+	class UNiagaraSystemWidget*                   UINS_DestroyedSpark_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_2) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_2");
+static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_2) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_2");
+static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_2, UINS_DestroyedSpark_0) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_2::UINS_DestroyedSpark_0' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_17
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_17 final
+{
+public:
+	class UNiagaraSystemWidget*                   UINS_DestroyedSpark_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_17) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_17");
+static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_17) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_17");
+static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_17, UINS_DestroyedSpark_0) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_17::UINS_DestroyedSpark_0' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_16
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_16 final
+{
+public:
+	class UNiagaraSystemWidget*                   UINS_DestroyedSpark_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_16) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_16");
+static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_16) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_16");
+static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_16, UINS_DestroyedSpark_0) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_16::UINS_DestroyedSpark_0' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_15
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_15 final
+{
+public:
+	class UNiagaraSystemWidget*                   UINS_DestroyedSpark_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_15) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_15");
+static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_15) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_15");
+static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_15, UINS_DestroyedSpark_0) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_15::UINS_DestroyedSpark_0' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_14
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_14 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Left;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_14) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_14");
+static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_14) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_14");
+static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_14, NGForgeSpark_Left) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_14::NGForgeSpark_Left' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_13
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_13 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Left;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_13) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_13");
+static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_13) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_13");
+static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_13, NGForgeSpark_Left) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_13::NGForgeSpark_Left' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_12
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_12 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Right;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_12) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_12");
+static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_12) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_12");
+static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_12, NGForgeSpark_Right) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_12::NGForgeSpark_Right' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_11
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_11 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Right;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_11) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_11");
+static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_11) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_11");
+static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_11, NGForgeSpark_Right) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_11::NGForgeSpark_Right' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_10
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_10 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_10) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_10");
+static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_10) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_10");
+static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_10, NGForgeSpark_Top) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_10::NGForgeSpark_Top' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_1
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_1 final
+{
+public:
+	class UNiagaraSystemWidget*                   UINS_DestroyedSpark_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_1) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_1");
+static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_1) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_1");
+static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_1, UINS_DestroyedSpark_0) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_1::UINS_DestroyedSpark_0' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_0
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_0 final
+{
+public:
+	class UNiagaraSystemWidget*                   UINS_DestroyedSpark_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_0) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_0");
+static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_0) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_0");
+static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_0, UINS_DestroyedSpark_0) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_0::UINS_DestroyedSpark_0' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SeqFX_Stop_Top
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SeqFX_Stop_Top final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SeqFX_Stop_Top) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SeqFX_Stop_Top");
+static_assert(sizeof(BI_UIFXDetailForged_C_SeqFX_Stop_Top) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SeqFX_Stop_Top");
+static_assert(offsetof(BI_UIFXDetailForged_C_SeqFX_Stop_Top, NGForgeSpark_Top) == 0x000000, "Member 'BI_UIFXDetailForged_C_SeqFX_Stop_Top::NGForgeSpark_Top' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SeqFX_Stop_Right
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SeqFX_Stop_Right final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Right;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SeqFX_Stop_Right) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SeqFX_Stop_Right");
+static_assert(sizeof(BI_UIFXDetailForged_C_SeqFX_Stop_Right) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SeqFX_Stop_Right");
+static_assert(offsetof(BI_UIFXDetailForged_C_SeqFX_Stop_Right, NGForgeSpark_Right) == 0x000000, "Member 'BI_UIFXDetailForged_C_SeqFX_Stop_Right::NGForgeSpark_Right' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SeqFX_Stop_Left
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SeqFX_Stop_Left final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Left;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SeqFX_Stop_Left) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SeqFX_Stop_Left");
+static_assert(sizeof(BI_UIFXDetailForged_C_SeqFX_Stop_Left) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SeqFX_Stop_Left");
+static_assert(offsetof(BI_UIFXDetailForged_C_SeqFX_Stop_Left, NGForgeSpark_Left) == 0x000000, "Member 'BI_UIFXDetailForged_C_SeqFX_Stop_Left::NGForgeSpark_Left' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SeqFX_Stop_Destroyed
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SeqFX_Stop_Destroyed final
+{
+public:
+	class UNiagaraSystemWidget*                   UINS_DestroyedSpark_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SeqFX_Stop_Destroyed) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SeqFX_Stop_Destroyed");
+static_assert(sizeof(BI_UIFXDetailForged_C_SeqFX_Stop_Destroyed) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SeqFX_Stop_Destroyed");
+static_assert(offsetof(BI_UIFXDetailForged_C_SeqFX_Stop_Destroyed, UINS_DestroyedSpark_0) == 0x000000, "Member 'BI_UIFXDetailForged_C_SeqFX_Stop_Destroyed::UINS_DestroyedSpark_0' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SeqFX_Play_Top
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SeqFX_Play_Top final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SeqFX_Play_Top) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SeqFX_Play_Top");
+static_assert(sizeof(BI_UIFXDetailForged_C_SeqFX_Play_Top) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SeqFX_Play_Top");
+static_assert(offsetof(BI_UIFXDetailForged_C_SeqFX_Play_Top, NGForgeSpark_Top) == 0x000000, "Member 'BI_UIFXDetailForged_C_SeqFX_Play_Top::NGForgeSpark_Top' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SeqFX_Play_Right
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SeqFX_Play_Right final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Right;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SeqFX_Play_Right) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SeqFX_Play_Right");
+static_assert(sizeof(BI_UIFXDetailForged_C_SeqFX_Play_Right) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SeqFX_Play_Right");
+static_assert(offsetof(BI_UIFXDetailForged_C_SeqFX_Play_Right, NGForgeSpark_Right) == 0x000000, "Member 'BI_UIFXDetailForged_C_SeqFX_Play_Right::NGForgeSpark_Right' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SeqFX_Play_Left
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SeqFX_Play_Left final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Left;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SeqFX_Play_Left) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SeqFX_Play_Left");
+static_assert(sizeof(BI_UIFXDetailForged_C_SeqFX_Play_Left) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SeqFX_Play_Left");
+static_assert(offsetof(BI_UIFXDetailForged_C_SeqFX_Play_Left, NGForgeSpark_Left) == 0x000000, "Member 'BI_UIFXDetailForged_C_SeqFX_Play_Left::NGForgeSpark_Left' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SeqFX_Play_Destroyed
+// 0x0008 (0x0008 - 0x0000)
+struct BI_UIFXDetailForged_C_SeqFX_Play_Destroyed final
+{
+public:
+	class UNiagaraSystemWidget*                   UINS_DestroyedSpark_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_SeqFX_Play_Destroyed) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SeqFX_Play_Destroyed");
+static_assert(sizeof(BI_UIFXDetailForged_C_SeqFX_Play_Destroyed) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SeqFX_Play_Destroyed");
+static_assert(offsetof(BI_UIFXDetailForged_C_SeqFX_Play_Destroyed, UINS_DestroyedSpark_0) == 0x000000, "Member 'BI_UIFXDetailForged_C_SeqFX_Play_Destroyed::UINS_DestroyedSpark_0' has a wrong offset!");
+
+// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct BI_UIFXDetailForged_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_UIFXDetailForged_C_PreConstruct) == 0x000001, "Wrong alignment on BI_UIFXDetailForged_C_PreConstruct");
+static_assert(sizeof(BI_UIFXDetailForged_C_PreConstruct) == 0x000001, "Wrong size on BI_UIFXDetailForged_C_PreConstruct");
+static_assert(offsetof(BI_UIFXDetailForged_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_UIFXDetailForged_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
 // Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.ExecuteUbergraph_BI_UIFXDetailForged
 // 0x0060 (0x0060 - 0x0000)
 struct BI_UIFXDetailForged_C_ExecuteUbergraph_BI_UIFXDetailForged final
@@ -49,303 +346,6 @@ static_assert(offsetof(BI_UIFXDetailForged_C_ExecuteUbergraph_BI_UIFXDetailForge
 static_assert(offsetof(BI_UIFXDetailForged_C_ExecuteUbergraph_BI_UIFXDetailForged, CallFunc_PlayAnimation_ReturnValue) == 0x000048, "Member 'BI_UIFXDetailForged_C_ExecuteUbergraph_BI_UIFXDetailForged::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 static_assert(offsetof(BI_UIFXDetailForged_C_ExecuteUbergraph_BI_UIFXDetailForged, CallFunc_PlayAnimation_ReturnValue_1) == 0x000050, "Member 'BI_UIFXDetailForged_C_ExecuteUbergraph_BI_UIFXDetailForged::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BI_UIFXDetailForged_C_ExecuteUbergraph_BI_UIFXDetailForged, CallFunc_PlayAnimation_ReturnValue_2) == 0x000058, "Member 'BI_UIFXDetailForged_C_ExecuteUbergraph_BI_UIFXDetailForged::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct BI_UIFXDetailForged_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_PreConstruct) == 0x000001, "Wrong alignment on BI_UIFXDetailForged_C_PreConstruct");
-static_assert(sizeof(BI_UIFXDetailForged_C_PreConstruct) == 0x000001, "Wrong size on BI_UIFXDetailForged_C_PreConstruct");
-static_assert(offsetof(BI_UIFXDetailForged_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_UIFXDetailForged_C_PreConstruct::IsDesignTime' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SeqFX_Play_Destroyed
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SeqFX_Play_Destroyed final
-{
-public:
-	class UNiagaraSystemWidget*                   UINS_DestroyedSpark_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SeqFX_Play_Destroyed) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SeqFX_Play_Destroyed");
-static_assert(sizeof(BI_UIFXDetailForged_C_SeqFX_Play_Destroyed) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SeqFX_Play_Destroyed");
-static_assert(offsetof(BI_UIFXDetailForged_C_SeqFX_Play_Destroyed, UINS_DestroyedSpark_0) == 0x000000, "Member 'BI_UIFXDetailForged_C_SeqFX_Play_Destroyed::UINS_DestroyedSpark_0' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SeqFX_Play_Left
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SeqFX_Play_Left final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Left;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SeqFX_Play_Left) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SeqFX_Play_Left");
-static_assert(sizeof(BI_UIFXDetailForged_C_SeqFX_Play_Left) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SeqFX_Play_Left");
-static_assert(offsetof(BI_UIFXDetailForged_C_SeqFX_Play_Left, NGForgeSpark_Left) == 0x000000, "Member 'BI_UIFXDetailForged_C_SeqFX_Play_Left::NGForgeSpark_Left' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SeqFX_Play_Right
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SeqFX_Play_Right final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Right;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SeqFX_Play_Right) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SeqFX_Play_Right");
-static_assert(sizeof(BI_UIFXDetailForged_C_SeqFX_Play_Right) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SeqFX_Play_Right");
-static_assert(offsetof(BI_UIFXDetailForged_C_SeqFX_Play_Right, NGForgeSpark_Right) == 0x000000, "Member 'BI_UIFXDetailForged_C_SeqFX_Play_Right::NGForgeSpark_Right' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SeqFX_Play_Top
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SeqFX_Play_Top final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SeqFX_Play_Top) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SeqFX_Play_Top");
-static_assert(sizeof(BI_UIFXDetailForged_C_SeqFX_Play_Top) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SeqFX_Play_Top");
-static_assert(offsetof(BI_UIFXDetailForged_C_SeqFX_Play_Top, NGForgeSpark_Top) == 0x000000, "Member 'BI_UIFXDetailForged_C_SeqFX_Play_Top::NGForgeSpark_Top' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SeqFX_Stop_Destroyed
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SeqFX_Stop_Destroyed final
-{
-public:
-	class UNiagaraSystemWidget*                   UINS_DestroyedSpark_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SeqFX_Stop_Destroyed) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SeqFX_Stop_Destroyed");
-static_assert(sizeof(BI_UIFXDetailForged_C_SeqFX_Stop_Destroyed) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SeqFX_Stop_Destroyed");
-static_assert(offsetof(BI_UIFXDetailForged_C_SeqFX_Stop_Destroyed, UINS_DestroyedSpark_0) == 0x000000, "Member 'BI_UIFXDetailForged_C_SeqFX_Stop_Destroyed::UINS_DestroyedSpark_0' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SeqFX_Stop_Left
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SeqFX_Stop_Left final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Left;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SeqFX_Stop_Left) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SeqFX_Stop_Left");
-static_assert(sizeof(BI_UIFXDetailForged_C_SeqFX_Stop_Left) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SeqFX_Stop_Left");
-static_assert(offsetof(BI_UIFXDetailForged_C_SeqFX_Stop_Left, NGForgeSpark_Left) == 0x000000, "Member 'BI_UIFXDetailForged_C_SeqFX_Stop_Left::NGForgeSpark_Left' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SeqFX_Stop_Right
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SeqFX_Stop_Right final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Right;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SeqFX_Stop_Right) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SeqFX_Stop_Right");
-static_assert(sizeof(BI_UIFXDetailForged_C_SeqFX_Stop_Right) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SeqFX_Stop_Right");
-static_assert(offsetof(BI_UIFXDetailForged_C_SeqFX_Stop_Right, NGForgeSpark_Right) == 0x000000, "Member 'BI_UIFXDetailForged_C_SeqFX_Stop_Right::NGForgeSpark_Right' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SeqFX_Stop_Top
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SeqFX_Stop_Top final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SeqFX_Stop_Top) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SeqFX_Stop_Top");
-static_assert(sizeof(BI_UIFXDetailForged_C_SeqFX_Stop_Top) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SeqFX_Stop_Top");
-static_assert(offsetof(BI_UIFXDetailForged_C_SeqFX_Stop_Top, NGForgeSpark_Top) == 0x000000, "Member 'BI_UIFXDetailForged_C_SeqFX_Stop_Top::NGForgeSpark_Top' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_0
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_0 final
-{
-public:
-	class UNiagaraSystemWidget*                   UINS_DestroyedSpark_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_0) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_0");
-static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_0) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_0");
-static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_0, UINS_DestroyedSpark_0) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_0::UINS_DestroyedSpark_0' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_1
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_1 final
-{
-public:
-	class UNiagaraSystemWidget*                   UINS_DestroyedSpark_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_1) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_1");
-static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_1) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_1");
-static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_1, UINS_DestroyedSpark_0) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_1::UINS_DestroyedSpark_0' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_10
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_10 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_10) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_10");
-static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_10) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_10");
-static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_10, NGForgeSpark_Top) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_10::NGForgeSpark_Top' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_11
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_11 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Right;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_11) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_11");
-static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_11) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_11");
-static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_11, NGForgeSpark_Right) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_11::NGForgeSpark_Right' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_12
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_12 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Right;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_12) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_12");
-static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_12) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_12");
-static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_12, NGForgeSpark_Right) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_12::NGForgeSpark_Right' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_13
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_13 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Left;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_13) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_13");
-static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_13) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_13");
-static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_13, NGForgeSpark_Left) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_13::NGForgeSpark_Left' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_14
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_14 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Left;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_14) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_14");
-static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_14) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_14");
-static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_14, NGForgeSpark_Left) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_14::NGForgeSpark_Left' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_15
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_15 final
-{
-public:
-	class UNiagaraSystemWidget*                   UINS_DestroyedSpark_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_15) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_15");
-static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_15) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_15");
-static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_15, UINS_DestroyedSpark_0) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_15::UINS_DestroyedSpark_0' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_16
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_16 final
-{
-public:
-	class UNiagaraSystemWidget*                   UINS_DestroyedSpark_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_16) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_16");
-static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_16) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_16");
-static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_16, UINS_DestroyedSpark_0) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_16::UINS_DestroyedSpark_0' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_17
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_17 final
-{
-public:
-	class UNiagaraSystemWidget*                   UINS_DestroyedSpark_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_17) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_17");
-static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_17) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_17");
-static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_17, UINS_DestroyedSpark_0) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_17::UINS_DestroyedSpark_0' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_2
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_2 final
-{
-public:
-	class UNiagaraSystemWidget*                   UINS_DestroyedSpark_0;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_2) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_2");
-static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_2) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_2");
-static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_2, UINS_DestroyedSpark_0) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_2::UINS_DestroyedSpark_0' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_3
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_3 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Left;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_3) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_3");
-static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_3) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_3");
-static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_3, NGForgeSpark_Left) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_3::NGForgeSpark_Left' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_4
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_4 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Left;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_4) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_4");
-static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_4) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_4");
-static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_4, NGForgeSpark_Left) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_4::NGForgeSpark_Left' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_5
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_5 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Right;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_5) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_5");
-static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_5) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_5");
-static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_5, NGForgeSpark_Right) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_5::NGForgeSpark_Right' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_6
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_6 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Right;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_6) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_6");
-static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_6) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_6");
-static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_6, NGForgeSpark_Right) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_6::NGForgeSpark_Right' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_7
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_7 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_7) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_7");
-static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_7) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_7");
-static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_7, NGForgeSpark_Top) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_7::NGForgeSpark_Top' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_8
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_8 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_8) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_8");
-static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_8) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_8");
-static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_8, NGForgeSpark_Top) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_8::NGForgeSpark_Top' has a wrong offset!");
-
-// Function BI_UIFXDetailForged.BI_UIFXDetailForged_C.SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_9
-// 0x0008 (0x0008 - 0x0000)
-struct BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_9 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_9) == 0x000008, "Wrong alignment on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_9");
-static_assert(sizeof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_9) == 0x000008, "Wrong size on BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_9");
-static_assert(offsetof(BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_9, NGForgeSpark_Top) == 0x000000, "Member 'BI_UIFXDetailForged_C_SequenceEvent__ENTRYPOINTBI_UIFXDetailForged_9::NGForgeSpark_Top' has a wrong offset!");
 
 }
 

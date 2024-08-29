@@ -17,149 +17,49 @@
 namespace SDK
 {
 
-// Function BI_HuluDetail.BI_HuluDetail_C.ExecuteUbergraph_BI_HuluDetail
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BI_HuluDetail.BI_HuluDetail_C.SequenceEvent__ENTRYPOINTBI_HuluDetail_1
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UBI_HuluDetail_C::ExecuteUbergraph_BI_HuluDetail(int32 EntryPoint)
+void UBI_HuluDetail_C::SequenceEvent__ENTRYPOINTBI_HuluDetail_1()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_HuluDetail_C", "ExecuteUbergraph_BI_HuluDetail");
-
-	Params::BI_HuluDetail_C_ExecuteUbergraph_BI_HuluDetail Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_HuluDetail.BI_HuluDetail_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_HuluDetail_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_HuluDetail_C", "PreConstruct");
-
-	Params::BI_HuluDetail_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_HuluDetail.BI_HuluDetail_C.SeqAnim_DetailBg_Equiped
-// (BlueprintCallable, BlueprintEvent)
-
-void UBI_HuluDetail_C::SeqAnim_DetailBg_Equiped()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_HuluDetail_C", "SeqAnim_DetailBg_Equiped");
+		Func = Class->GetFunction("BI_HuluDetail_C", "SequenceEvent__ENTRYPOINTBI_HuluDetail_1");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BI_HuluDetail.BI_HuluDetail_C.SeqAnim_DetailBg_Upgrade
-// (BlueprintCallable, BlueprintEvent)
+// Function BI_HuluDetail.BI_HuluDetail_C.SequenceEvent__ENTRYPOINTBI_HuluDetail_0
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UBI_HuluDetail_C::SeqAnim_DetailBg_Upgrade()
+void UBI_HuluDetail_C::SequenceEvent__ENTRYPOINTBI_HuluDetail_0()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_HuluDetail_C", "SeqAnim_DetailBg_Upgrade");
+		Func = Class->GetFunction("BI_HuluDetail_C", "SequenceEvent__ENTRYPOINTBI_HuluDetail_0");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Play_Left
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UNiagaraSystemWidget*             NGForgeSpark_Left_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_HuluDetail_C::SeqFX_Play_Left(class UNiagaraSystemWidget* NGForgeSpark_Left_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_HuluDetail_C", "SeqFX_Play_Left");
-
-	Params::BI_HuluDetail_C_SeqFX_Play_Left Parms{};
-
-	Parms.NGForgeSpark_Left_0 = NGForgeSpark_Left_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Play_Right
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UNiagaraSystemWidget*             NGForgeSpark_Right_0                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_HuluDetail_C::SeqFX_Play_Right(class UNiagaraSystemWidget* NGForgeSpark_Right_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_HuluDetail_C", "SeqFX_Play_Right");
-
-	Params::BI_HuluDetail_C_SeqFX_Play_Right Parms{};
-
-	Parms.NGForgeSpark_Right_0 = NGForgeSpark_Right_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Play_Top
+// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Stop_Top
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UNiagaraSystemWidget*             NGForgeSpark_Top_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_HuluDetail_C::SeqFX_Play_Top(class UNiagaraSystemWidget* NGForgeSpark_Top_0)
+void UBI_HuluDetail_C::SeqFX_Stop_Top(class UNiagaraSystemWidget* NGForgeSpark_Top_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_HuluDetail_C", "SeqFX_Play_Top");
+		Func = Class->GetFunction("BI_HuluDetail_C", "SeqFX_Stop_Top");
 
-	Params::BI_HuluDetail_C_SeqFX_Play_Top Parms{};
+	Params::BI_HuluDetail_C_SeqFX_Stop_Top Parms{};
 
 	Parms.NGForgeSpark_Top_0 = NGForgeSpark_Top_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Stop_Left
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UNiagaraSystemWidget*             NGForgeSpark_Left_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_HuluDetail_C::SeqFX_Stop_Left(class UNiagaraSystemWidget* NGForgeSpark_Left_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_HuluDetail_C", "SeqFX_Stop_Left");
-
-	Params::BI_HuluDetail_C_SeqFX_Stop_Left Parms{};
-
-	Parms.NGForgeSpark_Left_0 = NGForgeSpark_Left_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -185,19 +85,39 @@ void UBI_HuluDetail_C::SeqFX_Stop_Right(class UNiagaraSystemWidget* NGForgeSpark
 }
 
 
-// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Stop_Top
+// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Stop_Left
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UNiagaraSystemWidget*             NGForgeSpark_Top_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UNiagaraSystemWidget*             NGForgeSpark_Left_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_HuluDetail_C::SeqFX_Stop_Top(class UNiagaraSystemWidget* NGForgeSpark_Top_0)
+void UBI_HuluDetail_C::SeqFX_Stop_Left(class UNiagaraSystemWidget* NGForgeSpark_Left_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_HuluDetail_C", "SeqFX_Stop_Top");
+		Func = Class->GetFunction("BI_HuluDetail_C", "SeqFX_Stop_Left");
 
-	Params::BI_HuluDetail_C_SeqFX_Stop_Top Parms{};
+	Params::BI_HuluDetail_C_SeqFX_Stop_Left Parms{};
+
+	Parms.NGForgeSpark_Left_0 = NGForgeSpark_Left_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Play_Top
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UNiagaraSystemWidget*             NGForgeSpark_Top_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_HuluDetail_C::SeqFX_Play_Top(class UNiagaraSystemWidget* NGForgeSpark_Top_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_HuluDetail_C", "SeqFX_Play_Top");
+
+	Params::BI_HuluDetail_C_SeqFX_Play_Top Parms{};
 
 	Parms.NGForgeSpark_Top_0 = NGForgeSpark_Top_0;
 
@@ -205,31 +125,111 @@ void UBI_HuluDetail_C::SeqFX_Stop_Top(class UNiagaraSystemWidget* NGForgeSpark_T
 }
 
 
-// Function BI_HuluDetail.BI_HuluDetail_C.SequenceEvent__ENTRYPOINTBI_HuluDetail_0
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Play_Right
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UNiagaraSystemWidget*             NGForgeSpark_Right_0                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_HuluDetail_C::SequenceEvent__ENTRYPOINTBI_HuluDetail_0()
+void UBI_HuluDetail_C::SeqFX_Play_Right(class UNiagaraSystemWidget* NGForgeSpark_Right_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_HuluDetail_C", "SequenceEvent__ENTRYPOINTBI_HuluDetail_0");
+		Func = Class->GetFunction("BI_HuluDetail_C", "SeqFX_Play_Right");
+
+	Params::BI_HuluDetail_C_SeqFX_Play_Right Parms{};
+
+	Parms.NGForgeSpark_Right_0 = NGForgeSpark_Right_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_HuluDetail.BI_HuluDetail_C.SeqFX_Play_Left
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UNiagaraSystemWidget*             NGForgeSpark_Left_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_HuluDetail_C::SeqFX_Play_Left(class UNiagaraSystemWidget* NGForgeSpark_Left_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_HuluDetail_C", "SeqFX_Play_Left");
+
+	Params::BI_HuluDetail_C_SeqFX_Play_Left Parms{};
+
+	Parms.NGForgeSpark_Left_0 = NGForgeSpark_Left_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_HuluDetail.BI_HuluDetail_C.SeqAnim_DetailBg_Upgrade
+// (BlueprintCallable, BlueprintEvent)
+
+void UBI_HuluDetail_C::SeqAnim_DetailBg_Upgrade()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_HuluDetail_C", "SeqAnim_DetailBg_Upgrade");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BI_HuluDetail.BI_HuluDetail_C.SequenceEvent__ENTRYPOINTBI_HuluDetail_1
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BI_HuluDetail.BI_HuluDetail_C.SeqAnim_DetailBg_Equiped
+// (BlueprintCallable, BlueprintEvent)
 
-void UBI_HuluDetail_C::SequenceEvent__ENTRYPOINTBI_HuluDetail_1()
+void UBI_HuluDetail_C::SeqAnim_DetailBg_Equiped()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_HuluDetail_C", "SequenceEvent__ENTRYPOINTBI_HuluDetail_1");
+		Func = Class->GetFunction("BI_HuluDetail_C", "SeqAnim_DetailBg_Equiped");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_HuluDetail.BI_HuluDetail_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_HuluDetail_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_HuluDetail_C", "PreConstruct");
+
+	Params::BI_HuluDetail_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_HuluDetail.BI_HuluDetail_C.ExecuteUbergraph_BI_HuluDetail
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_HuluDetail_C::ExecuteUbergraph_BI_HuluDetail(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_HuluDetail_C", "ExecuteUbergraph_BI_HuluDetail");
+
+	Params::BI_HuluDetail_C_ExecuteUbergraph_BI_HuluDetail Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

@@ -43,11 +43,11 @@ public:
 	class UNiagaraSystemWidget*                   UINS_Config;                                       // 0x05F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_BI_GearItem_Tab(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
-	void SeqFX_PlayConfig(class UNiagaraSystemWidget* UINS_Config_0);
 	void SequenceEvent__ENTRYPOINTBI_GearItem_Tab_0();
+	void SeqFX_PlayConfig(class UNiagaraSystemWidget* UINS_Config_0);
+	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_BI_GearItem_Tab(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

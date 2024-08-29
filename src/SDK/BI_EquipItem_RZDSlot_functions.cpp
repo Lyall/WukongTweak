@@ -17,17 +17,23 @@
 namespace SDK
 {
 
-// Function BI_EquipItem_RZDSlot.BI_EquipItem_RZDSlot_C.Construct
+// Function BI_EquipItem_RZDSlot.BI_EquipItem_RZDSlot_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_EquipItem_RZDSlot_C::Construct()
+void UBI_EquipItem_RZDSlot_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_EquipItem_RZDSlot_C", "Construct");
+		Func = Class->GetFunction("BI_EquipItem_RZDSlot_C", "PreConstruct");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BI_EquipItem_RZDSlot_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -51,23 +57,17 @@ void UBI_EquipItem_RZDSlot_C::ExecuteUbergraph_BI_EquipItem_RZDSlot(int32 EntryP
 }
 
 
-// Function BI_EquipItem_RZDSlot.BI_EquipItem_RZDSlot_C.PreConstruct
+// Function BI_EquipItem_RZDSlot.BI_EquipItem_RZDSlot_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_EquipItem_RZDSlot_C::PreConstruct(bool IsDesignTime)
+void UBI_EquipItem_RZDSlot_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_EquipItem_RZDSlot_C", "PreConstruct");
+		Func = Class->GetFunction("BI_EquipItem_RZDSlot_C", "Construct");
 
-	Params::BI_EquipItem_RZDSlot_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

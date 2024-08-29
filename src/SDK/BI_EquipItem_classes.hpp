@@ -42,13 +42,13 @@ public:
 	class UGSImage*                               MarkerBase;                                        // 0x05E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void BP_OnEntryReleased();
-	void BP_OnItemExpansionChanged(bool bIsExpanded);
-	void BP_OnItemSelectionChanged(bool bIsSelected);
-	void Construct();
-	void ExecuteUbergraph_BI_EquipItem(int32 EntryPoint);
-	void OnListItemObjectSet(class UObject* ListItemObject);
 	void PreConstruct(bool IsDesignTime);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void ExecuteUbergraph_BI_EquipItem(int32 EntryPoint);
+	void Construct();
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void BP_OnItemExpansionChanged(bool bIsExpanded);
+	void BP_OnEntryReleased();
 
 public:
 	static class UClass* StaticClass()

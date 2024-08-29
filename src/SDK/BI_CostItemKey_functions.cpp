@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function BI_CostItemKey.BI_CostItemKey_C.ExecuteUbergraph_BI_CostItemKey
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_CostItemKey_C::ExecuteUbergraph_BI_CostItemKey(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_CostItemKey_C", "ExecuteUbergraph_BI_CostItemKey");
-
-	Params::BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BI_CostItemKey.BI_CostItemKey_C.InitTxt
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -73,6 +53,46 @@ void UBI_CostItemKey_C::InitTxt(class UTextBlock* TxtObj, const struct FAnchors&
 }
 
 
+// Function BI_CostItemKey.BI_CostItemKey_C.ExecuteUbergraph_BI_CostItemKey
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_CostItemKey_C::ExecuteUbergraph_BI_CostItemKey(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_CostItemKey_C", "ExecuteUbergraph_BI_CostItemKey");
+
+	Params::BI_CostItemKey_C_ExecuteUbergraph_BI_CostItemKey Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_CostItemKey.BI_CostItemKey_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_CostItemKey_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_CostItemKey_C", "PreConstruct");
+
+	Params::BI_CostItemKey_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BI_CostItemKey.BI_CostItemKey_C.InitUI
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -94,26 +114,6 @@ void UBI_CostItemKey_C::InitUI(class UImage* Obj, const struct FSlateBrush& Brus
 	Parms.Brush = std::move(Brush);
 	Parms.Size = std::move(Size);
 	Parms.Pos = std::move(Pos);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_CostItemKey.BI_CostItemKey_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_CostItemKey_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_CostItemKey_C", "PreConstruct");
-
-	Params::BI_CostItemKey_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

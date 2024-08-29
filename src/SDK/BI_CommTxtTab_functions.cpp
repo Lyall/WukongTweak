@@ -17,17 +17,23 @@
 namespace SDK
 {
 
-// Function BI_CommTxtTab.BI_CommTxtTab_C.Construct
+// Function BI_CommTxtTab.BI_CommTxtTab_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_CommTxtTab_C::Construct()
+void UBI_CommTxtTab_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_CommTxtTab_C", "Construct");
+		Func = Class->GetFunction("BI_CommTxtTab_C", "PreConstruct");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BI_CommTxtTab_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -51,23 +57,17 @@ void UBI_CommTxtTab_C::ExecuteUbergraph_BI_CommTxtTab(int32 EntryPoint)
 }
 
 
-// Function BI_CommTxtTab.BI_CommTxtTab_C.PreConstruct
+// Function BI_CommTxtTab.BI_CommTxtTab_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_CommTxtTab_C::PreConstruct(bool IsDesignTime)
+void UBI_CommTxtTab_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_CommTxtTab_C", "PreConstruct");
+		Func = Class->GetFunction("BI_CommTxtTab_C", "Construct");
 
-	Params::BI_CommTxtTab_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

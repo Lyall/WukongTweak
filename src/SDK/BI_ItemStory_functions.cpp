@@ -17,129 +17,23 @@
 namespace SDK
 {
 
-// Function BI_ItemStory.BI_ItemStory_C.Construct
+// Function BI_ItemStory.BI_ItemStory_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_ItemStory_C::Construct()
+void UBI_ItemStory_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_ItemStory_C", "Construct");
+		Func = Class->GetFunction("BI_ItemStory_C", "PreConstruct");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::BI_ItemStory_C_PreConstruct Parms{};
 
+	Parms.IsDesignTime = IsDesignTime;
 
-// Function BI_ItemStory.BI_ItemStory_C.EventAnimHide_Play
-// (BlueprintCallable, BlueprintEvent)
-
-void UBI_ItemStory_C::EventAnimHide_Play()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_ItemStory_C", "EventAnimHide_Play");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_ItemStory.BI_ItemStory_C.EventAnimHide_Stop
-// (BlueprintCallable, BlueprintEvent)
-
-void UBI_ItemStory_C::EventAnimHide_Stop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_ItemStory_C", "EventAnimHide_Stop");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_ItemStory.BI_ItemStory_C.EventAnimObsFold_Play
-// (BlueprintCallable, BlueprintEvent)
-
-void UBI_ItemStory_C::EventAnimObsFold_Play()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_ItemStory_C", "EventAnimObsFold_Play");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_ItemStory.BI_ItemStory_C.EventAnimObsFold_Stop
-// (BlueprintCallable, BlueprintEvent)
-
-void UBI_ItemStory_C::EventAnimObsFold_Stop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_ItemStory_C", "EventAnimObsFold_Stop");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_ItemStory.BI_ItemStory_C.EventAnimObsUnfold_Play
-// (BlueprintCallable, BlueprintEvent)
-
-void UBI_ItemStory_C::EventAnimObsUnfold_Play()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_ItemStory_C", "EventAnimObsUnfold_Play");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_ItemStory.BI_ItemStory_C.EventAnimObsUnfold_Stop
-// (BlueprintCallable, BlueprintEvent)
-
-void UBI_ItemStory_C::EventAnimObsUnfold_Stop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_ItemStory_C", "EventAnimObsUnfold_Stop");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_ItemStory.BI_ItemStory_C.EventAnimShow_Play
-// (BlueprintCallable, BlueprintEvent)
-
-void UBI_ItemStory_C::EventAnimShow_Play()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_ItemStory_C", "EventAnimShow_Play");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_ItemStory.BI_ItemStory_C.EventAnimShow_Stop
-// (BlueprintCallable, BlueprintEvent)
-
-void UBI_ItemStory_C::EventAnimShow_Stop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_ItemStory_C", "EventAnimShow_Stop");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -163,23 +57,129 @@ void UBI_ItemStory_C::ExecuteUbergraph_BI_ItemStory(int32 EntryPoint)
 }
 
 
-// Function BI_ItemStory.BI_ItemStory_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BI_ItemStory.BI_ItemStory_C.EventAnimShow_Stop
+// (BlueprintCallable, BlueprintEvent)
 
-void UBI_ItemStory_C::PreConstruct(bool IsDesignTime)
+void UBI_ItemStory_C::EventAnimShow_Stop()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_ItemStory_C", "PreConstruct");
+		Func = Class->GetFunction("BI_ItemStory_C", "EventAnimShow_Stop");
 
-	Params::BI_ItemStory_C_PreConstruct Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.IsDesignTime = IsDesignTime;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function BI_ItemStory.BI_ItemStory_C.EventAnimShow_Play
+// (BlueprintCallable, BlueprintEvent)
+
+void UBI_ItemStory_C::EventAnimShow_Play()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_ItemStory_C", "EventAnimShow_Play");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_ItemStory.BI_ItemStory_C.EventAnimObsUnfold_Stop
+// (BlueprintCallable, BlueprintEvent)
+
+void UBI_ItemStory_C::EventAnimObsUnfold_Stop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_ItemStory_C", "EventAnimObsUnfold_Stop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_ItemStory.BI_ItemStory_C.EventAnimObsUnfold_Play
+// (BlueprintCallable, BlueprintEvent)
+
+void UBI_ItemStory_C::EventAnimObsUnfold_Play()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_ItemStory_C", "EventAnimObsUnfold_Play");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_ItemStory.BI_ItemStory_C.EventAnimObsFold_Stop
+// (BlueprintCallable, BlueprintEvent)
+
+void UBI_ItemStory_C::EventAnimObsFold_Stop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_ItemStory_C", "EventAnimObsFold_Stop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_ItemStory.BI_ItemStory_C.EventAnimObsFold_Play
+// (BlueprintCallable, BlueprintEvent)
+
+void UBI_ItemStory_C::EventAnimObsFold_Play()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_ItemStory_C", "EventAnimObsFold_Play");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_ItemStory.BI_ItemStory_C.EventAnimHide_Stop
+// (BlueprintCallable, BlueprintEvent)
+
+void UBI_ItemStory_C::EventAnimHide_Stop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_ItemStory_C", "EventAnimHide_Stop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_ItemStory.BI_ItemStory_C.EventAnimHide_Play
+// (BlueprintCallable, BlueprintEvent)
+
+void UBI_ItemStory_C::EventAnimHide_Play()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_ItemStory_C", "EventAnimHide_Play");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_ItemStory.BI_ItemStory_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UBI_ItemStory_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_ItemStory_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

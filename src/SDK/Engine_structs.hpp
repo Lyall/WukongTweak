@@ -6661,7 +6661,7 @@ static_assert(offsetof(FDebugFloatHistory, bAutoAdjustMinMax) == 0x00001C, "Memb
 
 // ScriptStruct Engine.AnimBlueprintConstantData
 // 0x0001 (0x0001 - 0x0000)
-struct FAnimBlueprintConstantData final
+struct FAnimBlueprintConstantData
 {
 public:
 	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -11492,7 +11492,7 @@ static_assert(sizeof(FAnimBlueprintDebugData) == 0x000001, "Wrong size on FAnimB
 
 // ScriptStruct Engine.AnimBlueprintMutableData
 // 0x0001 (0x0001 - 0x0000)
-struct FAnimBlueprintMutableData final
+struct FAnimBlueprintMutableData
 {
 public:
 	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])

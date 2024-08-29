@@ -45,17 +45,17 @@ public:
 	class UImage*                                 UIFX_ForgingLight;                                 // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_BI_DetailPageSwitcher(int32 EntryPoint);
-	void FXTest();
-	void NGForgeSpark_Top_Event_0(class UNiagaraSystemWidget* NGForgeSpark_Top);
-	void NGForgeSpark_Top_Event_1(class UNiagaraSystemWidget* NGForgeSpark_Top);
-	void PreConstruct(bool IsDesignTime);
-	void SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_0(class UNiagaraSystemWidget* NGForgeSpark_Top);
-	void SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_1(class UNiagaraSystemWidget* NGForgeSpark_Top);
-	void SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_2(class UNiagaraSystemWidget* NGForgeSpark_Top);
-	void SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_3(class UNiagaraSystemWidget* NGForgeSpark_Top);
 	void SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_4(class UNiagaraSystemWidget* NGForgeSpark_Top);
+	void SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_3(class UNiagaraSystemWidget* NGForgeSpark_Top);
+	void SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_2(class UNiagaraSystemWidget* NGForgeSpark_Top);
+	void SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_1(class UNiagaraSystemWidget* NGForgeSpark_Top);
+	void SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_0(class UNiagaraSystemWidget* NGForgeSpark_Top);
+	void PreConstruct(bool IsDesignTime);
+	void NGForgeSpark_Top_Event_1(class UNiagaraSystemWidget* NGForgeSpark_Top);
+	void NGForgeSpark_Top_Event_0(class UNiagaraSystemWidget* NGForgeSpark_Top);
+	void FXTest();
+	void ExecuteUbergraph_BI_DetailPageSwitcher(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

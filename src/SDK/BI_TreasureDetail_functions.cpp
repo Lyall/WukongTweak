@@ -17,23 +17,31 @@
 namespace SDK
 {
 
-// Function BI_TreasureDetail.BI_TreasureDetail_C.ExecuteUbergraph_BI_TreasureDetail
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BI_TreasureDetail.BI_TreasureDetail_C.SequenceEvent__ENTRYPOINTBI_TreasureDetail_0
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UBI_TreasureDetail_C::ExecuteUbergraph_BI_TreasureDetail(int32 EntryPoint)
+void UBI_TreasureDetail_C::SequenceEvent__ENTRYPOINTBI_TreasureDetail_0()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_TreasureDetail_C", "ExecuteUbergraph_BI_TreasureDetail");
+		Func = Class->GetFunction("BI_TreasureDetail_C", "SequenceEvent__ENTRYPOINTBI_TreasureDetail_0");
 
-	Params::BI_TreasureDetail_C_ExecuteUbergraph_BI_TreasureDetail Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function BI_TreasureDetail.BI_TreasureDetail_C.SeqAnim_DetailBg_Equiped
+// (BlueprintCallable, BlueprintEvent)
+
+void UBI_TreasureDetail_C::SeqAnim_DetailBg_Equiped()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_TreasureDetail_C", "SeqAnim_DetailBg_Equiped");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -57,31 +65,23 @@ void UBI_TreasureDetail_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function BI_TreasureDetail.BI_TreasureDetail_C.SeqAnim_DetailBg_Equiped
-// (BlueprintCallable, BlueprintEvent)
+// Function BI_TreasureDetail.BI_TreasureDetail_C.ExecuteUbergraph_BI_TreasureDetail
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_TreasureDetail_C::SeqAnim_DetailBg_Equiped()
+void UBI_TreasureDetail_C::ExecuteUbergraph_BI_TreasureDetail(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_TreasureDetail_C", "SeqAnim_DetailBg_Equiped");
+		Func = Class->GetFunction("BI_TreasureDetail_C", "ExecuteUbergraph_BI_TreasureDetail");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::BI_TreasureDetail_C_ExecuteUbergraph_BI_TreasureDetail Parms{};
 
+	Parms.EntryPoint = EntryPoint;
 
-// Function BI_TreasureDetail.BI_TreasureDetail_C.SequenceEvent__ENTRYPOINTBI_TreasureDetail_0
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBI_TreasureDetail_C::SequenceEvent__ENTRYPOINTBI_TreasureDetail_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_TreasureDetail_C", "SequenceEvent__ENTRYPOINTBI_TreasureDetail_0");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

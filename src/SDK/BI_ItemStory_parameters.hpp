@@ -16,6 +16,17 @@
 namespace SDK::Params
 {
 
+// Function BI_ItemStory.BI_ItemStory_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct BI_ItemStory_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_ItemStory_C_PreConstruct) == 0x000001, "Wrong alignment on BI_ItemStory_C_PreConstruct");
+static_assert(sizeof(BI_ItemStory_C_PreConstruct) == 0x000001, "Wrong size on BI_ItemStory_C_PreConstruct");
+static_assert(offsetof(BI_ItemStory_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_ItemStory_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
 // Function BI_ItemStory.BI_ItemStory_C.ExecuteUbergraph_BI_ItemStory
 // 0x0040 (0x0040 - 0x0000)
 struct BI_ItemStory_C_ExecuteUbergraph_BI_ItemStory final
@@ -39,17 +50,6 @@ static_assert(offsetof(BI_ItemStory_C_ExecuteUbergraph_BI_ItemStory, CallFunc_Pl
 static_assert(offsetof(BI_ItemStory_C_ExecuteUbergraph_BI_ItemStory, CallFunc_PlayAnimation_ReturnValue_1) == 0x000028, "Member 'BI_ItemStory_C_ExecuteUbergraph_BI_ItemStory::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BI_ItemStory_C_ExecuteUbergraph_BI_ItemStory, CallFunc_PlayAnimation_ReturnValue_2) == 0x000030, "Member 'BI_ItemStory_C_ExecuteUbergraph_BI_ItemStory::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
 static_assert(offsetof(BI_ItemStory_C_ExecuteUbergraph_BI_ItemStory, CallFunc_PlayAnimation_ReturnValue_3) == 0x000038, "Member 'BI_ItemStory_C_ExecuteUbergraph_BI_ItemStory::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-
-// Function BI_ItemStory.BI_ItemStory_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct BI_ItemStory_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_ItemStory_C_PreConstruct) == 0x000001, "Wrong alignment on BI_ItemStory_C_PreConstruct");
-static_assert(sizeof(BI_ItemStory_C_PreConstruct) == 0x000001, "Wrong size on BI_ItemStory_C_PreConstruct");
-static_assert(offsetof(BI_ItemStory_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_ItemStory_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }
 

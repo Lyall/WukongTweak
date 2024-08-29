@@ -5751,7 +5751,7 @@ static_assert(offsetof(UGSEQG_Circle, RightAngle) == 0x0000E4, "Member 'UGSEQG_C
 
 // Class b1.GSEQG_Donut
 // 0x0020 (0x00F0 - 0x00D0)
-class UGSEQG_Donut final : public UGSEQG_SimpleTeleport
+class UGSEQG_Donut : public UGSEQG_SimpleTeleport
 {
 public:
 	float                                         InnerRadius;                                       // 0x00D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -5786,7 +5786,7 @@ static_assert(offsetof(UGSEQG_Donut, RightAngle) == 0x0000E8, "Member 'UGSEQG_Do
 
 // Class b1.GSEQG_SimpleGrid
 // 0x0008 (0x00D8 - 0x00D0)
-class UGSEQG_SimpleGrid final : public UGSEQG_SimpleTeleport
+class UGSEQG_SimpleGrid : public UGSEQG_SimpleTeleport
 {
 public:
 	float                                         GridHalfSize;                                      // 0x00D0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)

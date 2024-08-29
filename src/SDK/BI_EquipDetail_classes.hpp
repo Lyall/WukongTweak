@@ -73,33 +73,33 @@ public:
 
 public:
 	void ExecuteUbergraph_BI_EquipDetail(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
-	void SeqAnim_DetailBg_Destroy();
-	void SeqAnim_DetailBg_Equiped();
-	void SeqAnim_DetailBg_Forged();
-	void SeqAnim_DetailBg_Upgrade();
-	void SeqEvent_AnimForged(const class FString& EventName);
-	void SeqEvent_AnimUpgradeMax(const class FString& NewParam);
-	void SeqEvent_AnimWeaponUnlock(const class FString& EventName);
-	void SeqFX_Play_Destroyed(class UNiagaraSystemWidget* UINS_DestroyedSpark);
-	void SeqFX_Play_Left(class UNiagaraSystemWidget* NGForgeSpark_Left);
-	void SeqFX_Play_Right(class UNiagaraSystemWidget* NGForgeSpark_Right);
-	void SeqFX_Play_Top(class UNiagaraSystemWidget* NGForgeSpark_Top);
-	void SeqFX_Stop_Destroyed(class UNiagaraSystemWidget* UINS_DestroyedSpark);
-	void SeqFX_Stop_Left(class UNiagaraSystemWidget* NGForgeSpark_Left);
-	void SeqFX_Stop_Right(class UNiagaraSystemWidget* NGForgeSpark_Right);
-	void SeqFX_Stop_Top(class UNiagaraSystemWidget* NGForgeSpark_Top);
-	void SequenceEvent__ENTRYPOINTBI_EquipDetail_0();
-	void SequenceEvent__ENTRYPOINTBI_EquipDetail_1();
-	void SequenceEvent__ENTRYPOINTBI_EquipDetail_10();
-	void SequenceEvent__ENTRYPOINTBI_EquipDetail_2();
-	void SequenceEvent__ENTRYPOINTBI_EquipDetail_3();
-	void SequenceEvent__ENTRYPOINTBI_EquipDetail_4();
-	void SequenceEvent__ENTRYPOINTBI_EquipDetail_5();
-	void SequenceEvent__ENTRYPOINTBI_EquipDetail_6();
-	void SequenceEvent__ENTRYPOINTBI_EquipDetail_7();
-	void SequenceEvent__ENTRYPOINTBI_EquipDetail_8();
 	void SequenceEvent__ENTRYPOINTBI_EquipDetail_9();
+	void SequenceEvent__ENTRYPOINTBI_EquipDetail_8();
+	void SequenceEvent__ENTRYPOINTBI_EquipDetail_7();
+	void SequenceEvent__ENTRYPOINTBI_EquipDetail_6();
+	void SequenceEvent__ENTRYPOINTBI_EquipDetail_5();
+	void SequenceEvent__ENTRYPOINTBI_EquipDetail_4();
+	void SequenceEvent__ENTRYPOINTBI_EquipDetail_3();
+	void SequenceEvent__ENTRYPOINTBI_EquipDetail_2();
+	void SequenceEvent__ENTRYPOINTBI_EquipDetail_10();
+	void SequenceEvent__ENTRYPOINTBI_EquipDetail_1();
+	void SequenceEvent__ENTRYPOINTBI_EquipDetail_0();
+	void SeqFX_Stop_Top(class UNiagaraSystemWidget* NGForgeSpark_Top);
+	void SeqFX_Stop_Right(class UNiagaraSystemWidget* NGForgeSpark_Right);
+	void SeqFX_Stop_Left(class UNiagaraSystemWidget* NGForgeSpark_Left);
+	void SeqFX_Stop_Destroyed(class UNiagaraSystemWidget* UINS_DestroyedSpark);
+	void SeqFX_Play_Top(class UNiagaraSystemWidget* NGForgeSpark_Top);
+	void SeqFX_Play_Right(class UNiagaraSystemWidget* NGForgeSpark_Right);
+	void SeqFX_Play_Left(class UNiagaraSystemWidget* NGForgeSpark_Left);
+	void SeqFX_Play_Destroyed(class UNiagaraSystemWidget* UINS_DestroyedSpark);
+	void SeqEvent_AnimWeaponUnlock(const class FString& EventName);
+	void SeqEvent_AnimUpgradeMax(const class FString& NewParam);
+	void SeqEvent_AnimForged(const class FString& EventName);
+	void SeqAnim_DetailBg_Upgrade();
+	void SeqAnim_DetailBg_Forged();
+	void SeqAnim_DetailBg_Equiped();
+	void SeqAnim_DetailBg_Destroy();
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

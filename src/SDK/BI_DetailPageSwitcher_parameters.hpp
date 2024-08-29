@@ -14,6 +14,94 @@
 namespace SDK::Params
 {
 
+// Function BI_DetailPageSwitcher.BI_DetailPageSwitcher_C.SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_4
+// 0x0008 (0x0008 - 0x0000)
+struct BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_4 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_4) == 0x000008, "Wrong alignment on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_4");
+static_assert(sizeof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_4) == 0x000008, "Wrong size on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_4");
+static_assert(offsetof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_4, NGForgeSpark_Top) == 0x000000, "Member 'BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_4::NGForgeSpark_Top' has a wrong offset!");
+
+// Function BI_DetailPageSwitcher.BI_DetailPageSwitcher_C.SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_3
+// 0x0008 (0x0008 - 0x0000)
+struct BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_3 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_3) == 0x000008, "Wrong alignment on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_3");
+static_assert(sizeof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_3) == 0x000008, "Wrong size on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_3");
+static_assert(offsetof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_3, NGForgeSpark_Top) == 0x000000, "Member 'BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_3::NGForgeSpark_Top' has a wrong offset!");
+
+// Function BI_DetailPageSwitcher.BI_DetailPageSwitcher_C.SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_2
+// 0x0008 (0x0008 - 0x0000)
+struct BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_2 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_2) == 0x000008, "Wrong alignment on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_2");
+static_assert(sizeof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_2) == 0x000008, "Wrong size on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_2");
+static_assert(offsetof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_2, NGForgeSpark_Top) == 0x000000, "Member 'BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_2::NGForgeSpark_Top' has a wrong offset!");
+
+// Function BI_DetailPageSwitcher.BI_DetailPageSwitcher_C.SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_1
+// 0x0008 (0x0008 - 0x0000)
+struct BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_1 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_1) == 0x000008, "Wrong alignment on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_1");
+static_assert(sizeof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_1) == 0x000008, "Wrong size on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_1");
+static_assert(offsetof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_1, NGForgeSpark_Top) == 0x000000, "Member 'BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_1::NGForgeSpark_Top' has a wrong offset!");
+
+// Function BI_DetailPageSwitcher.BI_DetailPageSwitcher_C.SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_0
+// 0x0008 (0x0008 - 0x0000)
+struct BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_0 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_0) == 0x000008, "Wrong alignment on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_0");
+static_assert(sizeof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_0) == 0x000008, "Wrong size on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_0");
+static_assert(offsetof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_0, NGForgeSpark_Top) == 0x000000, "Member 'BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_0::NGForgeSpark_Top' has a wrong offset!");
+
+// Function BI_DetailPageSwitcher.BI_DetailPageSwitcher_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct BI_DetailPageSwitcher_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_DetailPageSwitcher_C_PreConstruct) == 0x000001, "Wrong alignment on BI_DetailPageSwitcher_C_PreConstruct");
+static_assert(sizeof(BI_DetailPageSwitcher_C_PreConstruct) == 0x000001, "Wrong size on BI_DetailPageSwitcher_C_PreConstruct");
+static_assert(offsetof(BI_DetailPageSwitcher_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_DetailPageSwitcher_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
+// Function BI_DetailPageSwitcher.BI_DetailPageSwitcher_C.NGForgeSpark_Top_Event_1
+// 0x0008 (0x0008 - 0x0000)
+struct BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_1 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_1) == 0x000008, "Wrong alignment on BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_1");
+static_assert(sizeof(BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_1) == 0x000008, "Wrong size on BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_1");
+static_assert(offsetof(BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_1, NGForgeSpark_Top) == 0x000000, "Member 'BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_1::NGForgeSpark_Top' has a wrong offset!");
+
+// Function BI_DetailPageSwitcher.BI_DetailPageSwitcher_C.NGForgeSpark_Top_Event_0
+// 0x0008 (0x0008 - 0x0000)
+struct BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_0 final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_0) == 0x000008, "Wrong alignment on BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_0");
+static_assert(sizeof(BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_0) == 0x000008, "Wrong size on BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_0");
+static_assert(offsetof(BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_0, NGForgeSpark_Top) == 0x000000, "Member 'BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_0::NGForgeSpark_Top' has a wrong offset!");
+
 // Function BI_DetailPageSwitcher.BI_DetailPageSwitcher_C.ExecuteUbergraph_BI_DetailPageSwitcher
 // 0x0020 (0x0020 - 0x0000)
 struct BI_DetailPageSwitcher_C_ExecuteUbergraph_BI_DetailPageSwitcher final
@@ -31,94 +119,6 @@ static_assert(offsetof(BI_DetailPageSwitcher_C_ExecuteUbergraph_BI_DetailPageSwi
 static_assert(offsetof(BI_DetailPageSwitcher_C_ExecuteUbergraph_BI_DetailPageSwitcher, K2Node_CustomEvent_NGForgeSpark_Top_1) == 0x000008, "Member 'BI_DetailPageSwitcher_C_ExecuteUbergraph_BI_DetailPageSwitcher::K2Node_CustomEvent_NGForgeSpark_Top_1' has a wrong offset!");
 static_assert(offsetof(BI_DetailPageSwitcher_C_ExecuteUbergraph_BI_DetailPageSwitcher, K2Node_CustomEvent_NGForgeSpark_Top) == 0x000010, "Member 'BI_DetailPageSwitcher_C_ExecuteUbergraph_BI_DetailPageSwitcher::K2Node_CustomEvent_NGForgeSpark_Top' has a wrong offset!");
 static_assert(offsetof(BI_DetailPageSwitcher_C_ExecuteUbergraph_BI_DetailPageSwitcher, K2Node_Event_IsDesignTime) == 0x000018, "Member 'BI_DetailPageSwitcher_C_ExecuteUbergraph_BI_DetailPageSwitcher::K2Node_Event_IsDesignTime' has a wrong offset!");
-
-// Function BI_DetailPageSwitcher.BI_DetailPageSwitcher_C.NGForgeSpark_Top_Event_0
-// 0x0008 (0x0008 - 0x0000)
-struct BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_0 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_0) == 0x000008, "Wrong alignment on BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_0");
-static_assert(sizeof(BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_0) == 0x000008, "Wrong size on BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_0");
-static_assert(offsetof(BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_0, NGForgeSpark_Top) == 0x000000, "Member 'BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_0::NGForgeSpark_Top' has a wrong offset!");
-
-// Function BI_DetailPageSwitcher.BI_DetailPageSwitcher_C.NGForgeSpark_Top_Event_1
-// 0x0008 (0x0008 - 0x0000)
-struct BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_1 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_1) == 0x000008, "Wrong alignment on BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_1");
-static_assert(sizeof(BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_1) == 0x000008, "Wrong size on BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_1");
-static_assert(offsetof(BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_1, NGForgeSpark_Top) == 0x000000, "Member 'BI_DetailPageSwitcher_C_NGForgeSpark_Top_Event_1::NGForgeSpark_Top' has a wrong offset!");
-
-// Function BI_DetailPageSwitcher.BI_DetailPageSwitcher_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct BI_DetailPageSwitcher_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_DetailPageSwitcher_C_PreConstruct) == 0x000001, "Wrong alignment on BI_DetailPageSwitcher_C_PreConstruct");
-static_assert(sizeof(BI_DetailPageSwitcher_C_PreConstruct) == 0x000001, "Wrong size on BI_DetailPageSwitcher_C_PreConstruct");
-static_assert(offsetof(BI_DetailPageSwitcher_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_DetailPageSwitcher_C_PreConstruct::IsDesignTime' has a wrong offset!");
-
-// Function BI_DetailPageSwitcher.BI_DetailPageSwitcher_C.SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_0
-// 0x0008 (0x0008 - 0x0000)
-struct BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_0 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_0) == 0x000008, "Wrong alignment on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_0");
-static_assert(sizeof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_0) == 0x000008, "Wrong size on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_0");
-static_assert(offsetof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_0, NGForgeSpark_Top) == 0x000000, "Member 'BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_0::NGForgeSpark_Top' has a wrong offset!");
-
-// Function BI_DetailPageSwitcher.BI_DetailPageSwitcher_C.SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_1
-// 0x0008 (0x0008 - 0x0000)
-struct BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_1 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_1) == 0x000008, "Wrong alignment on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_1");
-static_assert(sizeof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_1) == 0x000008, "Wrong size on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_1");
-static_assert(offsetof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_1, NGForgeSpark_Top) == 0x000000, "Member 'BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_1::NGForgeSpark_Top' has a wrong offset!");
-
-// Function BI_DetailPageSwitcher.BI_DetailPageSwitcher_C.SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_2
-// 0x0008 (0x0008 - 0x0000)
-struct BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_2 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_2) == 0x000008, "Wrong alignment on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_2");
-static_assert(sizeof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_2) == 0x000008, "Wrong size on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_2");
-static_assert(offsetof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_2, NGForgeSpark_Top) == 0x000000, "Member 'BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_2::NGForgeSpark_Top' has a wrong offset!");
-
-// Function BI_DetailPageSwitcher.BI_DetailPageSwitcher_C.SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_3
-// 0x0008 (0x0008 - 0x0000)
-struct BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_3 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_3) == 0x000008, "Wrong alignment on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_3");
-static_assert(sizeof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_3) == 0x000008, "Wrong size on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_3");
-static_assert(offsetof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_3, NGForgeSpark_Top) == 0x000000, "Member 'BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_3::NGForgeSpark_Top' has a wrong offset!");
-
-// Function BI_DetailPageSwitcher.BI_DetailPageSwitcher_C.SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_4
-// 0x0008 (0x0008 - 0x0000)
-struct BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_4 final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_4) == 0x000008, "Wrong alignment on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_4");
-static_assert(sizeof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_4) == 0x000008, "Wrong size on BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_4");
-static_assert(offsetof(BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_4, NGForgeSpark_Top) == 0x000000, "Member 'BI_DetailPageSwitcher_C_SequenceEvent__ENTRYPOINTBI_DetailPageSwitcher_4::NGForgeSpark_Top' has a wrong offset!");
 
 }
 

@@ -27,8 +27,8 @@ public:
 	class UNamedSlot*                             Child;                                             // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BI_ScrollBoxNew(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_BI_ScrollBoxNew(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

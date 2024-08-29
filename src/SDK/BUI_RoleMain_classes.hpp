@@ -36,8 +36,8 @@ public:
 	class UImage*                                 ImgTabBg;                                          // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
 	void ExecuteUbergraph_BUI_RoleMain(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

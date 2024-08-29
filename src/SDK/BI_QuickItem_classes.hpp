@@ -45,17 +45,17 @@ public:
 	class UNiagaraSystemWidget*                   UINS_Config;                                       // 0x0600(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void BP_OnEntryReleased();
-	void BP_OnItemExpansionChanged(bool bIsExpanded);
-	void BP_OnItemSelectionChanged(bool bIsSelected);
-	void Construct();
-	void ExecuteUbergraph_BI_QuickItem(int32 EntryPoint);
-	void OnListItemObjectSet(class UObject* ListItemObject);
-	void PreConstruct(bool IsDesignTime);
-	void SeqFX_PlayConfig(class UNiagaraSystemWidget* UINS_Config_0);
-	void SeqFX_StopConfig(class UNiagaraSystemWidget* UINS_Config_0);
-	void SequenceEvent__ENTRYPOINTBI_QuickItem_0(class UNiagaraSystemWidget* UINS_Config_0);
 	void SequenceEvent__ENTRYPOINTBI_QuickItem_1(class UNiagaraSystemWidget* UINS_Config_0);
+	void SequenceEvent__ENTRYPOINTBI_QuickItem_0(class UNiagaraSystemWidget* UINS_Config_0);
+	void SeqFX_StopConfig(class UNiagaraSystemWidget* UINS_Config_0);
+	void SeqFX_PlayConfig(class UNiagaraSystemWidget* UINS_Config_0);
+	void PreConstruct(bool IsDesignTime);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void ExecuteUbergraph_BI_QuickItem(int32 EntryPoint);
+	void Construct();
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void BP_OnItemExpansionChanged(bool bIsExpanded);
+	void BP_OnEntryReleased();
 
 public:
 	static class UClass* StaticClass()

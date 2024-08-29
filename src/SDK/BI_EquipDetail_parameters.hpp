@@ -50,115 +50,16 @@ static_assert(offsetof(BI_EquipDetail_C_ExecuteUbergraph_BI_EquipDetail, K2Node_
 static_assert(offsetof(BI_EquipDetail_C_ExecuteUbergraph_BI_EquipDetail, K2Node_CustomEvent_EventName) == 0x000058, "Member 'BI_EquipDetail_C_ExecuteUbergraph_BI_EquipDetail::K2Node_CustomEvent_EventName' has a wrong offset!");
 static_assert(offsetof(BI_EquipDetail_C_ExecuteUbergraph_BI_EquipDetail, K2Node_CustomEvent_NewParam) == 0x000068, "Member 'BI_EquipDetail_C_ExecuteUbergraph_BI_EquipDetail::K2Node_CustomEvent_NewParam' has a wrong offset!");
 
-// Function BI_EquipDetail.BI_EquipDetail_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct BI_EquipDetail_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_EquipDetail_C_PreConstruct) == 0x000001, "Wrong alignment on BI_EquipDetail_C_PreConstruct");
-static_assert(sizeof(BI_EquipDetail_C_PreConstruct) == 0x000001, "Wrong size on BI_EquipDetail_C_PreConstruct");
-static_assert(offsetof(BI_EquipDetail_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_EquipDetail_C_PreConstruct::IsDesignTime' has a wrong offset!");
-
-// Function BI_EquipDetail.BI_EquipDetail_C.SeqEvent_AnimForged
-// 0x0010 (0x0010 - 0x0000)
-struct BI_EquipDetail_C_SeqEvent_AnimForged final
-{
-public:
-	class FString                                 EventName;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_EquipDetail_C_SeqEvent_AnimForged) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqEvent_AnimForged");
-static_assert(sizeof(BI_EquipDetail_C_SeqEvent_AnimForged) == 0x000010, "Wrong size on BI_EquipDetail_C_SeqEvent_AnimForged");
-static_assert(offsetof(BI_EquipDetail_C_SeqEvent_AnimForged, EventName) == 0x000000, "Member 'BI_EquipDetail_C_SeqEvent_AnimForged::EventName' has a wrong offset!");
-
-// Function BI_EquipDetail.BI_EquipDetail_C.SeqEvent_AnimUpgradeMax
-// 0x0010 (0x0010 - 0x0000)
-struct BI_EquipDetail_C_SeqEvent_AnimUpgradeMax final
-{
-public:
-	class FString                                 NewParam;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_EquipDetail_C_SeqEvent_AnimUpgradeMax) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqEvent_AnimUpgradeMax");
-static_assert(sizeof(BI_EquipDetail_C_SeqEvent_AnimUpgradeMax) == 0x000010, "Wrong size on BI_EquipDetail_C_SeqEvent_AnimUpgradeMax");
-static_assert(offsetof(BI_EquipDetail_C_SeqEvent_AnimUpgradeMax, NewParam) == 0x000000, "Member 'BI_EquipDetail_C_SeqEvent_AnimUpgradeMax::NewParam' has a wrong offset!");
-
-// Function BI_EquipDetail.BI_EquipDetail_C.SeqEvent_AnimWeaponUnlock
-// 0x0010 (0x0010 - 0x0000)
-struct BI_EquipDetail_C_SeqEvent_AnimWeaponUnlock final
-{
-public:
-	class FString                                 EventName;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_EquipDetail_C_SeqEvent_AnimWeaponUnlock) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqEvent_AnimWeaponUnlock");
-static_assert(sizeof(BI_EquipDetail_C_SeqEvent_AnimWeaponUnlock) == 0x000010, "Wrong size on BI_EquipDetail_C_SeqEvent_AnimWeaponUnlock");
-static_assert(offsetof(BI_EquipDetail_C_SeqEvent_AnimWeaponUnlock, EventName) == 0x000000, "Member 'BI_EquipDetail_C_SeqEvent_AnimWeaponUnlock::EventName' has a wrong offset!");
-
-// Function BI_EquipDetail.BI_EquipDetail_C.SeqFX_Play_Destroyed
+// Function BI_EquipDetail.BI_EquipDetail_C.SeqFX_Stop_Top
 // 0x0008 (0x0008 - 0x0000)
-struct BI_EquipDetail_C_SeqFX_Play_Destroyed final
-{
-public:
-	class UNiagaraSystemWidget*                   UINS_DestroyedSpark;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_EquipDetail_C_SeqFX_Play_Destroyed) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqFX_Play_Destroyed");
-static_assert(sizeof(BI_EquipDetail_C_SeqFX_Play_Destroyed) == 0x000008, "Wrong size on BI_EquipDetail_C_SeqFX_Play_Destroyed");
-static_assert(offsetof(BI_EquipDetail_C_SeqFX_Play_Destroyed, UINS_DestroyedSpark) == 0x000000, "Member 'BI_EquipDetail_C_SeqFX_Play_Destroyed::UINS_DestroyedSpark' has a wrong offset!");
-
-// Function BI_EquipDetail.BI_EquipDetail_C.SeqFX_Play_Left
-// 0x0008 (0x0008 - 0x0000)
-struct BI_EquipDetail_C_SeqFX_Play_Left final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Left;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_EquipDetail_C_SeqFX_Play_Left) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqFX_Play_Left");
-static_assert(sizeof(BI_EquipDetail_C_SeqFX_Play_Left) == 0x000008, "Wrong size on BI_EquipDetail_C_SeqFX_Play_Left");
-static_assert(offsetof(BI_EquipDetail_C_SeqFX_Play_Left, NGForgeSpark_Left) == 0x000000, "Member 'BI_EquipDetail_C_SeqFX_Play_Left::NGForgeSpark_Left' has a wrong offset!");
-
-// Function BI_EquipDetail.BI_EquipDetail_C.SeqFX_Play_Right
-// 0x0008 (0x0008 - 0x0000)
-struct BI_EquipDetail_C_SeqFX_Play_Right final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Right;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_EquipDetail_C_SeqFX_Play_Right) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqFX_Play_Right");
-static_assert(sizeof(BI_EquipDetail_C_SeqFX_Play_Right) == 0x000008, "Wrong size on BI_EquipDetail_C_SeqFX_Play_Right");
-static_assert(offsetof(BI_EquipDetail_C_SeqFX_Play_Right, NGForgeSpark_Right) == 0x000000, "Member 'BI_EquipDetail_C_SeqFX_Play_Right::NGForgeSpark_Right' has a wrong offset!");
-
-// Function BI_EquipDetail.BI_EquipDetail_C.SeqFX_Play_Top
-// 0x0008 (0x0008 - 0x0000)
-struct BI_EquipDetail_C_SeqFX_Play_Top final
+struct BI_EquipDetail_C_SeqFX_Stop_Top final
 {
 public:
 	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BI_EquipDetail_C_SeqFX_Play_Top) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqFX_Play_Top");
-static_assert(sizeof(BI_EquipDetail_C_SeqFX_Play_Top) == 0x000008, "Wrong size on BI_EquipDetail_C_SeqFX_Play_Top");
-static_assert(offsetof(BI_EquipDetail_C_SeqFX_Play_Top, NGForgeSpark_Top) == 0x000000, "Member 'BI_EquipDetail_C_SeqFX_Play_Top::NGForgeSpark_Top' has a wrong offset!");
-
-// Function BI_EquipDetail.BI_EquipDetail_C.SeqFX_Stop_Destroyed
-// 0x0008 (0x0008 - 0x0000)
-struct BI_EquipDetail_C_SeqFX_Stop_Destroyed final
-{
-public:
-	class UNiagaraSystemWidget*                   UINS_DestroyedSpark;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_EquipDetail_C_SeqFX_Stop_Destroyed) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqFX_Stop_Destroyed");
-static_assert(sizeof(BI_EquipDetail_C_SeqFX_Stop_Destroyed) == 0x000008, "Wrong size on BI_EquipDetail_C_SeqFX_Stop_Destroyed");
-static_assert(offsetof(BI_EquipDetail_C_SeqFX_Stop_Destroyed, UINS_DestroyedSpark) == 0x000000, "Member 'BI_EquipDetail_C_SeqFX_Stop_Destroyed::UINS_DestroyedSpark' has a wrong offset!");
-
-// Function BI_EquipDetail.BI_EquipDetail_C.SeqFX_Stop_Left
-// 0x0008 (0x0008 - 0x0000)
-struct BI_EquipDetail_C_SeqFX_Stop_Left final
-{
-public:
-	class UNiagaraSystemWidget*                   NGForgeSpark_Left;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_EquipDetail_C_SeqFX_Stop_Left) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqFX_Stop_Left");
-static_assert(sizeof(BI_EquipDetail_C_SeqFX_Stop_Left) == 0x000008, "Wrong size on BI_EquipDetail_C_SeqFX_Stop_Left");
-static_assert(offsetof(BI_EquipDetail_C_SeqFX_Stop_Left, NGForgeSpark_Left) == 0x000000, "Member 'BI_EquipDetail_C_SeqFX_Stop_Left::NGForgeSpark_Left' has a wrong offset!");
+static_assert(alignof(BI_EquipDetail_C_SeqFX_Stop_Top) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqFX_Stop_Top");
+static_assert(sizeof(BI_EquipDetail_C_SeqFX_Stop_Top) == 0x000008, "Wrong size on BI_EquipDetail_C_SeqFX_Stop_Top");
+static_assert(offsetof(BI_EquipDetail_C_SeqFX_Stop_Top, NGForgeSpark_Top) == 0x000000, "Member 'BI_EquipDetail_C_SeqFX_Stop_Top::NGForgeSpark_Top' has a wrong offset!");
 
 // Function BI_EquipDetail.BI_EquipDetail_C.SeqFX_Stop_Right
 // 0x0008 (0x0008 - 0x0000)
@@ -171,16 +72,115 @@ static_assert(alignof(BI_EquipDetail_C_SeqFX_Stop_Right) == 0x000008, "Wrong ali
 static_assert(sizeof(BI_EquipDetail_C_SeqFX_Stop_Right) == 0x000008, "Wrong size on BI_EquipDetail_C_SeqFX_Stop_Right");
 static_assert(offsetof(BI_EquipDetail_C_SeqFX_Stop_Right, NGForgeSpark_Right) == 0x000000, "Member 'BI_EquipDetail_C_SeqFX_Stop_Right::NGForgeSpark_Right' has a wrong offset!");
 
-// Function BI_EquipDetail.BI_EquipDetail_C.SeqFX_Stop_Top
+// Function BI_EquipDetail.BI_EquipDetail_C.SeqFX_Stop_Left
 // 0x0008 (0x0008 - 0x0000)
-struct BI_EquipDetail_C_SeqFX_Stop_Top final
+struct BI_EquipDetail_C_SeqFX_Stop_Left final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Left;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_EquipDetail_C_SeqFX_Stop_Left) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqFX_Stop_Left");
+static_assert(sizeof(BI_EquipDetail_C_SeqFX_Stop_Left) == 0x000008, "Wrong size on BI_EquipDetail_C_SeqFX_Stop_Left");
+static_assert(offsetof(BI_EquipDetail_C_SeqFX_Stop_Left, NGForgeSpark_Left) == 0x000000, "Member 'BI_EquipDetail_C_SeqFX_Stop_Left::NGForgeSpark_Left' has a wrong offset!");
+
+// Function BI_EquipDetail.BI_EquipDetail_C.SeqFX_Stop_Destroyed
+// 0x0008 (0x0008 - 0x0000)
+struct BI_EquipDetail_C_SeqFX_Stop_Destroyed final
+{
+public:
+	class UNiagaraSystemWidget*                   UINS_DestroyedSpark;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_EquipDetail_C_SeqFX_Stop_Destroyed) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqFX_Stop_Destroyed");
+static_assert(sizeof(BI_EquipDetail_C_SeqFX_Stop_Destroyed) == 0x000008, "Wrong size on BI_EquipDetail_C_SeqFX_Stop_Destroyed");
+static_assert(offsetof(BI_EquipDetail_C_SeqFX_Stop_Destroyed, UINS_DestroyedSpark) == 0x000000, "Member 'BI_EquipDetail_C_SeqFX_Stop_Destroyed::UINS_DestroyedSpark' has a wrong offset!");
+
+// Function BI_EquipDetail.BI_EquipDetail_C.SeqFX_Play_Top
+// 0x0008 (0x0008 - 0x0000)
+struct BI_EquipDetail_C_SeqFX_Play_Top final
 {
 public:
 	class UNiagaraSystemWidget*                   NGForgeSpark_Top;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BI_EquipDetail_C_SeqFX_Stop_Top) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqFX_Stop_Top");
-static_assert(sizeof(BI_EquipDetail_C_SeqFX_Stop_Top) == 0x000008, "Wrong size on BI_EquipDetail_C_SeqFX_Stop_Top");
-static_assert(offsetof(BI_EquipDetail_C_SeqFX_Stop_Top, NGForgeSpark_Top) == 0x000000, "Member 'BI_EquipDetail_C_SeqFX_Stop_Top::NGForgeSpark_Top' has a wrong offset!");
+static_assert(alignof(BI_EquipDetail_C_SeqFX_Play_Top) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqFX_Play_Top");
+static_assert(sizeof(BI_EquipDetail_C_SeqFX_Play_Top) == 0x000008, "Wrong size on BI_EquipDetail_C_SeqFX_Play_Top");
+static_assert(offsetof(BI_EquipDetail_C_SeqFX_Play_Top, NGForgeSpark_Top) == 0x000000, "Member 'BI_EquipDetail_C_SeqFX_Play_Top::NGForgeSpark_Top' has a wrong offset!");
+
+// Function BI_EquipDetail.BI_EquipDetail_C.SeqFX_Play_Right
+// 0x0008 (0x0008 - 0x0000)
+struct BI_EquipDetail_C_SeqFX_Play_Right final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Right;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_EquipDetail_C_SeqFX_Play_Right) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqFX_Play_Right");
+static_assert(sizeof(BI_EquipDetail_C_SeqFX_Play_Right) == 0x000008, "Wrong size on BI_EquipDetail_C_SeqFX_Play_Right");
+static_assert(offsetof(BI_EquipDetail_C_SeqFX_Play_Right, NGForgeSpark_Right) == 0x000000, "Member 'BI_EquipDetail_C_SeqFX_Play_Right::NGForgeSpark_Right' has a wrong offset!");
+
+// Function BI_EquipDetail.BI_EquipDetail_C.SeqFX_Play_Left
+// 0x0008 (0x0008 - 0x0000)
+struct BI_EquipDetail_C_SeqFX_Play_Left final
+{
+public:
+	class UNiagaraSystemWidget*                   NGForgeSpark_Left;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_EquipDetail_C_SeqFX_Play_Left) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqFX_Play_Left");
+static_assert(sizeof(BI_EquipDetail_C_SeqFX_Play_Left) == 0x000008, "Wrong size on BI_EquipDetail_C_SeqFX_Play_Left");
+static_assert(offsetof(BI_EquipDetail_C_SeqFX_Play_Left, NGForgeSpark_Left) == 0x000000, "Member 'BI_EquipDetail_C_SeqFX_Play_Left::NGForgeSpark_Left' has a wrong offset!");
+
+// Function BI_EquipDetail.BI_EquipDetail_C.SeqFX_Play_Destroyed
+// 0x0008 (0x0008 - 0x0000)
+struct BI_EquipDetail_C_SeqFX_Play_Destroyed final
+{
+public:
+	class UNiagaraSystemWidget*                   UINS_DestroyedSpark;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_EquipDetail_C_SeqFX_Play_Destroyed) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqFX_Play_Destroyed");
+static_assert(sizeof(BI_EquipDetail_C_SeqFX_Play_Destroyed) == 0x000008, "Wrong size on BI_EquipDetail_C_SeqFX_Play_Destroyed");
+static_assert(offsetof(BI_EquipDetail_C_SeqFX_Play_Destroyed, UINS_DestroyedSpark) == 0x000000, "Member 'BI_EquipDetail_C_SeqFX_Play_Destroyed::UINS_DestroyedSpark' has a wrong offset!");
+
+// Function BI_EquipDetail.BI_EquipDetail_C.SeqEvent_AnimWeaponUnlock
+// 0x0010 (0x0010 - 0x0000)
+struct BI_EquipDetail_C_SeqEvent_AnimWeaponUnlock final
+{
+public:
+	class FString                                 EventName;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_EquipDetail_C_SeqEvent_AnimWeaponUnlock) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqEvent_AnimWeaponUnlock");
+static_assert(sizeof(BI_EquipDetail_C_SeqEvent_AnimWeaponUnlock) == 0x000010, "Wrong size on BI_EquipDetail_C_SeqEvent_AnimWeaponUnlock");
+static_assert(offsetof(BI_EquipDetail_C_SeqEvent_AnimWeaponUnlock, EventName) == 0x000000, "Member 'BI_EquipDetail_C_SeqEvent_AnimWeaponUnlock::EventName' has a wrong offset!");
+
+// Function BI_EquipDetail.BI_EquipDetail_C.SeqEvent_AnimUpgradeMax
+// 0x0010 (0x0010 - 0x0000)
+struct BI_EquipDetail_C_SeqEvent_AnimUpgradeMax final
+{
+public:
+	class FString                                 NewParam;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_EquipDetail_C_SeqEvent_AnimUpgradeMax) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqEvent_AnimUpgradeMax");
+static_assert(sizeof(BI_EquipDetail_C_SeqEvent_AnimUpgradeMax) == 0x000010, "Wrong size on BI_EquipDetail_C_SeqEvent_AnimUpgradeMax");
+static_assert(offsetof(BI_EquipDetail_C_SeqEvent_AnimUpgradeMax, NewParam) == 0x000000, "Member 'BI_EquipDetail_C_SeqEvent_AnimUpgradeMax::NewParam' has a wrong offset!");
+
+// Function BI_EquipDetail.BI_EquipDetail_C.SeqEvent_AnimForged
+// 0x0010 (0x0010 - 0x0000)
+struct BI_EquipDetail_C_SeqEvent_AnimForged final
+{
+public:
+	class FString                                 EventName;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_EquipDetail_C_SeqEvent_AnimForged) == 0x000008, "Wrong alignment on BI_EquipDetail_C_SeqEvent_AnimForged");
+static_assert(sizeof(BI_EquipDetail_C_SeqEvent_AnimForged) == 0x000010, "Wrong size on BI_EquipDetail_C_SeqEvent_AnimForged");
+static_assert(offsetof(BI_EquipDetail_C_SeqEvent_AnimForged, EventName) == 0x000000, "Member 'BI_EquipDetail_C_SeqEvent_AnimForged::EventName' has a wrong offset!");
+
+// Function BI_EquipDetail.BI_EquipDetail_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct BI_EquipDetail_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_EquipDetail_C_PreConstruct) == 0x000001, "Wrong alignment on BI_EquipDetail_C_PreConstruct");
+static_assert(sizeof(BI_EquipDetail_C_PreConstruct) == 0x000001, "Wrong size on BI_EquipDetail_C_PreConstruct");
+static_assert(offsetof(BI_EquipDetail_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_EquipDetail_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }
 

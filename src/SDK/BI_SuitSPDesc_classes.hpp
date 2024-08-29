@@ -36,11 +36,11 @@ public:
 	class UNiagaraSystemWidget*                   UINS_Forged;                                       // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BI_SuitSPDesc(int32 EntryPoint);
-	void SeqFX_Play();
-	void SeqFX_Stop();
-	void SequenceEvent__ENTRYPOINTBI_SuitSPDesc_0();
 	void SequenceEvent__ENTRYPOINTBI_SuitSPDesc_1();
+	void SequenceEvent__ENTRYPOINTBI_SuitSPDesc_0();
+	void SeqFX_Stop();
+	void SeqFX_Play();
+	void ExecuteUbergraph_BI_SuitSPDesc(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

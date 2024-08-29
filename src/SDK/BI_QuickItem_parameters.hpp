@@ -14,27 +14,71 @@
 namespace SDK::Params
 {
 
-// Function BI_QuickItem.BI_QuickItem_C.BP_OnItemExpansionChanged
-// 0x0001 (0x0001 - 0x0000)
-struct BI_QuickItem_C_BP_OnItemExpansionChanged final
+// Function BI_QuickItem.BI_QuickItem_C.SequenceEvent__ENTRYPOINTBI_QuickItem_1
+// 0x0008 (0x0008 - 0x0000)
+struct BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_1 final
 {
 public:
-	bool                                          bIsExpanded;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraSystemWidget*                   UINS_Config_0;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BI_QuickItem_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong alignment on BI_QuickItem_C_BP_OnItemExpansionChanged");
-static_assert(sizeof(BI_QuickItem_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong size on BI_QuickItem_C_BP_OnItemExpansionChanged");
-static_assert(offsetof(BI_QuickItem_C_BP_OnItemExpansionChanged, bIsExpanded) == 0x000000, "Member 'BI_QuickItem_C_BP_OnItemExpansionChanged::bIsExpanded' has a wrong offset!");
+static_assert(alignof(BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_1) == 0x000008, "Wrong alignment on BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_1");
+static_assert(sizeof(BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_1) == 0x000008, "Wrong size on BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_1");
+static_assert(offsetof(BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_1, UINS_Config_0) == 0x000000, "Member 'BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_1::UINS_Config_0' has a wrong offset!");
 
-// Function BI_QuickItem.BI_QuickItem_C.BP_OnItemSelectionChanged
-// 0x0001 (0x0001 - 0x0000)
-struct BI_QuickItem_C_BP_OnItemSelectionChanged final
+// Function BI_QuickItem.BI_QuickItem_C.SequenceEvent__ENTRYPOINTBI_QuickItem_0
+// 0x0008 (0x0008 - 0x0000)
+struct BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_0 final
 {
 public:
-	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraSystemWidget*                   UINS_Config_0;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BI_QuickItem_C_BP_OnItemSelectionChanged) == 0x000001, "Wrong alignment on BI_QuickItem_C_BP_OnItemSelectionChanged");
-static_assert(sizeof(BI_QuickItem_C_BP_OnItemSelectionChanged) == 0x000001, "Wrong size on BI_QuickItem_C_BP_OnItemSelectionChanged");
-static_assert(offsetof(BI_QuickItem_C_BP_OnItemSelectionChanged, bIsSelected) == 0x000000, "Member 'BI_QuickItem_C_BP_OnItemSelectionChanged::bIsSelected' has a wrong offset!");
+static_assert(alignof(BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_0) == 0x000008, "Wrong alignment on BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_0");
+static_assert(sizeof(BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_0) == 0x000008, "Wrong size on BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_0");
+static_assert(offsetof(BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_0, UINS_Config_0) == 0x000000, "Member 'BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_0::UINS_Config_0' has a wrong offset!");
+
+// Function BI_QuickItem.BI_QuickItem_C.SeqFX_StopConfig
+// 0x0008 (0x0008 - 0x0000)
+struct BI_QuickItem_C_SeqFX_StopConfig final
+{
+public:
+	class UNiagaraSystemWidget*                   UINS_Config_0;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_QuickItem_C_SeqFX_StopConfig) == 0x000008, "Wrong alignment on BI_QuickItem_C_SeqFX_StopConfig");
+static_assert(sizeof(BI_QuickItem_C_SeqFX_StopConfig) == 0x000008, "Wrong size on BI_QuickItem_C_SeqFX_StopConfig");
+static_assert(offsetof(BI_QuickItem_C_SeqFX_StopConfig, UINS_Config_0) == 0x000000, "Member 'BI_QuickItem_C_SeqFX_StopConfig::UINS_Config_0' has a wrong offset!");
+
+// Function BI_QuickItem.BI_QuickItem_C.SeqFX_PlayConfig
+// 0x0008 (0x0008 - 0x0000)
+struct BI_QuickItem_C_SeqFX_PlayConfig final
+{
+public:
+	class UNiagaraSystemWidget*                   UINS_Config_0;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_QuickItem_C_SeqFX_PlayConfig) == 0x000008, "Wrong alignment on BI_QuickItem_C_SeqFX_PlayConfig");
+static_assert(sizeof(BI_QuickItem_C_SeqFX_PlayConfig) == 0x000008, "Wrong size on BI_QuickItem_C_SeqFX_PlayConfig");
+static_assert(offsetof(BI_QuickItem_C_SeqFX_PlayConfig, UINS_Config_0) == 0x000000, "Member 'BI_QuickItem_C_SeqFX_PlayConfig::UINS_Config_0' has a wrong offset!");
+
+// Function BI_QuickItem.BI_QuickItem_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct BI_QuickItem_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_QuickItem_C_PreConstruct) == 0x000001, "Wrong alignment on BI_QuickItem_C_PreConstruct");
+static_assert(sizeof(BI_QuickItem_C_PreConstruct) == 0x000001, "Wrong size on BI_QuickItem_C_PreConstruct");
+static_assert(offsetof(BI_QuickItem_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_QuickItem_C_PreConstruct::IsDesignTime' has a wrong offset!");
+
+// Function BI_QuickItem.BI_QuickItem_C.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct BI_QuickItem_C_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BI_QuickItem_C_OnListItemObjectSet) == 0x000008, "Wrong alignment on BI_QuickItem_C_OnListItemObjectSet");
+static_assert(sizeof(BI_QuickItem_C_OnListItemObjectSet) == 0x000008, "Wrong size on BI_QuickItem_C_OnListItemObjectSet");
+static_assert(offsetof(BI_QuickItem_C_OnListItemObjectSet, ListItemObject) == 0x000000, "Member 'BI_QuickItem_C_OnListItemObjectSet::ListItemObject' has a wrong offset!");
 
 // Function BI_QuickItem.BI_QuickItem_C.ExecuteUbergraph_BI_QuickItem
 // 0x0028 (0x0028 - 0x0000)
@@ -60,71 +104,27 @@ static_assert(offsetof(BI_QuickItem_C_ExecuteUbergraph_BI_QuickItem, K2Node_Cust
 static_assert(offsetof(BI_QuickItem_C_ExecuteUbergraph_BI_QuickItem, K2Node_CustomEvent_UINS_Config) == 0x000018, "Member 'BI_QuickItem_C_ExecuteUbergraph_BI_QuickItem::K2Node_CustomEvent_UINS_Config' has a wrong offset!");
 static_assert(offsetof(BI_QuickItem_C_ExecuteUbergraph_BI_QuickItem, K2Node_Event_IsDesignTime) == 0x000020, "Member 'BI_QuickItem_C_ExecuteUbergraph_BI_QuickItem::K2Node_Event_IsDesignTime' has a wrong offset!");
 
-// Function BI_QuickItem.BI_QuickItem_C.OnListItemObjectSet
-// 0x0008 (0x0008 - 0x0000)
-struct BI_QuickItem_C_OnListItemObjectSet final
-{
-public:
-	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_QuickItem_C_OnListItemObjectSet) == 0x000008, "Wrong alignment on BI_QuickItem_C_OnListItemObjectSet");
-static_assert(sizeof(BI_QuickItem_C_OnListItemObjectSet) == 0x000008, "Wrong size on BI_QuickItem_C_OnListItemObjectSet");
-static_assert(offsetof(BI_QuickItem_C_OnListItemObjectSet, ListItemObject) == 0x000000, "Member 'BI_QuickItem_C_OnListItemObjectSet::ListItemObject' has a wrong offset!");
-
-// Function BI_QuickItem.BI_QuickItem_C.PreConstruct
+// Function BI_QuickItem.BI_QuickItem_C.BP_OnItemSelectionChanged
 // 0x0001 (0x0001 - 0x0000)
-struct BI_QuickItem_C_PreConstruct final
+struct BI_QuickItem_C_BP_OnItemSelectionChanged final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BI_QuickItem_C_PreConstruct) == 0x000001, "Wrong alignment on BI_QuickItem_C_PreConstruct");
-static_assert(sizeof(BI_QuickItem_C_PreConstruct) == 0x000001, "Wrong size on BI_QuickItem_C_PreConstruct");
-static_assert(offsetof(BI_QuickItem_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BI_QuickItem_C_PreConstruct::IsDesignTime' has a wrong offset!");
+static_assert(alignof(BI_QuickItem_C_BP_OnItemSelectionChanged) == 0x000001, "Wrong alignment on BI_QuickItem_C_BP_OnItemSelectionChanged");
+static_assert(sizeof(BI_QuickItem_C_BP_OnItemSelectionChanged) == 0x000001, "Wrong size on BI_QuickItem_C_BP_OnItemSelectionChanged");
+static_assert(offsetof(BI_QuickItem_C_BP_OnItemSelectionChanged, bIsSelected) == 0x000000, "Member 'BI_QuickItem_C_BP_OnItemSelectionChanged::bIsSelected' has a wrong offset!");
 
-// Function BI_QuickItem.BI_QuickItem_C.SeqFX_PlayConfig
-// 0x0008 (0x0008 - 0x0000)
-struct BI_QuickItem_C_SeqFX_PlayConfig final
+// Function BI_QuickItem.BI_QuickItem_C.BP_OnItemExpansionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct BI_QuickItem_C_BP_OnItemExpansionChanged final
 {
 public:
-	class UNiagaraSystemWidget*                   UINS_Config_0;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsExpanded;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BI_QuickItem_C_SeqFX_PlayConfig) == 0x000008, "Wrong alignment on BI_QuickItem_C_SeqFX_PlayConfig");
-static_assert(sizeof(BI_QuickItem_C_SeqFX_PlayConfig) == 0x000008, "Wrong size on BI_QuickItem_C_SeqFX_PlayConfig");
-static_assert(offsetof(BI_QuickItem_C_SeqFX_PlayConfig, UINS_Config_0) == 0x000000, "Member 'BI_QuickItem_C_SeqFX_PlayConfig::UINS_Config_0' has a wrong offset!");
-
-// Function BI_QuickItem.BI_QuickItem_C.SeqFX_StopConfig
-// 0x0008 (0x0008 - 0x0000)
-struct BI_QuickItem_C_SeqFX_StopConfig final
-{
-public:
-	class UNiagaraSystemWidget*                   UINS_Config_0;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_QuickItem_C_SeqFX_StopConfig) == 0x000008, "Wrong alignment on BI_QuickItem_C_SeqFX_StopConfig");
-static_assert(sizeof(BI_QuickItem_C_SeqFX_StopConfig) == 0x000008, "Wrong size on BI_QuickItem_C_SeqFX_StopConfig");
-static_assert(offsetof(BI_QuickItem_C_SeqFX_StopConfig, UINS_Config_0) == 0x000000, "Member 'BI_QuickItem_C_SeqFX_StopConfig::UINS_Config_0' has a wrong offset!");
-
-// Function BI_QuickItem.BI_QuickItem_C.SequenceEvent__ENTRYPOINTBI_QuickItem_0
-// 0x0008 (0x0008 - 0x0000)
-struct BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_0 final
-{
-public:
-	class UNiagaraSystemWidget*                   UINS_Config_0;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_0) == 0x000008, "Wrong alignment on BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_0");
-static_assert(sizeof(BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_0) == 0x000008, "Wrong size on BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_0");
-static_assert(offsetof(BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_0, UINS_Config_0) == 0x000000, "Member 'BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_0::UINS_Config_0' has a wrong offset!");
-
-// Function BI_QuickItem.BI_QuickItem_C.SequenceEvent__ENTRYPOINTBI_QuickItem_1
-// 0x0008 (0x0008 - 0x0000)
-struct BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_1 final
-{
-public:
-	class UNiagaraSystemWidget*                   UINS_Config_0;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_1) == 0x000008, "Wrong alignment on BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_1");
-static_assert(sizeof(BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_1) == 0x000008, "Wrong size on BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_1");
-static_assert(offsetof(BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_1, UINS_Config_0) == 0x000000, "Member 'BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_1::UINS_Config_0' has a wrong offset!");
+static_assert(alignof(BI_QuickItem_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong alignment on BI_QuickItem_C_BP_OnItemExpansionChanged");
+static_assert(sizeof(BI_QuickItem_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong size on BI_QuickItem_C_BP_OnItemExpansionChanged");
+static_assert(offsetof(BI_QuickItem_C_BP_OnItemExpansionChanged, bIsExpanded) == 0x000000, "Member 'BI_QuickItem_C_BP_OnItemExpansionChanged::bIsExpanded' has a wrong offset!");
 
 }
 

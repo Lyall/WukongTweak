@@ -17,17 +17,23 @@
 namespace SDK
 {
 
-// Function BI_GearItem_Slot.BI_GearItem_Slot_C.Construct
+// Function BI_GearItem_Slot.BI_GearItem_Slot_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_GearItem_Slot_C::Construct()
+void UBI_GearItem_Slot_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearItem_Slot_C", "Construct");
+		Func = Class->GetFunction("BI_GearItem_Slot_C", "PreConstruct");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BI_GearItem_Slot_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -51,23 +57,17 @@ void UBI_GearItem_Slot_C::ExecuteUbergraph_BI_GearItem_Slot(int32 EntryPoint)
 }
 
 
-// Function BI_GearItem_Slot.BI_GearItem_Slot_C.PreConstruct
+// Function BI_GearItem_Slot.BI_GearItem_Slot_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_GearItem_Slot_C::PreConstruct(bool IsDesignTime)
+void UBI_GearItem_Slot_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearItem_Slot_C", "PreConstruct");
+		Func = Class->GetFunction("BI_GearItem_Slot_C", "Construct");
 
-	Params::BI_GearItem_Slot_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

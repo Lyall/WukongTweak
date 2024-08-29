@@ -67,18 +67,18 @@ public:
 	float                                         SparkSize;                                         // 0x0528(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BI_RZDDetail(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
-	void SeqAnim_DetailBg_Equiped();
-	void SeqAnim_DetailBg_Upgrade();
-	void SeqFX_Play_Left(class UNiagaraSystemWidget* NGForgeSpark_Left_0);
-	void SeqFX_Play_Right(class UNiagaraSystemWidget* NGForgeSpark_Right_0);
-	void SeqFX_Play_Top(class UNiagaraSystemWidget* NGForgeSpark_Top_0);
-	void SeqFX_Stop_Left(class UNiagaraSystemWidget* NGForgeSpark_Left_0);
-	void SeqFX_Stop_Right(class UNiagaraSystemWidget* NGForgeSpark_Right_0);
-	void SeqFX_Stop_Top(class UNiagaraSystemWidget* NGForgeSpark_Top_0);
-	void SequenceEvent__ENTRYPOINTBI_RZDDetail_0();
 	void SequenceEvent__ENTRYPOINTBI_RZDDetail_1();
+	void SequenceEvent__ENTRYPOINTBI_RZDDetail_0();
+	void SeqFX_Stop_Top(class UNiagaraSystemWidget* NGForgeSpark_Top_0);
+	void SeqFX_Stop_Right(class UNiagaraSystemWidget* NGForgeSpark_Right_0);
+	void SeqFX_Stop_Left(class UNiagaraSystemWidget* NGForgeSpark_Left_0);
+	void SeqFX_Play_Top(class UNiagaraSystemWidget* NGForgeSpark_Top_0);
+	void SeqFX_Play_Right(class UNiagaraSystemWidget* NGForgeSpark_Right_0);
+	void SeqFX_Play_Left(class UNiagaraSystemWidget* NGForgeSpark_Left_0);
+	void SeqAnim_DetailBg_Upgrade();
+	void SeqAnim_DetailBg_Equiped();
+	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_BI_RZDDetail(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

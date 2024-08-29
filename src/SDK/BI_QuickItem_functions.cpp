@@ -17,167 +17,19 @@
 namespace SDK
 {
 
-// Function BI_QuickItem.BI_QuickItem_C.BP_OnEntryReleased
-// (Event, Protected, BlueprintEvent)
-
-void UBI_QuickItem_C::BP_OnEntryReleased()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_QuickItem_C", "BP_OnEntryReleased");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_QuickItem.BI_QuickItem_C.BP_OnItemExpansionChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_QuickItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_QuickItem_C", "BP_OnItemExpansionChanged");
-
-	Params::BI_QuickItem_C_BP_OnItemExpansionChanged Parms{};
-
-	Parms.bIsExpanded = bIsExpanded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_QuickItem.BI_QuickItem_C.BP_OnItemSelectionChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_QuickItem_C::BP_OnItemSelectionChanged(bool bIsSelected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_QuickItem_C", "BP_OnItemSelectionChanged");
-
-	Params::BI_QuickItem_C_BP_OnItemSelectionChanged Parms{};
-
-	Parms.bIsSelected = bIsSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_QuickItem.BI_QuickItem_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UBI_QuickItem_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_QuickItem_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_QuickItem.BI_QuickItem_C.ExecuteUbergraph_BI_QuickItem
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_QuickItem_C::ExecuteUbergraph_BI_QuickItem(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_QuickItem_C", "ExecuteUbergraph_BI_QuickItem");
-
-	Params::BI_QuickItem_C_ExecuteUbergraph_BI_QuickItem Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_QuickItem.BI_QuickItem_C.OnListItemObjectSet
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_QuickItem_C::OnListItemObjectSet(class UObject* ListItemObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_QuickItem_C", "OnListItemObjectSet");
-
-	Params::BI_QuickItem_C_OnListItemObjectSet Parms{};
-
-	Parms.ListItemObject = ListItemObject;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_QuickItem.BI_QuickItem_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_QuickItem_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_QuickItem_C", "PreConstruct");
-
-	Params::BI_QuickItem_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_QuickItem.BI_QuickItem_C.SeqFX_PlayConfig
-// (BlueprintCallable, BlueprintEvent)
+// Function BI_QuickItem.BI_QuickItem_C.SequenceEvent__ENTRYPOINTBI_QuickItem_1
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UNiagaraSystemWidget*             UINS_Config_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_QuickItem_C::SeqFX_PlayConfig(class UNiagaraSystemWidget* UINS_Config_0)
+void UBI_QuickItem_C::SequenceEvent__ENTRYPOINTBI_QuickItem_1(class UNiagaraSystemWidget* UINS_Config_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_QuickItem_C", "SeqFX_PlayConfig");
+		Func = Class->GetFunction("BI_QuickItem_C", "SequenceEvent__ENTRYPOINTBI_QuickItem_1");
 
-	Params::BI_QuickItem_C_SeqFX_PlayConfig Parms{};
-
-	Parms.UINS_Config_0 = UINS_Config_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_QuickItem.BI_QuickItem_C.SeqFX_StopConfig
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UNiagaraSystemWidget*             UINS_Config_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBI_QuickItem_C::SeqFX_StopConfig(class UNiagaraSystemWidget* UINS_Config_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_QuickItem_C", "SeqFX_StopConfig");
-
-	Params::BI_QuickItem_C_SeqFX_StopConfig Parms{};
+	Params::BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_1 Parms{};
 
 	Parms.UINS_Config_0 = UINS_Config_0;
 
@@ -205,23 +57,171 @@ void UBI_QuickItem_C::SequenceEvent__ENTRYPOINTBI_QuickItem_0(class UNiagaraSyst
 }
 
 
-// Function BI_QuickItem.BI_QuickItem_C.SequenceEvent__ENTRYPOINTBI_QuickItem_1
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BI_QuickItem.BI_QuickItem_C.SeqFX_StopConfig
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UNiagaraSystemWidget*             UINS_Config_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_QuickItem_C::SequenceEvent__ENTRYPOINTBI_QuickItem_1(class UNiagaraSystemWidget* UINS_Config_0)
+void UBI_QuickItem_C::SeqFX_StopConfig(class UNiagaraSystemWidget* UINS_Config_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_QuickItem_C", "SequenceEvent__ENTRYPOINTBI_QuickItem_1");
+		Func = Class->GetFunction("BI_QuickItem_C", "SeqFX_StopConfig");
 
-	Params::BI_QuickItem_C_SequenceEvent__ENTRYPOINTBI_QuickItem_1 Parms{};
+	Params::BI_QuickItem_C_SeqFX_StopConfig Parms{};
 
 	Parms.UINS_Config_0 = UINS_Config_0;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_QuickItem.BI_QuickItem_C.SeqFX_PlayConfig
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UNiagaraSystemWidget*             UINS_Config_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_QuickItem_C::SeqFX_PlayConfig(class UNiagaraSystemWidget* UINS_Config_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_QuickItem_C", "SeqFX_PlayConfig");
+
+	Params::BI_QuickItem_C_SeqFX_PlayConfig Parms{};
+
+	Parms.UINS_Config_0 = UINS_Config_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_QuickItem.BI_QuickItem_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_QuickItem_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_QuickItem_C", "PreConstruct");
+
+	Params::BI_QuickItem_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_QuickItem.BI_QuickItem_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_QuickItem_C::OnListItemObjectSet(class UObject* ListItemObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_QuickItem_C", "OnListItemObjectSet");
+
+	Params::BI_QuickItem_C_OnListItemObjectSet Parms{};
+
+	Parms.ListItemObject = ListItemObject;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_QuickItem.BI_QuickItem_C.ExecuteUbergraph_BI_QuickItem
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_QuickItem_C::ExecuteUbergraph_BI_QuickItem(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_QuickItem_C", "ExecuteUbergraph_BI_QuickItem");
+
+	Params::BI_QuickItem_C_ExecuteUbergraph_BI_QuickItem Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_QuickItem.BI_QuickItem_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UBI_QuickItem_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_QuickItem_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_QuickItem.BI_QuickItem_C.BP_OnItemSelectionChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_QuickItem_C::BP_OnItemSelectionChanged(bool bIsSelected)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_QuickItem_C", "BP_OnItemSelectionChanged");
+
+	Params::BI_QuickItem_C_BP_OnItemSelectionChanged Parms{};
+
+	Parms.bIsSelected = bIsSelected;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_QuickItem.BI_QuickItem_C.BP_OnItemExpansionChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_QuickItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_QuickItem_C", "BP_OnItemExpansionChanged");
+
+	Params::BI_QuickItem_C_BP_OnItemExpansionChanged Parms{};
+
+	Parms.bIsExpanded = bIsExpanded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BI_QuickItem.BI_QuickItem_C.BP_OnEntryReleased
+// (Event, Protected, BlueprintEvent)
+
+void UBI_QuickItem_C::BP_OnEntryReleased()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_QuickItem_C", "BP_OnEntryReleased");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

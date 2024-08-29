@@ -17,49 +17,15 @@
 namespace SDK
 {
 
-// Function BI_SuitSPDesc.BI_SuitSPDesc_C.ExecuteUbergraph_BI_SuitSPDesc
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BI_SuitSPDesc.BI_SuitSPDesc_C.SequenceEvent__ENTRYPOINTBI_SuitSPDesc_1
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UBI_SuitSPDesc_C::ExecuteUbergraph_BI_SuitSPDesc(int32 EntryPoint)
+void UBI_SuitSPDesc_C::SequenceEvent__ENTRYPOINTBI_SuitSPDesc_1()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_SuitSPDesc_C", "ExecuteUbergraph_BI_SuitSPDesc");
-
-	Params::BI_SuitSPDesc_C_ExecuteUbergraph_BI_SuitSPDesc Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BI_SuitSPDesc.BI_SuitSPDesc_C.SeqFX_Play
-// (BlueprintCallable, BlueprintEvent)
-
-void UBI_SuitSPDesc_C::SeqFX_Play()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_SuitSPDesc_C", "SeqFX_Play");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BI_SuitSPDesc.BI_SuitSPDesc_C.SeqFX_Stop
-// (BlueprintCallable, BlueprintEvent)
-
-void UBI_SuitSPDesc_C::SeqFX_Stop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BI_SuitSPDesc_C", "SeqFX_Stop");
+		Func = Class->GetFunction("BI_SuitSPDesc_C", "SequenceEvent__ENTRYPOINTBI_SuitSPDesc_1");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -79,17 +45,51 @@ void UBI_SuitSPDesc_C::SequenceEvent__ENTRYPOINTBI_SuitSPDesc_0()
 }
 
 
-// Function BI_SuitSPDesc.BI_SuitSPDesc_C.SequenceEvent__ENTRYPOINTBI_SuitSPDesc_1
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BI_SuitSPDesc.BI_SuitSPDesc_C.SeqFX_Stop
+// (BlueprintCallable, BlueprintEvent)
 
-void UBI_SuitSPDesc_C::SequenceEvent__ENTRYPOINTBI_SuitSPDesc_1()
+void UBI_SuitSPDesc_C::SeqFX_Stop()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_SuitSPDesc_C", "SequenceEvent__ENTRYPOINTBI_SuitSPDesc_1");
+		Func = Class->GetFunction("BI_SuitSPDesc_C", "SeqFX_Stop");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_SuitSPDesc.BI_SuitSPDesc_C.SeqFX_Play
+// (BlueprintCallable, BlueprintEvent)
+
+void UBI_SuitSPDesc_C::SeqFX_Play()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_SuitSPDesc_C", "SeqFX_Play");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BI_SuitSPDesc.BI_SuitSPDesc_C.ExecuteUbergraph_BI_SuitSPDesc
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBI_SuitSPDesc_C::ExecuteUbergraph_BI_SuitSPDesc(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BI_SuitSPDesc_C", "ExecuteUbergraph_BI_SuitSPDesc");
+
+	Params::BI_SuitSPDesc_C_ExecuteUbergraph_BI_SuitSPDesc Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

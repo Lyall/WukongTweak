@@ -17,35 +17,35 @@
 namespace SDK
 {
 
-// Function BI_GearItem_Tab.BI_GearItem_Tab_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function BI_GearItem_Tab.BI_GearItem_Tab_C.SequenceEvent__ENTRYPOINTBI_GearItem_Tab_0
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UBI_GearItem_Tab_C::Construct()
+void UBI_GearItem_Tab_C::SequenceEvent__ENTRYPOINTBI_GearItem_Tab_0()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearItem_Tab_C", "Construct");
+		Func = Class->GetFunction("BI_GearItem_Tab_C", "SequenceEvent__ENTRYPOINTBI_GearItem_Tab_0");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BI_GearItem_Tab.BI_GearItem_Tab_C.ExecuteUbergraph_BI_GearItem_Tab
-// (Final, UbergraphFunction)
+// Function BI_GearItem_Tab.BI_GearItem_Tab_C.SeqFX_PlayConfig
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UNiagaraSystemWidget*             UINS_Config_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_GearItem_Tab_C::ExecuteUbergraph_BI_GearItem_Tab(int32 EntryPoint)
+void UBI_GearItem_Tab_C::SeqFX_PlayConfig(class UNiagaraSystemWidget* UINS_Config_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearItem_Tab_C", "ExecuteUbergraph_BI_GearItem_Tab");
+		Func = Class->GetFunction("BI_GearItem_Tab_C", "SeqFX_PlayConfig");
 
-	Params::BI_GearItem_Tab_C_ExecuteUbergraph_BI_GearItem_Tab Parms{};
+	Params::BI_GearItem_Tab_C_SeqFX_PlayConfig Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.UINS_Config_0 = UINS_Config_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -71,35 +71,35 @@ void UBI_GearItem_Tab_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function BI_GearItem_Tab.BI_GearItem_Tab_C.SeqFX_PlayConfig
-// (BlueprintCallable, BlueprintEvent)
+// Function BI_GearItem_Tab.BI_GearItem_Tab_C.ExecuteUbergraph_BI_GearItem_Tab
+// (Final, UbergraphFunction)
 // Parameters:
-// class UNiagaraSystemWidget*             UINS_Config_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBI_GearItem_Tab_C::SeqFX_PlayConfig(class UNiagaraSystemWidget* UINS_Config_0)
+void UBI_GearItem_Tab_C::ExecuteUbergraph_BI_GearItem_Tab(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearItem_Tab_C", "SeqFX_PlayConfig");
+		Func = Class->GetFunction("BI_GearItem_Tab_C", "ExecuteUbergraph_BI_GearItem_Tab");
 
-	Params::BI_GearItem_Tab_C_SeqFX_PlayConfig Parms{};
+	Params::BI_GearItem_Tab_C_ExecuteUbergraph_BI_GearItem_Tab Parms{};
 
-	Parms.UINS_Config_0 = UINS_Config_0;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BI_GearItem_Tab.BI_GearItem_Tab_C.SequenceEvent__ENTRYPOINTBI_GearItem_Tab_0
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BI_GearItem_Tab.BI_GearItem_Tab_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UBI_GearItem_Tab_C::SequenceEvent__ENTRYPOINTBI_GearItem_Tab_0()
+void UBI_GearItem_Tab_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BI_GearItem_Tab_C", "SequenceEvent__ENTRYPOINTBI_GearItem_Tab_0");
+		Func = Class->GetFunction("BI_GearItem_Tab_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
