@@ -13,7 +13,7 @@ HMODULE baseModule = GetModuleHandle(NULL);
 
 // Version
 std::string sFixName = "WukongTweak";
-std::string sFixVer = "0.8.3";
+std::string sFixVer = "0.8.4";
 std::string sLogFile = sFixName + ".log";
 
 // Logger
