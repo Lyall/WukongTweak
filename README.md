@@ -28,6 +28,14 @@ This is an ASI plugin for Black Myth: Wukong that features expanded ultrawide su
 🚩**You do not need to do this if you are using Windows!**
 - Open up the game properties in Steam and add `WINEDLLOVERRIDES="dsound=n,b" %command%` to the launch options.
 
+## Console
+To display the console, you will need to have a console key bound.<br/>
+You can do this by editing `%LOCALAPPDATA%\b1\Saved\Config\Windows\Input.ini` and adding these lines:
+```ini
+[/Script/Engine.InputSettings]
+ConsoleKeys=Tilde
+```
+
 ## Configuration
 - See **WukongTweak.ini** to adjust settings.
 
