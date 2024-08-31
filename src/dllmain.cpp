@@ -35,6 +35,7 @@ bool bChromaticAberration;
 bool bVignette;
 bool bVirtualShadowmaps;
 float fAdditionalFOV;
+std::vector<std::pair<std::string, std::string>> sCustomCVars;
 
 // Aspect ratio + HUD stuff
 float fPi = (float)3.141592653;
@@ -158,6 +159,12 @@ void Configuration()
     inipp::get_value(ini.sections["Chromatic Aberration"], "Enabled", bChromaticAberration);
     inipp::get_value(ini.sections["Vignette"], "Enabled", bVignette);
     inipp::get_value(ini.sections["Virtual Shadow Maps"], "Enabled", bVirtualShadowmaps);
+    auto it = ini.sections.find("Custom CVars");
+    if (it != ini.sections.end()) {
+        for (const auto& pair : it->second) {
+            sCustomCVars.emplace_back(pair.first, pair.second);
+        }
+    }
 
     spdlog::info("----------");
     spdlog::info("Config Parse: bFixAspect: {}", bFixAspect);
@@ -172,6 +179,9 @@ void Configuration()
     spdlog::info("Config Parse: bChromaticAberration: {}", bChromaticAberration);
     spdlog::info("Config Parse: bVignette: {}", bVignette);
     spdlog::info("Config Parse: bVirtualShadowmaps: {}", bVirtualShadowmaps);
+    for (const auto& cvar : sCustomCVars) {
+        spdlog::info("Config Parse: CustomCVars: {} = {}", cvar.first, cvar.second);
+    }
     spdlog::info("----------");
 
     // Grab desktop resolution/aspect
@@ -179,6 +189,43 @@ void Configuration()
     iCurrentResX = DesktopDimensions.first;
     iCurrentResY = DesktopDimensions.second;
     CalculateAspectRatio(false);
+}
+
+void UpdateOffsets()
+{
+    // GObjects
+    uint8_t* GObjectsScanResult = Memory::PatternScan(baseModule, "48 8B ?? ?? ?? ?? ?? 48 8B ?? ?? 48 8D ?? ?? EB ?? 33 ?? 8B ?? ?? C1 ??");
+    if (GObjectsScanResult) {
+        spdlog::info("Offsets: GObjects: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)GObjectsScanResult - (uintptr_t)baseModule);
+        uintptr_t GObjectsAddr = Memory::GetAbsolute((uintptr_t)GObjectsScanResult + 0x3);
+        SDK::Offsets::GObjects = (uintptr_t)GObjectsAddr - (uintptr_t)baseModule;
+        spdlog::info("Offsets: GObjects: Offset: {:x}", SDK::Offsets::GObjects);
+    }
+    else if (!GObjectsScanResult) {
+        spdlog::error("Offsets: GObjects: Pattern scan failed.");
+    }
+
+    // AppendString
+    uint8_t* AppendStringScanResult = Memory::PatternScan(baseModule, "48 89 ?? ?? ?? 57 48 83 ?? ?? 80 3D ?? ?? ?? ?? 00 48 8B ?? 48 8B ?? 74 ?? 4C 8D ?? ?? ?? ?? ?? EB ?? 48 8D ?? ?? ?? ?? ?? E8 ?? ?? ?? ?? 4C ?? ?? C6 ?? ?? ?? ?? ?? 01 8B ?? 8B ?? 0F ?? ?? C1 ?? 10 89 ?? ?? ?? 89 ?? ?? ?? 48 8B ?? ?? ?? 48 ?? ?? ?? 8D ?? ?? 49 ?? ?? ?? ?? 48 8B ?? E8 ?? ?? ?? ?? 83 ?? ?? 00");
+    if (AppendStringScanResult) {
+        spdlog::info("Offsets: AppendString: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)AppendStringScanResult - (uintptr_t)baseModule);
+        SDK::Offsets::AppendString = (uintptr_t)AppendStringScanResult - (uintptr_t)baseModule;
+        spdlog::info("Offsets: AppendString: Offset: {:x}", SDK::Offsets::AppendString);
+    }
+    else if (!AppendStringScanResult) {
+        spdlog::error("Offsets: AppendString: Pattern scan failed.");
+    }
+
+    // ProcessEvent
+    uint8_t* ProcessEventScanResult = Memory::PatternScan(baseModule, "40 ?? 56 57 41 ?? 41 ?? 41 ?? 41 ?? 48 ?? ?? ?? ?? ?? ?? 48 8D ?? ?? ?? 48 89 ?? ?? ?? ?? ?? 48 8B ?? ?? ?? ?? ?? 48 ?? ?? 48 89 ?? ?? ?? ?? ?? 4D ?? ?? 48 ?? ?? 4C ?? ?? 48 ?? ??");
+    if (ProcessEventScanResult) {
+        spdlog::info("Offsets: ProcessEvent: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)ProcessEventScanResult - (uintptr_t)baseModule);
+        SDK::Offsets::ProcessEvent = (uintptr_t)ProcessEventScanResult - (uintptr_t)baseModule;
+        spdlog::info("Offsets: ProcessEvent: Offset: {:x}", SDK::Offsets::ProcessEvent);
+    }
+    else if (!ProcessEventScanResult) {
+        spdlog::error("Offsets: ProcessEvent: Pattern scan failed.");
+    }
 }
 
 void CurrentResolution()
@@ -231,6 +278,109 @@ void CurrentResolution()
     }
     else if (!CurrResolutionScanResult) {
         spdlog::error("Current Resolution: Pattern scan failed.");
+    }
+}
+
+void GetCVARs()
+{
+    // Get console objects
+    uint8_t* ConsoleManagerSingletonScanResult = Memory::PatternScan(baseModule, "48 83 ?? ?? 48 83 3D ?? ?? ?? ?? 00 0F 85 ?? ?? ?? ?? B9 ?? ?? ?? ?? 48 89 ?? ?? ?? E8 ?? ?? ?? ?? 48 ?? ?? 48 ?? ??");
+    if (ConsoleManagerSingletonScanResult) {
+        spdlog::info("Console CVARs: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)ConsoleManagerSingletonScanResult - (uintptr_t)baseModule);
+        uintptr_t singletonAddr = Memory::GetAbsolute((uintptr_t)ConsoleManagerSingletonScanResult + 0x7) + 0x1;
+        spdlog::info("Console CVARs: IConsoleManager singleton address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)singletonAddr - (uintptr_t)baseModule);
+
+        int i = 0;
+        while (!*(uintptr_t*)singletonAddr)
+        {
+            i++;
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+
+            if (i == 100) { // 10s
+                spdlog::error("Console CVARs: Failed to find singleton adddress.");
+                return;
+            }
+        }
+
+        // Cache all console objects
+        ConsoleObjects = Unreal::GetConsoleObjects(singletonAddr);
+
+        if (ConsoleObjects.Num() != 0) {
+            bCachedConsoleObjects = true;
+            spdlog::info("Console CVARs: Cached all console objects.");
+        }
+        else {
+            spdlog::error("Console CVARs: ConsoleObjects TMap is not valid.");
+        }
+    }
+    else if (!ConsoleManagerSingletonScanResult) {
+        spdlog::error("Console CVARs: Pattern scan failed.");
+    }
+}
+
+void SetCVARs()
+{
+    if (bCachedConsoleObjects) {
+        // Apply custom cvars from ini
+        for (const auto& cvar : sCustomCVars) {
+            auto consoleVariable = Unreal::FindCVAR(cvar.first, ConsoleObjects);
+            if (consoleVariable) {
+                // Convert to wstring
+                std::wstring wValue(cvar.second.begin(), cvar.second.end());
+                // Set value
+                consoleVariable->Set(wValue.c_str());
+                spdlog::info("CVar: Custom CVars: Set {} to {}", cvar.first, consoleVariable->GetString().ToString());
+            }
+            else {
+                spdlog::info("CVar: Custom CVars: Failed to find {}", cvar.first);
+            }
+        }
+
+        cvarSharpen = Unreal::FindCVAR("r.Tonemapper.Sharpen", ConsoleObjects);
+        cvarCA = Unreal::FindCVAR("r.SceneColorFringeQuality", ConsoleObjects);
+        cvarVignette = Unreal::FindCVAR("r.Tonemapper.Quality", ConsoleObjects);
+        cvarVSMEnable = Unreal::FindCVAR("r.Shadow.Virtual.Enable", ConsoleObjects);
+
+        // ULevelSequence::PostLoad
+        // Set CVars after the level has loaded so that we override anything set by the game.
+        uint8_t* LevelPostLoadScanResult = Memory::PatternScan(baseModule, "45 ?? ?? 4C ?? ?? 41 ?? ?? 4C ?? ?? ?? 48 89 ?? ?? ?? ?? ?? 4D ?? ?? 49 8B ?? ?? ?? ?? ??");
+        if (LevelPostLoadScanResult) {
+            spdlog::info("LevelSequence:PostLoad: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)LevelPostLoadScanResult - (uintptr_t)baseModule);
+            static SafetyHookMid LevelPostLoadMidHook{};
+            LevelPostLoadMidHook = safetyhook::create_mid(LevelPostLoadScanResult,
+                [](SafetyHookContext& ctx) {
+                    // r.Tonemapper.Sharpen
+                    if (cvarSharpen && (cvarSharpen->GetFloat() != fSharpeningValue)) {
+                        // Flag jank
+                        *reinterpret_cast<int*>((uintptr_t)cvarSharpen + 0x18) = 0x0A000000;
+                        // Set value manually since this one is finicky
+                        *reinterpret_cast<float*>((uintptr_t)cvarSharpen + 0x60) = fSharpeningValue;
+                        *reinterpret_cast<float*>((uintptr_t)cvarSharpen + 0x64) = fSharpeningValue;
+                        spdlog::info("CVar: r.Tonemapper.Sharpen: Set to {}", cvarSharpen->GetFloat());
+                    }
+
+                    // r.SceneColorFringeQuality
+                    if (cvarCA && (cvarCA->GetInt() != (int)bChromaticAberration)) {
+                        cvarCA->Set(std::to_wstring(bChromaticAberration).c_str());
+                        spdlog::info("CVar: r.SceneColorFringeQuality: Set to {}", cvarCA->GetInt());
+                    }
+
+                    // r.Tonemapper.Quality
+                    if (cvarVignette && !bVignette && (cvarVignette->GetInt() != 1)) {
+                        cvarVignette->Set(L"1"); // 1 for disabling vignette
+                        spdlog::info("CVar: r.Tonemapper.Quality: Set to {}", cvarVignette->GetInt());
+                    }
+
+                    // r.Shadow.Virtual.Enable
+                    if (cvarVSMEnable && (cvarVSMEnable->GetInt() != (int)bVirtualShadowmaps)) {
+                        cvarVSMEnable->Set(std::to_wstring(bVirtualShadowmaps).c_str());
+                        spdlog::info("CVar: r.Shadow.Virtual.Enable: Set to {}", cvarVSMEnable->GetInt());
+                    }
+                });
+        }
+        else if (!LevelPostLoadScanResult) {
+            spdlog::error("LevelSequence:PostLoad: Pattern scan failed.");
+        }
     }
 }
 
@@ -290,94 +440,6 @@ void EnableConsole()
         }
         else {
             spdlog::error("Construct Console: GObjects or AppendString offset invalid.");
-        }
-    }
-}
-
-void GetCVARs()
-{
-    // Get console objects
-    uint8_t* ConsoleManagerSingletonScanResult = Memory::PatternScan(baseModule, "48 83 ?? ?? 48 83 3D ?? ?? ?? ?? 00 0F 85 ?? ?? ?? ?? B9 ?? ?? ?? ?? 48 89 ?? ?? ?? E8 ?? ?? ?? ?? 48 ?? ?? 48 ?? ??");
-    if (ConsoleManagerSingletonScanResult) {
-        spdlog::info("Console CVARs: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)ConsoleManagerSingletonScanResult - (uintptr_t)baseModule);
-        uintptr_t singletonAddr = Memory::GetAbsolute((uintptr_t)ConsoleManagerSingletonScanResult + 0x7) + 0x1;
-        spdlog::info("Console CVARs: IConsoleManager singleton address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)singletonAddr - (uintptr_t)baseModule);
-
-        int i = 0;
-        while (!*(uintptr_t*)singletonAddr)
-        {
-            i++;
-            std::this_thread::sleep_for(std::chrono::milliseconds(100));
-
-            if (i == 100) { // 10s
-                spdlog::error("Console CVARs: Failed to find singleton adddress.");
-                return;
-            }
-        }
-
-        // Cache all console objects
-        ConsoleObjects = Unreal::GetConsoleObjects(singletonAddr);
-
-        if (ConsoleObjects.Num() != 0) {
-            bCachedConsoleObjects = true;
-            spdlog::info("Console CVARs: Cached all console objects.");
-        }
-        else {
-            spdlog::error("Console CVARs: ConsoleObjects TMap is not valid.");
-        }
-    }
-    else if (!ConsoleManagerSingletonScanResult) {
-        spdlog::error("Console CVARs: Pattern scan failed.");
-    }
-}
-
-void SetCVARs()
-{
-    if (bCachedConsoleObjects) {
-        cvarSharpen = Unreal::FindCVAR("r.Tonemapper.Sharpen", ConsoleObjects);
-        cvarCA = Unreal::FindCVAR("r.SceneColorFringeQuality", ConsoleObjects);
-        cvarVignette = Unreal::FindCVAR("r.Tonemapper.Quality", ConsoleObjects);
-        cvarVSMEnable = Unreal::FindCVAR("r.Shadow.Virtual.Enable", ConsoleObjects);
-
-        // ULevelSequence::PostLoad
-        // Set CVars after the level has loaded so that we override anything set by the game.
-        uint8_t* LevelPostLoadScanResult = Memory::PatternScan(baseModule, "45 ?? ?? 4C ?? ?? 41 ?? ?? 4C ?? ?? ?? 48 89 ?? ?? ?? ?? ?? 4D ?? ?? 49 8B ?? ?? ?? ?? ??");
-        if (LevelPostLoadScanResult) {
-            spdlog::info("LevelSequence:PostLoad: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)LevelPostLoadScanResult - (uintptr_t)baseModule);
-            static SafetyHookMid LevelPostLoadMidHook{};
-            LevelPostLoadMidHook = safetyhook::create_mid(LevelPostLoadScanResult,
-                [](SafetyHookContext& ctx) {
-                    // r.Tonemapper.Sharpen
-                    if (cvarSharpen && (cvarSharpen->GetFloat() != fSharpeningValue)) {
-                        // Flag jank
-                        *reinterpret_cast<int*>((uintptr_t)cvarSharpen + 0x18) = 0x0A000000;
-                        // Set value manually since this one is finicky
-                        *reinterpret_cast<float*>((uintptr_t)cvarSharpen + 0x60) = fSharpeningValue;
-                        *reinterpret_cast<float*>((uintptr_t)cvarSharpen + 0x64) = fSharpeningValue;
-                        spdlog::info("CVar: r.Tonemapper.Sharpen: Set to {}", cvarSharpen->GetFloat());
-                    }
-
-                    // r.SceneColorFringeQuality
-                    if (cvarCA && (cvarCA->GetInt() != (int)bChromaticAberration)) {
-                        cvarCA->Set(std::to_wstring(bChromaticAberration).c_str());
-                        spdlog::info("CVar: r.SceneColorFringeQuality: Set to {}", cvarCA->GetInt());
-                    }
-
-                    // r.Tonemapper.Quality
-                    if (cvarVignette && !bVignette && (cvarVignette->GetInt() != 1)) {
-                        cvarVignette->Set(L"1"); // 1 for disabling vignette
-                        spdlog::info("CVar: r.Tonemapper.Quality: Set to {}", cvarVignette->GetInt());
-                    }
-
-                    // r.Shadow.Virtual.Enable
-                    if (cvarVSMEnable && (cvarVSMEnable->GetInt() != (int)bVirtualShadowmaps)) {
-                        cvarVSMEnable->Set(std::to_wstring(bVirtualShadowmaps).c_str());
-                        spdlog::info("CVar: r.Shadow.Virtual.Enable: Set to {}", cvarVSMEnable->GetInt());
-                    }
-                });
-        }
-        else if (!LevelPostLoadScanResult) {
-            spdlog::error("LevelSequence:PostLoad: Pattern scan failed.");
         }
     }
 }
@@ -481,52 +543,15 @@ void AspectFOV()
     }
 }
 
-void UpdateOffsets() 
-{
-    // GObjects
-    uint8_t* GObjectsScanResult = Memory::PatternScan(baseModule, "48 8B ?? ?? ?? ?? ?? 48 8B ?? ?? 48 8D ?? ?? EB ?? 33 ?? 8B ?? ?? C1 ??");
-    if (GObjectsScanResult) {
-        spdlog::info("Offsets: GObjects: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)GObjectsScanResult - (uintptr_t)baseModule);
-        uintptr_t GObjectsAddr = Memory::GetAbsolute((uintptr_t)GObjectsScanResult + 0x3);
-        SDK::Offsets::GObjects = (uintptr_t)GObjectsAddr - (uintptr_t)baseModule;
-        spdlog::info("Offsets: GObjects: Offset: {:x}", SDK::Offsets::GObjects);
-    }
-    else if (!GObjectsScanResult) {
-        spdlog::error("Offsets: GObjects: Pattern scan failed.");
-    }
-
-    // AppendString
-    uint8_t* AppendStringScanResult = Memory::PatternScan(baseModule, "48 89 ?? ?? ?? 57 48 83 ?? ?? 80 3D ?? ?? ?? ?? 00 48 8B ?? 48 8B ?? 74 ?? 4C 8D ?? ?? ?? ?? ?? EB ?? 48 8D ?? ?? ?? ?? ?? E8 ?? ?? ?? ?? 4C ?? ?? C6 ?? ?? ?? ?? ?? 01 8B ?? 8B ?? 0F ?? ?? C1 ?? 10 89 ?? ?? ?? 89 ?? ?? ?? 48 8B ?? ?? ?? 48 ?? ?? ?? 8D ?? ?? 49 ?? ?? ?? ?? 48 8B ?? E8 ?? ?? ?? ?? 83 ?? ?? 00");
-    if (AppendStringScanResult) {
-        spdlog::info("Offsets: AppendString: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)AppendStringScanResult - (uintptr_t)baseModule);
-        SDK::Offsets::AppendString = (uintptr_t)AppendStringScanResult - (uintptr_t)baseModule;
-        spdlog::info("Offsets: AppendString: Offset: {:x}", SDK::Offsets::AppendString);
-    }
-    else if (!AppendStringScanResult) {
-        spdlog::error("Offsets: AppendString: Pattern scan failed.");
-    }
-
-    // ProcessEvent
-    uint8_t* ProcessEventScanResult = Memory::PatternScan(baseModule, "40 ?? 56 57 41 ?? 41 ?? 41 ?? 41 ?? 48 ?? ?? ?? ?? ?? ?? 48 8D ?? ?? ?? 48 89 ?? ?? ?? ?? ?? 48 8B ?? ?? ?? ?? ?? 48 ?? ?? 48 89 ?? ?? ?? ?? ?? 4D ?? ?? 48 ?? ?? 4C ?? ?? 48 ?? ??");
-    if (ProcessEventScanResult) {
-        spdlog::info("Offsets: ProcessEvent: Address is {:s}+{:x}", sExeName.c_str(), (uintptr_t)ProcessEventScanResult - (uintptr_t)baseModule);
-        SDK::Offsets::ProcessEvent = (uintptr_t)ProcessEventScanResult - (uintptr_t)baseModule;
-        spdlog::info("Offsets: ProcessEvent: Offset: {:x}", SDK::Offsets::ProcessEvent);
-    }
-    else if (!ProcessEventScanResult) {
-        spdlog::error("Offsets: ProcessEvent: Pattern scan failed.");
-    }
-}
-
 DWORD __stdcall Main(void*)
 {
     Logging();
     Configuration();
     UpdateOffsets();
     CurrentResolution();
-    EnableConsole();
     GetCVARs();
     SetCVARs();
+    EnableConsole();
     AspectFOV();
     return true;
 }
