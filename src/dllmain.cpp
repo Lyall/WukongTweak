@@ -329,7 +329,7 @@ void SetCVARs()
                 std::wstring wValue(cvar.second.begin(), cvar.second.end());
                 // Set value
                 consoleVariable->Set(wValue.c_str());
-                spdlog::info("CVar: Custom CVars: Set {} to {}", cvar.first, consoleVariable->GetString().ToString());
+                spdlog::info("CVar: Custom CVars: Set {} to {}", cvar.first, cvar.second);
             }
             else {
                 spdlog::info("CVar: Custom CVars: Failed to find {}", cvar.first);
