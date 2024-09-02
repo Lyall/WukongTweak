@@ -372,7 +372,7 @@ void SetCVARs()
                     }
 
                     // r.Shadow.Virtual.Enable
-                    if (cvarVSMEnable && (cvarVSMEnable->GetInt() != (int)bVirtualShadowmaps)) {
+                    if (cvarVSMEnable && bVirtualShadowmaps && (cvarVSMEnable->GetInt() != 1)) {
                         cvarVSMEnable->Set(std::to_wstring(bVirtualShadowmaps).c_str());
                         spdlog::info("CVar: r.Shadow.Virtual.Enable: Set to {}", cvarVSMEnable->GetInt());
                     }
