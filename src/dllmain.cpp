@@ -336,6 +336,15 @@ void SetCVARs()
             }
         }
 
+        static std::vector<std::pair<std::string, std::string>> HighVSMQuality = {
+                {"r.Shadow.Virtual.SMRT.TexelDitherScale", "1"},
+                {"r.Shadow.Virtual.MaxPhysicalPages", "4096"},
+                {"r.Shadow.Virtual.SMRT.RayCountDirectional", "8"},
+                {"r.Shadow.Virtual.SMRT.SamplesPerRayDirectional", "4"},
+                {"r.Shadow.Virtual.SMRT.RayCountLocal", "8"},
+                {"r.Shadow.Virtual.SMRT.SamplesPerRayLocal", "4"}
+        };
+
         cvarSharpen = Unreal::FindCVAR("r.Tonemapper.Sharpen", ConsoleObjects);
         cvarCA = Unreal::FindCVAR("r.SceneColorFringeQuality", ConsoleObjects);
         cvarVignette = Unreal::FindCVAR("r.Tonemapper.Quality", ConsoleObjects);
@@ -375,6 +384,21 @@ void SetCVARs()
                     if (cvarVSMEnable && bVirtualShadowmaps && (cvarVSMEnable->GetInt() != 1)) {
                         cvarVSMEnable->Set(std::to_wstring(bVirtualShadowmaps).c_str());
                         spdlog::info("CVar: r.Shadow.Virtual.Enable: Set to {}", cvarVSMEnable->GetInt());
+
+                        // Set high quality VSM cvars
+                        for (const auto& cvar : HighVSMQuality) {
+                            auto consoleVariable = Unreal::FindCVAR(cvar.first, ConsoleObjects);
+                            if (consoleVariable) {
+                                // Convert to wstring
+                                std::wstring wValue(cvar.second.begin(), cvar.second.end());
+                                // Set value
+                                consoleVariable->Set(wValue.c_str());
+                                spdlog::info("CVar: VSMs: Set {} to {}", cvar.first, cvar.second);
+                            }
+                            else {
+                                spdlog::info("CVar: VSMs: Failed to find {}", cvar.first);
+                            }
+                        }
                     }
                 });
         }
